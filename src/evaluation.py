@@ -1,6 +1,7 @@
 import random
 import json
 from deap import base, creator, tools
+from Read import Data, Route, Constraints
 
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMin) 
@@ -41,32 +42,33 @@ def distance(individual):
     route = Route(Constraints(25, 200), 0, [0,3,6], Data())
     return 
 
-def checkBounds(min, max):
-    def decorator(func):
-        def wrapper(*args, **kargs):
-            offspring = func(*args, **kargs)
-            for child in offspring: #zmienic petle!
-                # for i in xrange(len(child)):
-                #     if child[i] > max:
-                #         child[i] = max
-                #     elif child[i] < min:
-                #         child[i] = min
-            return offspring
-        return wrapper
-    return decorator
+# def checkBounds(min, max):
+#     def decorator(func):
+#         def wrapper(*args, **kargs):
+#             offspring = func(*args, **kargs)
+#             for child in offspring: #zmienic petle!
+#                 # for i in xrange(len(child)):
+#                 #     if child[i] > max:
+#                 #         child[i] = max
+#                 #     elif child[i] < min:
+#                 #         child[i] = min
+#             return offspring
+#         return wrapper
+#     return decorator
 
-toolbox.register("mate", tools.cxTwoPoint) #inny algorytm!
+toolbox.register("mate", tools.cxPartialMatched) #inny algorytm!
 toolbox.register("mutate", tools.mutShuffleIndexes, indpb =0.1)
 
-toolbox.decorate("mate", checkBounds(MIN, MAX)) #oczywiscie inna postac funkcji!
-toolbox.decorate("mutate", checkBounds(MIN, MAX)) #j.w.
+# toolbox.decorate("mate", checkBounds(MIN, MAX)) #oczywiscie inna postac funkcji!
+# toolbox.decorate("mutate", checkBounds(MIN, MAX)) #j.w.
 
 toolbox.register("select", tools.selTournament, tournsize=3)
 toolbox.register("evaluate", evaluate)
 #w przykladzie jest to rozdzielone, we wczytywaniu jedna funkcj liczy koszt+kare
-toolbox.decorate("evaluate", tools.DeltaPenalty(feasible, 7.0, distance))
+# toolbox.decorate("evaluate", tools.DeltaPenalty(feasible, 7.0, distance))
 
 def main():
+	
 	pop = toolbox.population(n=10)
 	CXPB, MUTPB, NGEN = 0.5, 0.2, 40
 
@@ -103,3 +105,5 @@ def main():
 		pop[:] = offspring
 
 	print (pop)
+
+main()
