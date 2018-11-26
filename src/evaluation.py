@@ -1,109 +1,135 @@
 import random
 import json
 from deap import base, creator, tools
-from Read import Data, Route, Constraints
 
-creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
-creator.create("Individual", list, fitness=creator.FitnessMin) 
+from Read import Route, Constraints, Data, get_data
 
-def initIndividual(ind_size):
-	customers = random.sample(range(ind_size), ind_size)
-	vehicles = customers.copy()
-	for x in range(ind_size):
-		vehicles[x] += 100
-	result = customers.extend(vehicles)
-	return shuffle(result[1:])
-	
 
-IND_SIZE = 25
-toolbox = base.Toolbox()
-toolbox.register("individual", initIndividual, IND_SIZE)
+class Algorithm(object):
+	def __init__(self, data = Data(), constraints = Constraints(25, 100)):
+		self.data = data
+		self.constraints = constraints
 
-#zamiast jednej populacji może być ew. kilka
-toolbox.register("population", tools.initRepeat, list, toolbox.individual)
+		creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
+		creator.create("Individual", list, fitness=creator.FitnessMin)
 
-def evaluate(individual):
-	#tzreba bedzie przeparsowac individual i tworzyc Route z rzeczywistymi danymi
-    route = Route(Constraints(25, 200), 0, [0,3,6], Data())
-    return route.count_cost
+		self.IND_SIZE = len(self.data)*2
+		self.toolbox = base.Toolbox()
+		self.toolbox.register("indices", random.sample, range(self.IND_SIZE), self.IND_SIZE)
+		self.toolbox.register("individual", tools.initIterate, creator.Individual,
+						 self.toolbox.indices)
 
-def feasible(individual):
-    """Feasibility function for the individual. Returns True if feasible False
-    otherwise."""
-    #j.w.
-    route = Route(Constraints(25, 200), 0, [0,3,6], Data())
-    if route.feasable:
-        return True
-    return False
+		# zamiast jednej populacji może być ew. kilka
+		self.toolbox.register("population", tools.initRepeat, list, self.toolbox.individual)
 
-def distance(individual):
-    """A distance function to the feasibility region."""
-    #j.w.
-    route = Route(Constraints(25, 200), 0, [0,3,6], Data())
-    return 
+		self.toolbox.register("mate", tools.cxPartialyMatched)  # PartialyMatched lub Ordered
+		self.toolbox.register("mutate", tools.mutShuffleIndexes, indpb=0.1)
 
-# def checkBounds(min, max):
-#     def decorator(func):
-#         def wrapper(*args, **kargs):
-#             offspring = func(*args, **kargs)
-#             for child in offspring: #zmienic petle!
-#                 # for i in xrange(len(child)):
-#                 #     if child[i] > max:
-#                 #         child[i] = max
-#                 #     elif child[i] < min:
-#                 #         child[i] = min
-#             return offspring
-#         return wrapper
-#     return decorator
+		# self.toolbox.decorate("mate", checkBounds(MIN, MAX)) #oczywiscie inna postac funkcji!
+		# self.toolbox.decorate("mutate", checkBounds(MIN, MAX)) #j.w.
 
-toolbox.register("mate", tools.cxPartialMatched) #inny algorytm!
-toolbox.register("mutate", tools.mutShuffleIndexes, indpb =0.1)
+		self.toolbox.register("select", tools.selTournament, tournsize=3)
+		self.toolbox.register("evaluate", self.evaluate)
+		# w przykladzie jest to rozdzielone, we wczytywaniu jedna funkcj liczy koszt+kare
+		# self.toolbox.decorate("evaluate", tools.DeltaPenalty(feasible, 7.0, distance))
 
-# toolbox.decorate("mate", checkBounds(MIN, MAX)) #oczywiscie inna postac funkcji!
-# toolbox.decorate("mutate", checkBounds(MIN, MAX)) #j.w.
+	def evaluate(self, individual):
+		no_of_cities = self.IND_SIZE // 2
+		if individual[0] <= no_of_cities: #tymczasowe likwidowanie zlych permutacji
+			return float('inf'),
+		else:
+			routes = []
+			destinations = []
+			current_vehicle = -1
+			for e in individual:
+				if e > no_of_cities:
+					if current_vehicle != -1:
+						route_description = {
+							'vehicle': current_vehicle,
+							'route': destinations
+						}
+						routes.append(route_description)
+					current_vehicle = e
+					destinations = []
+				else:
+					destinations.append(e)
 
-toolbox.register("select", tools.selTournament, tournsize=3)
-toolbox.register("evaluate", evaluate)
-#w przykladzie jest to rozdzielone, we wczytywaniu jedna funkcj liczy koszt+kare
-# toolbox.decorate("evaluate", tools.DeltaPenalty(feasible, 7.0, distance))
+			all_cost = 0
+			for r in routes:
+				route = Route(self.constraints, r['vehicle'], r['route'], self.data)
+				all_cost += route.count_cost(self.data)['cost']
 
-def main():
-	
-	pop = toolbox.population(n=10)
-	CXPB, MUTPB, NGEN = 0.5, 0.2, 40
+		return all_cost,
 
-	#Evaluate the entire pop
-	fitnesses = map(toolbox.evaluate, pop)
-	for ind, fit in zip(pop, fitnesses):
-		ind.fitness.values = fit
+	# def feasible(self, individual):
+	# 	"""Feasibility function for the individual. Returns True if feasible False
+	# 	otherwise."""
+	# 	#j.w.
+	# 	route = Route(Constraints(25, 200), 0, [0,3,6], Data())
+	# 	if route.feasable:
+	# 		return True
+	# 	return False
+	#
+	# def distance(self, individual):
+	# 	"""A distance function to the feasibility region."""
+	# 	#j.w.
+	# 	route = Route(Constraints(25, 200), 0, [0,3,6], Data())
+	# 	return
 
-	for g in range(NGEN):
-		#Select the next generation individuals
-		selected = toolbox.select(pop, len(pop))
-		#Clone the selected indiv
-		offspring = map(toolbox.clone, selected)
+	# def checkBounds(self, min, max):
+	#     def decorator(func):
+	#         def wrapper(*args, **kargs):
+	#             offspring = func(*args, **kargs)
+	#             for child in offspring: #zmienic petle!
+	#                 # for i in xrange(len(child)):
+	#                 #     if child[i] > max:
+	#                 #         child[i] = max
+	#                 #     elif child[i] < min:
+	#                 #         child[i] = min
+	#             return offspring
+	#         return wrapper
+	#     return decorator
 
-		#Apply crossover and mutation on the offspring
-		for child1, child2 in zip(offspring[::2], offspring[1::2]):
-			if random.random() < CXPB:
-				toolbox.mate(child1, child2)
-				del child1.fitness.values
-				del child2.fitness.values
 
-		for mutant in offspring:
-			if random.random() < MUTB:
-				toolbox.mutate(mutant)
-				del mutant.fitness.values
+	def getVPRTW(self):
 
-		#Eval the indiv with an invalid fitness
-		invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
-		fitnesses = toolbox.map(toolbox.evaluate, invalid_ind)
-		for ind, fit in zip(invalid_ind, fitnesses):
+		pop = self.toolbox.population(n=10)
+		CXPB, MUTPB, NGEN = 0.5, 0.2, 40
+
+		#Evaluate the entire pop
+		fitnesses = map(self.toolbox.evaluate, pop)
+		for ind, fit in zip(pop, fitnesses):
 			ind.fitness.values = fit
-		
-		#The population is entirely replaces by offspring
-		pop[:] = offspring
 
-	print (pop)
+		for g in range(NGEN):
+			#Select the next generation individuals
+			selected = self.toolbox.select(pop, len(pop))
+			#Clone the selected indiv
+			offspring = map(self.toolbox.clone, selected)
 
-main()
+			#Apply crossover and mutation on the offspring
+			for child1, child2 in zip(offspring[::2], offspring[1::2]):
+				if random.random() < CXPB:
+					self.toolbox.mate(child1, child2)
+					del child1.fitness.values
+					del child2.fitness.values
+
+			for mutant in offspring:
+				if random.random() < MUTPB:
+					self.toolbox.mutate(mutant)
+					del mutant.fitness.values
+
+			#Eval the indiv with an invalid fitness
+			invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
+			fitnesses = self.toolbox.map(self.toolbox.evaluate, invalid_ind)
+			for ind, fit in zip(invalid_ind, fitnesses):
+				ind.fitness.values = fit
+
+			#The population is entirely replaces by offspring
+			pop[:] = offspring
+
+		print (pop)
+
+data = get_data()
+a = Algorithm(data=data)
+a.getVPRTW()

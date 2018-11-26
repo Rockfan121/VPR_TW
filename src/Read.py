@@ -20,6 +20,7 @@ CUST NO.  XCOORD.   YCOORD.    DEMAND   READY TIME  DUE DATE   SERVICE   TIME
     1      45         68         10        912        967         90 
 ... (CUSTOMER CUST NO column from 0 to VECHICLE NUMBER or moved by 1)    
 """
+
 class Data(object):
     def __init__(self, row = None):
         if not row:
@@ -43,37 +44,40 @@ class Data(object):
         self.service_time = 0
     def __repr__(self):
         return 'Data object: {}'.format(str(self.__dict__))
-open_f = open('../input/C101.txt', 'r')
-name = (open_f.readline()).strip() 					# Title for benchmark
-for p in range(3):
-    open_f.readline() 							# Empty line, "VECHICLE", reast of header
-line = open_f.readline()
-line = line.strip() # Get rid of whitespaces before and after the line
-words = line.split()
-if len(words) == 2:
-    vehicle_count = int(words[0])
-    capacity = int(words[1])
-    print('Vehicle count: {}'.format(vehicle_count))
-    print('Capacity: {}'.format(capacity))
 
-data = []
-for i in range(4):
-    open_f.readline()
-    
-for line in open_f:
-    line = line.strip()
-    # Non empty line
-    if line != '':
-        d = Data(line)
-        if d:
-            data.append(d)
+def get_data():
+    open_f = open('../input/C101.txt', 'r')
+    name = (open_f.readline()).strip() 					# Title for benchmark
+    for p in range(3):
+        open_f.readline() 							# Empty line, "VECHICLE", reast of header
+    line = open_f.readline()
+    line = line.strip() # Get rid of whitespaces before and after the line
+    words = line.split()
+    if len(words) == 2:
+        vehicle_count = int(words[0])
+        capacity = int(words[1])
+        print('Vehicle count: {}'.format(vehicle_count))
+        print('Capacity: {}'.format(capacity))
+
+    data = []
+    for i in range(4):
+        open_f.readline()
+
+    for line in open_f:
+        line = line.strip()
+        # Non empty line
+        if line != '':
+            d = Data(line)
+            if d:
+                data.append(d)
 
 
-# In[2]:
+    # In[2]:
 
 
-for d in data:
-    print(d.__dict__)
+    for d in data:
+        print(d.__dict__)
+    return data
 
 
 # In[3]:
@@ -153,8 +157,9 @@ class Route(object):
                 current_time = arrival_time + target.service_time
             else:
                 print("Cannot create route")
-                return {'result': False, 'cost': 0 }
-        cost += dist(data[self.seq[-1]], Data())
+                return {'result': False, 'cost': float('inf') }
+        if len(self.seq) > 0:
+            cost += dist(data[self.seq[-1]], Data())
         self.cost = cost
         return {'result': True, 'cost': cost }
 
@@ -162,8 +167,9 @@ class Route(object):
 # In[5]:
 
 
-r = Route(Constraints(vehicle_count, capacity), 0, [0, 3, 4], data)
-print(r)
+# r = Route(Constraints(vehicle_count, capacity), 0, [0, 3, 4, 20], data)
+# print("r value:")
+# print(r)
     
 
 
