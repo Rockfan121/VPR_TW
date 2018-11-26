@@ -13,7 +13,7 @@ class Algorithm(object):
 		creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 		creator.create("Individual", list, fitness=creator.FitnessMin)
 
-		self.IND_SIZE = len(self.data)*2
+		self.IND_SIZE = (len(self.data)-1)*2
 		self.toolbox = base.Toolbox()
 		self.toolbox.register("indices", random.sample, range(self.IND_SIZE), self.IND_SIZE)
 		self.toolbox.register("individual", tools.initIterate, creator.Individual,
@@ -34,6 +34,7 @@ class Algorithm(object):
 		# self.toolbox.decorate("evaluate", tools.DeltaPenalty(feasible, 7.0, distance))
 
 	def evaluate(self, individual):
+		#print('individual: {}\n'.format(individual))
 		no_of_cities = self.IND_SIZE // 2
 		if individual[0] <= no_of_cities: #tymczasowe likwidowanie zlych permutacji
 			return float('inf'),
@@ -43,6 +44,7 @@ class Algorithm(object):
 			current_vehicle = -1
 			for e in individual:
 				if e > no_of_cities:
+					print('e: {}'.format(e))
 					if current_vehicle != -1:
 						route_description = {
 							'vehicle': current_vehicle,
@@ -94,7 +96,7 @@ class Algorithm(object):
 	def getVPRTW(self):
 
 		pop = self.toolbox.population(n=10)
-		CXPB, MUTPB, NGEN = 0.5, 0.2, 40
+		CXPB, MUTPB, NGEN = 0.5, 0.2, 100
 
 		#Evaluate the entire pop
 		fitnesses = map(self.toolbox.evaluate, pop)
@@ -105,7 +107,7 @@ class Algorithm(object):
 			#Select the next generation individuals
 			selected = self.toolbox.select(pop, len(pop))
 			#Clone the selected indiv
-			offspring = map(self.toolbox.clone, selected)
+			offspring = [self.toolbox.clone(s) for s in selected]
 
 			#Apply crossover and mutation on the offspring
 			for child1, child2 in zip(offspring[::2], offspring[1::2]):
@@ -128,7 +130,9 @@ class Algorithm(object):
 			#The population is entirely replaces by offspring
 			pop[:] = offspring
 
-		print (pop)
+		for p in pop:
+			print (p) 
+			print (' ')
 
 data = get_data()
 a = Algorithm(data=data)
