@@ -22,16 +22,17 @@ class Algorithm(object):
 		# zamiast jednej populacji może być ew. kilka
 		self.toolbox.register("population", tools.initRepeat, list, self.toolbox.individual)
 
-		self.toolbox.register("mate", tools.cxPartialyMatched)  # PartialyMatched lub Ordered
+
+		self.toolbox.register("mate", tools.cxOrdered)  # PartialyMatched lub Ordered
 		self.toolbox.register("mutate", tools.mutShuffleIndexes, indpb=0.1)
 
 		# self.toolbox.decorate("mate", checkBounds(MIN, MAX)) #oczywiscie inna postac funkcji!
 		# self.toolbox.decorate("mutate", checkBounds(MIN, MAX)) #j.w.
 
-		self.toolbox.register("select", tools.selTournament, tournsize=3)
+		self.toolbox.register("select", tools.selTournament, tournsize=20)
 		self.toolbox.register("evaluate", self.evaluate)
 		# w przykladzie jest to rozdzielone, we wczytywaniu jedna funkcj liczy koszt+kare
-		# self.toolbox.decorate("evaluate", tools.DeltaPenalty(feasible, 7.0, distance))
+		#self.toolbox.decorate("evaluate", tools.DeltaPenalty(check_feasability, 10000.0, count_cost)
 
 	def evaluate(self, individual):
 		#print('individual: {}\n'.format(individual))
@@ -44,7 +45,7 @@ class Algorithm(object):
 			current_vehicle = -1
 			for e in individual:
 				if e > no_of_cities:
-					print('e: {}'.format(e))
+					#print('e: {}'.format(e))
 					if current_vehicle != -1:
 						route_description = {
 							'vehicle': current_vehicle,
@@ -59,6 +60,10 @@ class Algorithm(object):
 			all_cost = 0
 			for r in routes:
 				route = Route(self.constraints, r['vehicle'], r['route'], self.data)
+				if route.count_cost(self.data)['result'] == False:
+					# not feasible
+					route.make_feasible(self.data)
+				print(route)
 				all_cost += route.count_cost(self.data)['cost']
 
 		return all_cost,
@@ -96,13 +101,15 @@ class Algorithm(object):
 	def getVPRTW(self):
 
 		pop = self.toolbox.population(n=10)
+		# probabilities as parameters
 		CXPB, MUTPB, NGEN = 0.5, 0.2, 100
 
 		#Evaluate the entire pop
 		fitnesses = map(self.toolbox.evaluate, pop)
 		for ind, fit in zip(pop, fitnesses):
 			ind.fitness.values = fit
-
+			print(ind)
+			print(fit)
 		for g in range(NGEN):
 			#Select the next generation individuals
 			selected = self.toolbox.select(pop, len(pop))
@@ -124,6 +131,7 @@ class Algorithm(object):
 			#Eval the indiv with an invalid fitness
 			invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
 			fitnesses = self.toolbox.map(self.toolbox.evaluate, invalid_ind)
+
 			for ind, fit in zip(invalid_ind, fitnesses):
 				ind.fitness.values = fit
 
@@ -131,8 +139,14 @@ class Algorithm(object):
 			pop[:] = offspring
 
 		for p in pop:
-			print (p) 
+			print (p)
+			print (p.fitness.values)
 			print (' ')
+
+
+
+	def check_feasibility(individual):
+		pass
 
 data = get_data()
 a = Algorithm(data=data)

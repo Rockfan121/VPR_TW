@@ -47,9 +47,9 @@ class Data(object):
 
 def get_data():
     open_f = open('../input/C101.txt', 'r')
-    name = (open_f.readline()).strip() 					# Title for benchmark
+    name = (open_f.readline()).strip()                     # Title for benchmark
     for p in range(3):
-        open_f.readline() 							# Empty line, "VECHICLE", reast of header
+        open_f.readline()                             # Empty line, "VECHICLE", reast of header
     line = open_f.readline()
     line = line.strip() # Get rid of whitespaces before and after the line
     words = line.split()
@@ -110,12 +110,11 @@ class Constraints(object):
         self.capacity = capacity
     def __repr__(self):
         return str(self.__dict__)
-    
-    
+
+
 class Route(object):
     """
         Route of single vehicle with global constraints
-        
     """
     def __init__(self, constraints, vehicle_id, sequence, data):
         self.constraints = constraints
@@ -156,13 +155,51 @@ class Route(object):
                 cost += arrival_time - current_time
                 current_time = arrival_time + target.service_time
             else:
-                print("Cannot create route")
+                # print("Cannot create route")
                 return {'result': False, 'cost': float('inf') }
         if len(self.seq) > 0:
             cost += dist(data[self.seq[-1]], Data())
         self.cost = cost
         return {'result': True, 'cost': cost }
 
+    def make_feasible(self, data):
+        seq_copy: list = [ x for x in self.seq]
+        dependencies = {}
+        pos = 0
+        for place in self.seq:
+            info = data[place]
+            dependencies[place] = GraphNode(place, info.ready_time, info.due_date, pos)
+            pos += 1
+        for place in dependencies.values():
+            place.get_priority(dependencies)
+
+        new_deps = sorted(dependencies.values(), key=lambda x: x.value())
+        seq_copy = [x.no for x in new_deps]
+        self.seq = seq_copy
+
+
+
+class GraphNode(object):
+    def __init__(self, no, ready_time, due_time, position):
+        self.PROPORTION = 10000
+        self.no = no
+        self.ready_time = ready_time
+        self.due_time = due_time
+        self.position = position
+        self.prio = 0
+
+    def get_priority(self, allNodes):
+        current = 0
+        if self.prio > 0:
+            return self.prio
+        for node in allNodes.values():
+            if node.due_time < self.ready_time:
+                current = max(current, node.get_priority(allNodes))
+        self.prio = current + 1
+        return self.prio
+
+    def value(self):
+        return self.prio * self.PROPORTION + self.position
 
 # In[5]:
 
