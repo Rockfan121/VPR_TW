@@ -29,7 +29,7 @@ class Algorithm(object):
 		# self.toolbox.decorate("mate", checkBounds(MIN, MAX)) #oczywiscie inna postac funkcji!
 		# self.toolbox.decorate("mutate", checkBounds(MIN, MAX)) #j.w.
 
-		self.toolbox.register("select", tools.selTournament, tournsize=20)
+		self.toolbox.register("select", tools.selTournament, tournsize=3)
 		self.toolbox.register("evaluate", self.evaluate)
 		# w przykladzie jest to rozdzielone, we wczytywaniu jedna funkcj liczy koszt+kare
 		#self.toolbox.decorate("evaluate", tools.DeltaPenalty(check_feasability, 10000.0, count_cost)
@@ -100,7 +100,7 @@ class Algorithm(object):
 
 	def getVPRTW(self):
 
-		pop = self.toolbox.population(n=10)
+		pop = self.toolbox.population(n=30)
 		# probabilities as parameters
 		CXPB, MUTPB, NGEN = 0.5, 0.2, 100
 
