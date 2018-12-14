@@ -136,13 +136,18 @@ class Route(object):
         for place in self.seq:
             cap -= data[place].demand
         if cap < 0:
-            return False
+            return "overload"
         return self.count_cost(data)['result']
         
     def count_cost(self, data):
         current_time = 0
-        last_place = Data()
+        
+        baza = Data()
+        baza.x_coord = data[0].x_coord
+        baza.y_coord = data[0].y_coord
         cost = 0
+
+        last_place = baza
         # example data[place] = "{'customer': 25, 'x_coord': 25, 'y_coord': 52, 
         # 'demand': 40, 'ready_time': 169, 'due_date': 224, 'service_time': 90}"
         for place in self.seq:
@@ -156,11 +161,11 @@ class Route(object):
                 current_time = arrival_time + target.service_time
             else:
                 # print("Cannot create route")
-                return {'result': False, 'cost': float('inf') }
+                return {'result': "overtime", 'cost': float('inf') }
         if len(self.seq) > 0:
-            cost += dist(data[self.seq[-1]], Data())
+            cost += dist(data[self.seq[-1]], baza)
         self.cost = cost
-        return {'result': True, 'cost': cost }
+        return {'result': "ok", 'cost': cost }
 
     def make_feasible(self, data):
         seq_copy: list = [ x for x in self.seq]
@@ -173,7 +178,7 @@ class Route(object):
         for place in dependencies.values():
             place.get_priority(dependencies)
 
-        new_deps = sorted(dependencies.values(), key=lambda x: x.value())
+        new_deps = sorted(dependencies.values(), key=lambda x: x.value()) ####
         seq_copy = [x.no for x in new_deps]
         self.seq = seq_copy
 

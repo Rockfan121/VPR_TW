@@ -4,8 +4,8 @@ from deap import base, creator, tools
 
 from Read import Route, Constraints, Data, get_data
 
-
 class Algorithm(object):
+
 	def __init__(self, data = Data(), constraints = Constraints(25, 100)):
 		self.data = data
 		self.constraints = constraints
@@ -13,13 +13,13 @@ class Algorithm(object):
 		creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 		creator.create("Individual", list, fitness=creator.FitnessMin)
 
-		self.IND_SIZE = (len(self.data)-1)*2
+		self.IND_SIZE = (len(self.data)-1)*2-1
 		self.toolbox = base.Toolbox()
 		self.toolbox.register("indices", random.sample, range(self.IND_SIZE), self.IND_SIZE)
 		self.toolbox.register("individual", tools.initIterate, creator.Individual,
 						 self.toolbox.indices)
 
-		# zamiast jednej populacji może być ew. kilka
+		# zamiast jednej populacji moze byc ew. kilka
 		self.toolbox.register("population", tools.initRepeat, list, self.toolbox.individual)
 
 
@@ -37,14 +37,16 @@ class Algorithm(object):
 	def evaluate(self, individual):
 		#print('individual: {}\n'.format(individual))
 		no_of_cities = self.IND_SIZE // 2
-		if individual[0] <= no_of_cities: #tymczasowe likwidowanie zlych permutacji
+		elem = individual[0]+1
+		if elem <= no_of_cities: #tymczasowe likwidowanie zlych permutacji
 			return float('inf'),
 		else:
 			routes = []
 			destinations = []
 			current_vehicle = -1
 			for e in individual:
-				if e > no_of_cities:
+				elem =e+1
+				if elem > no_of_cities:
 					#print('e: {}'.format(e))
 					if current_vehicle != -1:
 						route_description = {
@@ -52,15 +54,18 @@ class Algorithm(object):
 							'route': destinations
 						}
 						routes.append(route_description)
-					current_vehicle = e
+					current_vehicle = elem
 					destinations = []
 				else:
-					destinations.append(e)
+					destinations.append(elem)
 
 			all_cost = 0
 			for r in routes:
 				route = Route(self.constraints, r['vehicle'], r['route'], self.data)
-				if route.count_cost(self.data)['result'] == False:
+				if route.feasable == "overload":
+					print(route)
+					return float('inf'), #do poprawki!
+				elif route.feasable == "overtime":
 					# not feasible
 					route.make_feasible(self.data)
 				print(route)
