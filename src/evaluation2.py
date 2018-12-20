@@ -2,10 +2,9 @@ import random
 import json
 from deap import base, creator, tools
 
-from Read import Route, Constraints, Data, get_data
+from Read2 import Route, Constraints, Data, get_data,Solution
 
 class Algorithm(object):
-
 	def __init__(self, data = Data(), constraints = Constraints(25, 100)):
 		self.data = data
 		self.constraints = constraints
@@ -13,7 +12,7 @@ class Algorithm(object):
 		creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 		creator.create("Individual", list, fitness=creator.FitnessMin)
 
-		self.IND_SIZE = (len(self.data)-1)*2-1
+		self.IND_SIZE = (len(self.data)-1)*2
 		self.toolbox = base.Toolbox()
 		self.toolbox.register("indices", random.sample, range(self.IND_SIZE), self.IND_SIZE)
 		self.toolbox.register("individual", tools.initIterate, creator.Individual,
@@ -36,41 +35,56 @@ class Algorithm(object):
 
 	def evaluate(self, individual):
 		#print('individual: {}\n'.format(individual))
+		print('INF EVALUATE')
 		no_of_cities = self.IND_SIZE // 2
-		elem = individual[0]+1
-		if elem <= no_of_cities: #tymczasowe likwidowanie zlych permutacji
+		print("no_of_cities: {}".format(no_of_cities))
+		all_cost = 0
+		if individual[0] < no_of_cities: #tymczasowe likwidowanie zlych permutacji
 			return float('inf'),
 		else:
 			routes = []
 			destinations = []
 			current_vehicle = -1
 			for e in individual:
-				elem =e+1
-				if elem > no_of_cities:
-					#print('e: {}'.format(e))
+				if e >= no_of_cities:
+					#print('vehicle: {}'.format(e))
 					if current_vehicle != -1:
-						route_description = {
-							'vehicle': current_vehicle,
-							'route': destinations
-						}
-						routes.append(route_description)
-					current_vehicle = elem
+						# route_description = {
+						# 	'vehicle': current_vehicle,
+						# 	'route': destinations
+						# }
+						route = Route(self.constraints, current_vehicle, destinations, self.data)
+						routes.append(route)
+						print('added route: {}'.format(route))
+					current_vehicle = e
 					destinations = []
 				else:
-					destinations.append(elem)
+					destinations.append(e)
 
-			all_cost = 0
+			is_overload = False
+			#routes_to_ = []
 			for r in routes:
-				route = Route(self.constraints, r['vehicle'], r['route'], self.data)
+				#routes.append(route)
 				if route.feasable == "overload":
-					print(route)
-					return float('inf'), #do poprawki!
-				elif route.feasable == "overtime":
-					# not feasible
-					route.make_feasible(self.data)
-				print(route)
-				all_cost += route.count_cost(self.data)['cost']
+					is_overload = True
+					#return float('inf'), #do poprawki!
 
+			if is_overload:
+				print("is_overload!!!!!!")
+				solution = Solution(routes)
+				solution.change_vehicles_load(self.data)
+
+			for r in routes:
+				#route = Route(self.constraints, r['vehicle'], r['route'], self.data)
+				if route.feasable == "overtime":
+					print('route before amending: {}'.format(route))
+					route.make_feasible(self.data)
+					print('route after amending: {}'.format(route))
+				route.feasable = route.check_feasability(self.data)
+				if (route.count_cost(self.data)['cost'] !=0):
+					print(route)
+				all_cost += route.cost
+				print('all_cost: {}'.format(all_cost))
 		return all_cost,
 
 	# def feasible(self, individual):

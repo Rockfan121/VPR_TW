@@ -103,6 +103,47 @@ class Solution(object):
     
     def __repr__(self):
         return str(self.__dict__)
+
+    def change_vehicles_load(self, data):
+        #licze load dla kolejnych tras
+        #zapisuje do dwoch sekwencji: puste trasy, trasy przeladowane
+        #dla kazdej przeladowanej przenies tyle ostatnich elem, ile to jest konieczne do nowej sekw.
+        #sekwencje dodaj do pustej trasy
+        overloaded_routes = []
+        empty_routes = []
+        for r in self.routes:
+            result = r.check_load(data)
+            not_used = result['not_used']
+            first_to_move = result['first_to_move']
+            #not_used, first_to_move = r.check_load(data)
+            print("not_used: {}".format(not_used))
+            if not_used == r.constraints.capacity:
+                empty_routes.append(r)
+            elif not_used < 0:
+                overloaded_route  = {'route' : r, 'first_to_move': first_to_move}
+                overloaded_routes.append(overloaded_route)
+
+        if len(overloaded_routes) > len(empty_routes):
+            print("WARNING: not enough vehicles to use!")
+
+        for r_to_cut, r_to_augment in zip(overloaded_routes, empty_routes):
+            print("Before breaking:")
+            print("r_to_cut: {}".format(r_to_cut))
+            print("r_to_augment: {}".format(r_to_augment))
+
+            print('r_to_cut[route]: {} '.format(r_to_cut['route']))
+            destinations_to_move = (r_to_cut['route'].seq)[first_to_move : ].copy()
+            print('destinations_to_move: {} '.format(destinations_to_move))
+            #r_to_augment.seq.append(destinations_to_move)
+            for dest in destinations_to_move:
+                r_to_augment.seq.append(dest)
+            r_to_cut['route'].seq = (r_to_cut['route'].seq)[ : first_to_move].copy()
+
+            print("After breaking:")
+            print("r_to_cut: {}".format(r_to_cut))
+            print("r_to_augment: {}".format(r_to_augment))
+            r_to_cut['route'].feasable = r_to_cut['route'].check_feasability(data)
+            r_to_augment.feasable = r_to_augment.check_feasability(data)
     
 class Constraints(object):
     def __init__(self, vehicles, capacity):
@@ -125,6 +166,16 @@ class Route(object):
         
     def __repr__(self):
         return str(self.__dict__)
+
+    def check_load(self, data):
+        cap = self.constraints.capacity
+        first_to_move = -1
+        for idx in range(len(self.seq)):
+            place = self.seq[idx]
+            cap -= data[place].demand
+            if cap >= 0:
+                first_to_move = idx
+        return {'not_used': cap, 'first_to_move' : first_to_move}
     
     def check_feasability(self, data):
         '''
@@ -132,10 +183,10 @@ class Route(object):
         Each vehicle start at (0, 0) on time 0.
         
         '''
-        cap = self.constraints.capacity
-        for place in self.seq:
-            cap -= data[place].demand
-        if cap < 0:
+        # cap = self.constraints.capacity
+        # for place in self.seq:
+        #     cap -= data[place+1].demand
+        if (self.check_load(data)['not_used']) < 0:
             return "overload"
         return self.count_cost(data)['result']
         
@@ -151,7 +202,7 @@ class Route(object):
         # example data[place] = "{'customer': 25, 'x_coord': 25, 'y_coord': 52, 
         # 'demand': 40, 'ready_time': 169, 'due_date': 224, 'service_time': 90}"
         for place in self.seq:
-            target = data[place]
+            target = data[place+1]
             arrival_time = current_time + dist(target, last_place)
             last_place = target
             if arrival_time < target.ready_time:
@@ -163,7 +214,7 @@ class Route(object):
                 # print("Cannot create route")
                 return {'result': "overtime", 'cost': float('inf') }
         if len(self.seq) > 0:
-            cost += dist(data[self.seq[-1]], baza)
+            cost += dist(data[self.seq[-1]+1], baza)
         self.cost = cost
         return {'result': "ok", 'cost': cost }
 
@@ -172,7 +223,8 @@ class Route(object):
         dependencies = {}
         pos = 0
         for place in self.seq:
-            info = data[place]
+            real_place = place+1
+            info = data[real_place]
             dependencies[place] = GraphNode(place, info.ready_time, info.due_date, pos)
             pos += 1
         for place in dependencies.values():
