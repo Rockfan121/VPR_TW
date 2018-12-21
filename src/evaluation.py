@@ -1,8 +1,9 @@
 import random
 import json
 from deap import base, creator, tools
-
-from Read import Route, Constraints, Data, get_data,Solution
+import numpy as np
+import matplotlib.pyplot as plt
+from Read import Route, Constraints, Data, get_data, Solution
 
 class Algorithm(object):
 	def __init__(self, data = Data(), constraints = Constraints(25, 100)):
@@ -55,6 +56,7 @@ class Algorithm(object):
 					destinations = []
 				else:
 					destinations.append(e)
+#			routes = get_routes_from_individual(individual, no_of_cities)
 
 			is_overload = False
 			for r in routes:
@@ -78,6 +80,7 @@ class Algorithm(object):
 				all_cost += r.cost
 				print('all_cost: {}'.format(all_cost))
 		return all_cost,
+
 
 	# def feasible(self, individual):
 	# 	"""Feasibility function for the individual. Returns True if feasible False
@@ -113,7 +116,7 @@ class Algorithm(object):
 
 		pop = self.toolbox.population(n=10)
 		# probabilities as parameters
-		CXPB, MUTPB, NGEN = 0.5, 0.2, 100
+		CXPB, MUTPB, NGEN = 0.5, 0.2, 200
 
 		#Evaluate the entire pop
 		fitnesses = map(self.toolbox.evaluate, pop)
@@ -149,6 +152,7 @@ class Algorithm(object):
 			#The population is entirely replaces by offspring
 			pop[:] = offspring
 
+		plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
 		for p in pop:
 			print (p)
 			print (p.fitness.values)
@@ -156,8 +160,69 @@ class Algorithm(object):
 
 
 
+
 	def check_feasibility(individual):
 		pass
+
+def get_routes_from_individual(individual, no_of_cities):
+	routes = []
+	destinations = []
+	current_vehicle = -1
+	for e in individual:
+		elem = e + 1
+		if elem > no_of_cities:
+			# print('e: {}'.format(e))
+			if current_vehicle != -1:
+				route_description = {
+					'vehicle': current_vehicle,
+					'route': destinations
+				}
+				routes.append(route_description)
+			current_vehicle = elem
+			destinations = []
+		else:
+			destinations.append(elem)
+	return routes
+
+def plot_results(population, no_of_cities, data, constraints):
+	"""
+
+	:type population: object
+	"""
+	cities = []
+	for d in data:
+		cities.append((d.x_coord, d.y_coord))
+	max_x = max(data, key=lambda x: x.x_coord)
+	min_x = min(data, key=lambda x: x.x_coord)
+	#space = np.linspace(0, max_x, 100)
+	#space = np.linspace(0, max_x, 100)
+	max_y = max(data, key=lambda x: x.y_coord)
+	min_y = min(data, key=lambda x: x.y_coord)
+	ind_id = 0
+	f, plots = plt.subplots(len(population) // 3 + 1, 3, sharex='col', sharey='row')
+	for individual in population:
+		i = 1
+
+		routes = get_routes_from_individual(individual, no_of_cities)
+		for r in routes:
+			route = Route(constraints, r['vehicle'], r['route'], data)
+			custom_data = [(data[i].x_coord, data[i].y_coord) for i in route.seq]
+			plots[ind_id // 3 ][ind_id % 3].plot(list(map(lambda x: x[0], custom_data)),
+					 list(map(lambda x: x[1], custom_data)), zorder=i)
+
+			i += 1
+		ind_id += 1
+	plt.show()
+
+
+	plt.figure()
+	plt.subplot(211)
+	plt.plot(list(map(lambda x: x.x_coord, data)),
+			 list(map(lambda x: x.y_coord, data)))
+	plt.show()
+
+
+
 
 data = get_data()
 a = Algorithm(data=data)
