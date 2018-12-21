@@ -2,7 +2,7 @@ import random
 import json
 from deap import base, creator, tools
 
-from Read2 import Route, Constraints, Data, get_data,Solution
+from Read import Route, Constraints, Data, get_data,Solution
 
 class Algorithm(object):
 	def __init__(self, data = Data(), constraints = Constraints(25, 100)):
@@ -47,12 +47,7 @@ class Algorithm(object):
 			current_vehicle = -1
 			for e in individual:
 				if e >= no_of_cities:
-					#print('vehicle: {}'.format(e))
 					if current_vehicle != -1:
-						# route_description = {
-						# 	'vehicle': current_vehicle,
-						# 	'route': destinations
-						# }
 						route = Route(self.constraints, current_vehicle, destinations, self.data)
 						routes.append(route)
 						print('added route: {}'.format(route))
@@ -62,12 +57,9 @@ class Algorithm(object):
 					destinations.append(e)
 
 			is_overload = False
-			#routes_to_ = []
 			for r in routes:
-				#routes.append(route)
-				if route.feasable == "overload":
+				if r.feasable == "overload":
 					is_overload = True
-					#return float('inf'), #do poprawki!
 
 			if is_overload:
 				print("is_overload!!!!!!")
@@ -76,14 +68,14 @@ class Algorithm(object):
 
 			for r in routes:
 				#route = Route(self.constraints, r['vehicle'], r['route'], self.data)
-				if route.feasable == "overtime":
-					print('route before amending: {}'.format(route))
-					route.make_feasible(self.data)
-					print('route after amending: {}'.format(route))
-				route.feasable = route.check_feasability(self.data)
-				if (route.count_cost(self.data)['cost'] !=0):
-					print(route)
-				all_cost += route.cost
+				if r.feasable == "overtime":
+					print('route before amending: {}'.format(r))
+					r.make_feasible(self.data)
+					print('route after amending: {}'.format(r))
+				r.feasable = r.check_feasability(self.data)
+				if (r.count_cost(self.data)['cost'] !=0):
+					print(r)
+				all_cost += r.cost
 				print('all_cost: {}'.format(all_cost))
 		return all_cost,
 
