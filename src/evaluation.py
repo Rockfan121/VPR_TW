@@ -114,9 +114,9 @@ class Algorithm(object):
 
 	def getVPRTW(self):
 
-		pop = self.toolbox.population(n=10)
+		pop = self.toolbox.population(n=15)
 		# probabilities as parameters
-		CXPB, MUTPB, NGEN = 0.5, 0.2, 200
+		CXPB, MUTPB, NGEN = 0.5, 0.2, 3
 
 		#Evaluate the entire pop
 		fitnesses = map(self.toolbox.evaluate, pop)
@@ -164,24 +164,20 @@ class Algorithm(object):
 	def check_feasibility(individual):
 		pass
 
-def get_routes_from_individual(individual, no_of_cities):
+def get_routes_from_individual(individual, no_of_cities, constraints, data):
 	routes = []
 	destinations = []
 	current_vehicle = -1
 	for e in individual:
-		elem = e + 1
-		if elem > no_of_cities:
-			# print('e: {}'.format(e))
+		if e >= no_of_cities:
 			if current_vehicle != -1:
-				route_description = {
-					'vehicle': current_vehicle,
-					'route': destinations
-				}
-				routes.append(route_description)
-			current_vehicle = elem
+				route = Route(constraints, current_vehicle, destinations, data)
+				routes.append(route)
+				print('added route: {}'.format(route))
+			current_vehicle = e
 			destinations = []
 		else:
-			destinations.append(elem)
+			destinations.append(e)
 	return routes
 
 def plot_results(population, no_of_cities, data, constraints):
@@ -201,24 +197,27 @@ def plot_results(population, no_of_cities, data, constraints):
 	ind_id = 0
 	f, plots = plt.subplots(len(population) // 3 + 1, 3, sharex='col', sharey='row')
 	for individual in population:
-		i = 1
+		z = 1
 
-		routes = get_routes_from_individual(individual, no_of_cities)
+		routes = get_routes_from_individual(individual, no_of_cities, constraints, data)
+		print("Individual: {}".format(ind_id))
+		print("Total cost: {}".format(sum(map(lambda x: x.cost, routes))))
 		for r in routes:
-			route = Route(constraints, r['vehicle'], r['route'], data)
+			route = r
+			# r.count_cost(data)
+			# print(r)
 			custom_data = [(data[i].x_coord, data[i].y_coord) for i in route.seq]
-			plots[ind_id // 3 ][ind_id % 3].plot(list(map(lambda x: x[0], custom_data)),
-					 list(map(lambda x: x[1], custom_data)), zorder=i)
-
-			i += 1
+			custom_data = [(data[0].x_coord, data[0].y_coord)] + custom_data
+			plots[(ind_id + 1) // 3 ][(ind_id  + 1 )% 3].plot(list(map(lambda x: x[0], custom_data)),
+					 list(map(lambda x: x[1], custom_data)), zorder=z*2)
+			#plots[ind_id // 3][ind_id % 3].title = route.__repr__()
+			z += 1
+			plots[(ind_id + 1) // 3][(ind_id + 1) % 3].plot(list(map(lambda x: x.x_coord, data)),
+			 list(map(lambda x: x.y_coord, data)), zorder=0)
 		ind_id += 1
-	plt.show()
 
-
-	plt.figure()
-	plt.subplot(211)
-	plt.plot(list(map(lambda x: x.x_coord, data)),
-			 list(map(lambda x: x.y_coord, data)))
+	plots[0][0].plot(list(map(lambda x: x.x_coord, data)),
+			 list(map(lambda x: x.y_coord, data)), zorder=1)
 	plt.show()
 
 

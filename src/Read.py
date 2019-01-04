@@ -202,6 +202,8 @@ class Route(object):
         # example data[place] = "{'customer': 25, 'x_coord': 25, 'y_coord': 52, 
         # 'demand': 40, 'ready_time': 169, 'due_date': 224, 'service_time': 90}"
         for place in self.seq:
+            # if len(data) <= place + 1:
+            #     continue
             target = data[place+1]
             arrival_time = current_time + dist(target, last_place)
             last_place = target
@@ -212,6 +214,7 @@ class Route(object):
                 current_time = arrival_time + target.service_time
             else:
                 # print("Cannot create route")
+                self.cost = float('inf')
                 return {'result': "overtime", 'cost': float('inf') }
         if len(self.seq) > 0:
             cost += dist(data[self.seq[-1]+1], baza)
