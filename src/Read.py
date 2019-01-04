@@ -45,8 +45,8 @@ class Data(object):
     def __repr__(self):
         return 'Data object: {}'.format(str(self.__dict__))
 
-def get_data():
-    open_f = open('../input/C101.txt', 'r')
+def get_data(filename, constraints):
+    open_f = open(filename, 'r')
     name = (open_f.readline()).strip()                     # Title for benchmark
     for p in range(3):
         open_f.readline()                             # Empty line, "VECHICLE", reast of header
@@ -58,7 +58,8 @@ def get_data():
         capacity = int(words[1])
         print('Vehicle count: {}'.format(vehicle_count))
         print('Capacity: {}'.format(capacity))
-
+        constraints.vehicle_count = vehicle_count
+        constraints.capacity = capacity
     data = []
     for i in range(4):
         open_f.readline()
@@ -219,7 +220,7 @@ class Route(object):
         if len(self.seq) > 0:
             cost += dist(data[self.seq[-1]+1], baza)
         self.cost = cost
-        return {'result': "ok", 'cost': cost }
+        return {'result': "ok", 'cost': self.cost }
 
     def make_feasible(self, data):
         seq_copy: list = [ x for x in self.seq]

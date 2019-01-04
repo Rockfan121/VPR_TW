@@ -4,16 +4,19 @@ from deap import base, creator, tools
 import numpy as np
 import matplotlib.pyplot as plt
 from Read import Route, Constraints, Data, get_data, Solution
+import sys
 
+top_result = 1_000_000_000_000_000.0
 class Algorithm(object):
 	def __init__(self, data = Data(), constraints = Constraints(25, 100)):
 		self.data = data
 		self.constraints = constraints
+		self.top_result = 1_000_000_000_000_000
 
 		creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 		creator.create("Individual", list, fitness=creator.FitnessMin)
 
-		self.IND_SIZE = (len(self.data)-1)*2
+		self.IND_SIZE = (len(self.data))*2 -1
 		self.toolbox = base.Toolbox()
 		self.toolbox.register("indices", random.sample, range(self.IND_SIZE), self.IND_SIZE)
 		self.toolbox.register("individual", tools.initIterate, creator.Individual,
@@ -40,7 +43,7 @@ class Algorithm(object):
 		no_of_cities = self.IND_SIZE // 2
 		print("no_of_cities: {}".format(no_of_cities))
 		all_cost = 0
-		if individual[0] < no_of_cities: #tymczasowe likwidowanie zlych permutacji
+		if individual[0] < no_of_cities - 1: #tymczasowe likwidowanie zlych permutacji
 			return float('inf'),
 		else:
 			routes = []
@@ -51,7 +54,7 @@ class Algorithm(object):
 					if current_vehicle != -1:
 						route = Route(self.constraints, current_vehicle, destinations, self.data)
 						routes.append(route)
-						print('added route: {}'.format(route))
+						#print('added route: {}'.format(route))
 					current_vehicle = e
 					destinations = []
 				else:
@@ -70,15 +73,20 @@ class Algorithm(object):
 
 			for r in routes:
 				#route = Route(self.constraints, r['vehicle'], r['route'], self.data)
+				r.check_feasability(self.data)
 				if r.feasable == "overtime":
 					print('route before amending: {}'.format(r))
 					r.make_feasible(self.data)
+					r.feasable = r.check_feasability(self.data)
+					r.count_cost(self.data)
 					print('route after amending: {}'.format(r))
 				r.feasable = r.check_feasability(self.data)
 				if (r.count_cost(self.data)['cost'] !=0):
 					print(r)
 				all_cost += r.cost
-				print('all_cost: {}'.format(all_cost))
+			print('all_cost: {}'.format(all_cost))
+		if all_cost != 0 and all_cost < self.top_result:
+			self.top_result = all_cost
 		return all_cost,
 
 
@@ -114,9 +122,9 @@ class Algorithm(object):
 
 	def getVPRTW(self):
 
-		pop = self.toolbox.population(n=15)
+		pop = self.toolbox.population(n=20)
 		# probabilities as parameters
-		CXPB, MUTPB, NGEN = 0.5, 0.2, 3
+		CXPB, MUTPB, NGEN = 0.3, 0.35, 300
 
 		#Evaluate the entire pop
 		fitnesses = map(self.toolbox.evaluate, pop)
@@ -164,7 +172,7 @@ class Algorithm(object):
 	def check_feasibility(individual):
 		pass
 
-def get_routes_from_individual(individual, no_of_cities, constraints, data):
+def get_routes_from_individual(individual, no_of_cities, constraints, data, verbose=False):
 	routes = []
 	destinations = []
 	current_vehicle = -1
@@ -173,7 +181,8 @@ def get_routes_from_individual(individual, no_of_cities, constraints, data):
 			if current_vehicle != -1:
 				route = Route(constraints, current_vehicle, destinations, data)
 				routes.append(route)
-				print('added route: {}'.format(route))
+				if verbose:
+					print('added route: {}'.format(route))
 			current_vehicle = e
 			destinations = []
 		else:
@@ -199,12 +208,13 @@ def plot_results(population, no_of_cities, data, constraints):
 	for individual in population:
 		z = 1
 
-		routes = get_routes_from_individual(individual, no_of_cities, constraints, data)
+		routes = get_routes_from_individual(individual, no_of_cities, constraints, data, verbose=True)
 		print("Individual: {}".format(ind_id))
-		print("Total cost: {}".format(sum(map(lambda x: x.cost, routes))))
+		#print("Total cost: {}".format(sum(map(lambda x: x.cost, routes))))
 		for r in routes:
 			route = r
-			# r.count_cost(data)
+			r.check_feasability(data)
+
 			# print(r)
 			custom_data = [(data[i].x_coord, data[i].y_coord) for i in route.seq]
 			custom_data = [(data[0].x_coord, data[0].y_coord)] + custom_data
@@ -222,7 +232,9 @@ def plot_results(population, no_of_cities, data, constraints):
 
 
 
-
-data = get_data()
-a = Algorithm(data=data)
+c = Constraints(25,100)
+data = get_data(sys.argv[1], c)
+print(c.__dict__)
+a = Algorithm(data=data, constraints=c)
 a.getVPRTW()
+print("Best solution cost: {}".format(a.top_result))
