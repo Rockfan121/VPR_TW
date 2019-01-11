@@ -44,47 +44,52 @@ class Algorithm(object):
 		print("no_of_cities: {}".format(no_of_cities))
 		all_cost = 0
 		if individual[0] < no_of_cities - 1: #tymczasowe likwidowanie zlych permutacji
-			return float('inf'),
-		else:
-			routes = []
-			destinations = []
-			current_vehicle = -1
-			for e in individual:
+			first_city  = 0
+			for e, i in zip(individual, range(self.IND_SIZE)):
 				if e >= no_of_cities:
-					if current_vehicle != -1:
-						route = Route(self.constraints, current_vehicle, destinations, self.data)
-						routes.append(route)
-						#print('added route: {}'.format(route))
-					current_vehicle = e
-					destinations = []
-				else:
-					destinations.append(e)
+					first_city = i
+			individual[0], individual[first_city] = individual[first_city], individual[0]
+
+	
+		routes = []
+		destinations = []
+		current_vehicle = -1
+		for e in individual:
+			if e >= no_of_cities:
+				if current_vehicle != -1:
+					route = Route(self.constraints, current_vehicle, destinations, self.data)
+					routes.append(route)
+					#print('added route: {}'.format(route))
+				current_vehicle = e
+				destinations = []
+			else:
+				destinations.append(e)
 #			routes = get_routes_from_individual(individual, no_of_cities)
 
-			is_overload = False
-			for r in routes:
-				if r.feasable == "overload":
-					is_overload = True
+		is_overload = False
+		for r in routes:
+			if r.feasable == "overload":
+				is_overload = True
 
-			if is_overload:
-				print("is_overload!!!!!!")
-				solution = Solution(routes)
-				solution.change_vehicles_load(self.data)
+		if is_overload:
+			print("is_overload!!!!!!")
+			solution = Solution(routes)
+			solution.change_vehicles_load(self.data)
 
-			for r in routes:
-				#route = Route(self.constraints, r['vehicle'], r['route'], self.data)
-				r.check_feasability(self.data)
-				if r.feasable == "overtime":
-					print('route before amending: {}'.format(r))
-					r.make_feasible(self.data)
-					r.feasable = r.check_feasability(self.data)
-					r.count_cost(self.data)
-					print('route after amending: {}'.format(r))
+		for r in routes:
+			#route = Route(self.constraints, r['vehicle'], r['route'], self.data)
+			r.check_feasability(self.data)
+			if r.feasable == "overtime":
+				print('route before amending: {}'.format(r))
+				r.make_feasible(self.data)
 				r.feasable = r.check_feasability(self.data)
-				if (r.count_cost(self.data)['cost'] !=0):
-					print(r)
-				all_cost += r.cost
-			print('all_cost: {}'.format(all_cost))
+				r.count_cost(self.data)
+				print('route after amending: {}'.format(r))
+			r.feasable = r.check_feasability(self.data)
+			if (r.count_cost(self.data)['cost'] !=0):
+				print(r)
+			all_cost += r.cost
+		print('all_cost: {}'.format(all_cost))
 		if all_cost != 0 and all_cost < self.top_result:
 			self.top_result = all_cost
 		return all_cost,
