@@ -16,9 +16,9 @@ class Algorithm(object):
 		creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 		creator.create("Individual", list, fitness=creator.FitnessMin)
 
-		self.IND_SIZE = (len(self.data))*2 -1
+		self.IND_SIZE = (len(self.data))*2 - 1
 		self.toolbox = base.Toolbox()
-		self.toolbox.register("indices", random.sample, range(self.IND_SIZE), self.IND_SIZE)
+		self.toolbox.register("indices", random.sample, range(self.IND_SIZE+1), self.IND_SIZE+1)
 		self.toolbox.register("individual", tools.initIterate, creator.Individual,
 						 self.toolbox.indices)
 
@@ -26,13 +26,13 @@ class Algorithm(object):
 		self.toolbox.register("population", tools.initRepeat, list, self.toolbox.individual)
 
 
-		self.toolbox.register("mate", tools.cxOrdered)  # PartialyMatched lub Ordered
+		self.toolbox.register("mate", tools.cxPartialyMatched)  # PartialyMatched lub Ordered
 		self.toolbox.register("mutate", tools.mutShuffleIndexes, indpb=0.1)
 
 		# self.toolbox.decorate("mate", checkBounds(MIN, MAX)) #oczywiscie inna postac funkcji!
 		# self.toolbox.decorate("mutate", checkBounds(MIN, MAX)) #j.w.
 
-		self.toolbox.register("select", tools.selTournament, tournsize=20)
+		self.toolbox.register("select", tools.selTournament, tournsize=constraints.vehicle_count)
 		self.toolbox.register("evaluate", self.evaluate)
 		# w przykladzie jest to rozdzielone, we wczytywaniu jedna funkcj liczy koszt+kare
 		#self.toolbox.decorate("evaluate", tools.DeltaPenalty(check_feasability, 10000.0, count_cost)
@@ -48,7 +48,7 @@ class Algorithm(object):
 			for e, i in zip(individual, range(self.IND_SIZE)):
 				if e >= no_of_cities:
 					first_city = i
-			individual[0], individual[first_city] = individual[first_city], individual[0]
+			# individual[0], individual[first_city] = individual[first_city], individual[0]
 
 	
 		routes = []
@@ -64,7 +64,7 @@ class Algorithm(object):
 				destinations = []
 			else:
 				destinations.append(e)
-#			routes = get_routes_from_individual(individual, no_of_cities)
+			# routes = get_routes_from_individual(individual, no_of_cities)
 
 		is_overload = False
 		for r in routes:
@@ -74,17 +74,20 @@ class Algorithm(object):
 		if is_overload:
 			print("is_overload!!!!!!")
 			solution = Solution(routes)
-			solution.change_vehicles_load(self.data)
+			# solution.change_vehicles_load(self.data)
 
 		for r in routes:
 			#route = Route(self.constraints, r['vehicle'], r['route'], self.data)
 			r.check_feasability(self.data)
 			if r.feasable == "overtime":
-				print('route before amending: {}'.format(r))
-				r.make_feasible(self.data)
-				r.feasable = r.check_feasability(self.data)
-				r.count_cost(self.data)
-				print('route after amending: {}'.format(r))
+				# print('route before amending: {}'.format(r))
+				# r.make_feasible(self.data)
+				# r.feasable = r.check_feasability(self.data)
+				# r.count_cost(self.data)
+				# print('route after amending: {}'.format(r))
+				# new_ind = []
+				# for v, route in 
+				pass
 			r.feasable = r.check_feasability(self.data)
 			if (r.count_cost(self.data)['cost'] !=0):
 				print(r)
@@ -127,9 +130,10 @@ class Algorithm(object):
 
 	def getVPRTW(self):
 
-		pop = self.toolbox.population(n=20)
+		pop = self.toolbox.population(n=25)
+		plot_results(pop, self.IND_SIZE // 2, self.data, self.constraints)
 		# probabilities as parameters
-		CXPB, MUTPB, NGEN = 0.3, 0.35, 300
+		CXPB, MUTPB, NGEN = 0.5, 0.5, 200
 
 		#Evaluate the entire pop
 		fitnesses = map(self.toolbox.evaluate, pop)
@@ -168,7 +172,7 @@ class Algorithm(object):
 		plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
 		for p in pop:
 			print (p)
-			print (p.fitness.values)
+			print (p.fitness)
 			print (' ')
 
 
@@ -214,6 +218,8 @@ def plot_results(population, no_of_cities, data, constraints):
 		z = 1
 
 		routes = get_routes_from_individual(individual, no_of_cities, constraints, data, verbose=True)
+		total_cities_here = sum([len(r.seq) for r in routes])
+		print("All cities: {}".format(total_cities_here))
 		print("Individual: {}".format(ind_id))
 		#print("Total cost: {}".format(sum(map(lambda x: x.cost, routes))))
 		for r in routes:
