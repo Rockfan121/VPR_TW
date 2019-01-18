@@ -128,21 +128,21 @@ class Solution(object):
             print("WARNING: not enough vehicles to use!")
 
         for r_to_cut, r_to_augment in zip(overloaded_routes, empty_routes):
-            print("Before breaking:")
-            print("r_to_cut: {}".format(r_to_cut))
-            print("r_to_augment: {}".format(r_to_augment))
-
-            print('r_to_cut[route]: {} '.format(r_to_cut['route']))
+            # print("Before breaking:")
+            # print("r_to_cut: {}".format(r_to_cut))
+            # print("r_to_augment: {}".format(r_to_augment))
+            #
+            # print('r_to_cut[route]: {} '.format(r_to_cut['route']))
             destinations_to_move = (r_to_cut['route'].seq)[first_to_move : ].copy()
-            print('destinations_to_move: {} '.format(destinations_to_move))
+            # print('destinations_to_move: {} '.format(destinations_to_move))
             #r_to_augment.seq.append(destinations_to_move)
             for dest in destinations_to_move:
                 r_to_augment.seq.append(dest)
             r_to_cut['route'].seq = (r_to_cut['route'].seq)[ : first_to_move].copy()
 
-            print("After breaking:")
-            print("r_to_cut: {}".format(r_to_cut))
-            print("r_to_augment: {}".format(r_to_augment))
+            # print("After breaking:")
+            # print("r_to_cut: {}".format(r_to_cut))
+            # print("r_to_augment: {}".format(r_to_augment))
             r_to_cut['route'].feasable = r_to_cut['route'].check_feasability(data)
             r_to_augment.feasable = r_to_augment.check_feasability(data)
     

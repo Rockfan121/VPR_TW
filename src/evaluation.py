@@ -16,9 +16,9 @@ class Algorithm(object):
 		creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 		creator.create("Individual", list, fitness=creator.FitnessMin)
 
-		self.IND_SIZE = (len(self.data))*2 - 1
+		self.IND_SIZE = (len(self.data)-1)*2
 		self.toolbox = base.Toolbox()
-		self.toolbox.register("indices", random.sample, range(self.IND_SIZE+1), self.IND_SIZE+1)
+		self.toolbox.register("indices", random.sample, range(self.IND_SIZE), self.IND_SIZE)
 		self.toolbox.register("individual", tools.initIterate, creator.Individual,
 						 self.toolbox.indices)
 
@@ -32,39 +32,25 @@ class Algorithm(object):
 		# self.toolbox.decorate("mate", checkBounds(MIN, MAX)) #oczywiscie inna postac funkcji!
 		# self.toolbox.decorate("mutate", checkBounds(MIN, MAX)) #j.w.
 
-		self.toolbox.register("select", tools.selTournament, tournsize=constraints.vehicle_count)
+		self.toolbox.register("select", tools.selTournament, tournsize=15)
 		self.toolbox.register("evaluate", self.evaluate)
 		# w przykladzie jest to rozdzielone, we wczytywaniu jedna funkcj liczy koszt+kare
 		#self.toolbox.decorate("evaluate", tools.DeltaPenalty(check_feasability, 10000.0, count_cost)
 
 	def evaluate(self, individual):
 		#print('individual: {}\n'.format(individual))
-		print('INF EVALUATE')
+		print('EVALUATE')
 		no_of_cities = self.IND_SIZE // 2
 		print("no_of_cities: {}".format(no_of_cities))
 		all_cost = 0
-		if individual[0] < no_of_cities - 1: #tymczasowe likwidowanie zlych permutacji
+		if individual[0] < no_of_cities: #tymczasowe likwidowanie zlych permutacji
 			first_city  = 0
 			for e, i in zip(individual, range(self.IND_SIZE)):
 				if e >= no_of_cities:
 					first_city = i
-			# individual[0], individual[first_city] = individual[first_city], individual[0]
+			individual[0], individual[first_city] = individual[first_city], individual[0]
 
-	
-		routes = []
-		destinations = []
-		current_vehicle = -1
-		for e in individual:
-			if e >= no_of_cities:
-				if current_vehicle != -1:
-					route = Route(self.constraints, current_vehicle, destinations, self.data)
-					routes.append(route)
-					#print('added route: {}'.format(route))
-				current_vehicle = e
-				destinations = []
-			else:
-				destinations.append(e)
-			# routes = get_routes_from_individual(individual, no_of_cities)
+		routes = get_routes_from_individual(individual, no_of_cities, self.constraints, self.data)
 
 		is_overload = False
 		for r in routes:
@@ -72,22 +58,19 @@ class Algorithm(object):
 				is_overload = True
 
 		if is_overload:
-			print("is_overload!!!!!!")
+			#print("is_overload!!!!!!")
 			solution = Solution(routes)
-			# solution.change_vehicles_load(self.data)
+			solution.change_vehicles_load(self.data)
 
 		for r in routes:
 			#route = Route(self.constraints, r['vehicle'], r['route'], self.data)
 			r.check_feasability(self.data)
 			if r.feasable == "overtime":
-				# print('route before amending: {}'.format(r))
-				# r.make_feasible(self.data)
-				# r.feasable = r.check_feasability(self.data)
-				# r.count_cost(self.data)
-				# print('route after amending: {}'.format(r))
-				# new_ind = []
-				# for v, route in 
-				pass
+				#print('route before amending: {}'.format(r))
+				r.make_feasible(self.data)
+				r.feasable = r.check_feasability(self.data)
+				r.count_cost(self.data)
+				#print('route after amending: {}'.format(r))
 			r.feasable = r.check_feasability(self.data)
 			if (r.count_cost(self.data)['cost'] !=0):
 				print(r)
@@ -128,12 +111,11 @@ class Algorithm(object):
 	#     return decorator
 
 
-	def getVPRTW(self):
+	def getVPRTW(self, CXPB=0.3, MUTPB=0.35, NGEN=300):
 
 		pop = self.toolbox.population(n=25)
-		plot_results(pop, self.IND_SIZE // 2, self.data, self.constraints)
+		#plot_results(pop, self.IND_SIZE // 2, self.data, self.constraints)
 		# probabilities as parameters
-		CXPB, MUTPB, NGEN = 0.5, 0.5, 200
 
 		#Evaluate the entire pop
 		fitnesses = map(self.toolbox.evaluate, pop)
@@ -172,19 +154,18 @@ class Algorithm(object):
 		plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
 		for p in pop:
 			print (p)
-			print (p.fitness)
+			print (p.fitness.values)
 			print (' ')
 
-
-
-
-	def check_feasibility(individual):
-		pass
+	#
+	# def check_feasibility(individual):
+	# 	pass
 
 def get_routes_from_individual(individual, no_of_cities, constraints, data, verbose=False):
 	routes = []
 	destinations = []
 	current_vehicle = -1
+	last_idx = len(individual)-1
 	for e in individual:
 		if e >= no_of_cities:
 			if current_vehicle != -1:
@@ -194,6 +175,12 @@ def get_routes_from_individual(individual, no_of_cities, constraints, data, verb
 					print('added route: {}'.format(route))
 			current_vehicle = e
 			destinations = []
+		elif e == individual[last_idx]:
+			destinations.append(e)
+			route = Route(constraints, current_vehicle, destinations, data)
+			routes.append(route)
+			if verbose:
+				print('added route: {}'.format(route))
 		else:
 			destinations.append(e)
 	return routes
@@ -247,5 +234,27 @@ c = Constraints(25,100)
 data = get_data(sys.argv[1], c)
 print(c.__dict__)
 a = Algorithm(data=data, constraints=c)
-a.getVPRTW()
-print("Best solution cost: {}".format(a.top_result))
+probabilities = np.linspace(0.1, 0.9, 17)
+generations = [100, 150, 200, 250, 300, 350]
+
+params = []
+best_params = []
+best_result = top_result
+for cxpb in probabilities:
+	for mutpb in probabilities:
+		for ngen in generations:
+			for i in range(10):
+				a.getVPRTW(cxpb, mutpb, ngen)
+				print("Best solution cost: {}".format(a.top_result))
+				params.append({'cxpb': cxpb, 'mutpb': mutpb, 'ngen': ngen, 'i': i, 'result': a.top_result})
+				if best_result < a.top_result:
+					best_params.append({'cxpb': cxpb, 'mutpb': mutpb, 'ngen': ngen, 'i': i, 'result': a.top_result})
+					best_result = a.top_result
+print("ALL PARAMS AND RESULTS")
+print(params)
+
+print("BEST PARAMS AND RESULTS")
+print(best_params)
+
+
+
