@@ -155,7 +155,7 @@ class Algorithm(object):
 			#The population is entirely replaces by offspring
 			pop[:] = offspring
 
-		#plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
+		plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
 		for p in pop:
 			print (p)
 			print (p.fitness.values)
@@ -218,7 +218,7 @@ def plot_results(population, no_of_cities, data, constraints):
 			r.check_feasability(data)
 
 			# print(r)
-			custom_data = [(data[i].x_coord, data[i].y_coord) for i in route.seq]
+			custom_data = [(data[i+1].x_coord, data[i+1].y_coord) for i in route.seq]
 			custom_data = [(data[0].x_coord, data[0].y_coord)] + custom_data
 			plots[(ind_id + 1) // 3 ][(ind_id  + 1 )% 3].plot(list(map(lambda x: x[0], custom_data)),
 					 list(map(lambda x: x[1], custom_data)), zorder=z*2)
@@ -238,28 +238,33 @@ c = Constraints(25,100)
 data = get_data(sys.argv[1], c)
 print(c.__dict__)
 a = Algorithm(data=data, constraints=c)
-probabilities = np.linspace(0.1, 0.9, 9) #17
-generations = [200, 250, 300] #generations = [100, 150, 200, 250, 300, 350]
-params = []
-best_params = []
-best_result = top_result
-for cxpb in probabilities:
-	for mutpb in probabilities:
-		for ngen in generations:
-			for i in range(3):
-				print("CXPB: {}, MUTPB: {}, NGEN: {}, I: {}".format(cxpb, mutpb, ngen, i))
-				a.getVPRTW(cxpb, mutpb, ngen)
-				print("Best solution cost: {}".format(a.top_result))
-				params.append({'cxpb': cxpb, 'mutpb': mutpb, 'ngen': ngen, 'i': i, 'result': a.top_result})
-				if best_result > a.top_result:
-					best_params.append({'cxpb': cxpb, 'mutpb': mutpb, 'ngen': ngen, 'i': i, 'result': a.top_result})
-					best_result = a.top_result
-				a.top_result = 1_000_000_000_000_000
-print("ALL PARAMS AND RESULTS")
-print(params)
+SEARCH_PARAMS = False
+if not SEARCH_PARAMS:
+	a.getVPRTW(0.7, 0.7, 300)
+	print("Best solution cost: {}".format(a.top_result))
+else:
+	probabilities = np.linspace(0.1, 0.9, 9) #17
+	generations = [200, 250, 300] #generations = [100, 150, 200, 250, 300, 350]
+	params = []
+	best_params = []
+	best_result = top_result
+	for cxpb in probabilities:
+		for mutpb in probabilities:
+			for ngen in generations:
+				for i in range(3):
+					print("CXPB: {}, MUTPB: {}, NGEN: {}, I: {}".format(cxpb, mutpb, ngen, i))
+					a.getVPRTW(cxpb, mutpb, ngen)
+					print("Best solution cost: {}".format(a.top_result))
+					params.append({'cxpb': cxpb, 'mutpb': mutpb, 'ngen': ngen, 'i': i, 'result': a.top_result})
+					if best_result > a.top_result:
+						best_params.append({'cxpb': cxpb, 'mutpb': mutpb, 'ngen': ngen, 'i': i, 'result': a.top_result})
+						best_result = a.top_result
+					a.top_result = 1_000_000_000_000_000
+	print("ALL PARAMS AND RESULTS")
+	print(params)
 
-print("BEST PARAMS AND RESULTS")
-print(best_params)
+	print("BEST PARAMS AND RESULTS")
+	print(best_params)
 
 
 

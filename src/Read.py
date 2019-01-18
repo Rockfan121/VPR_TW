@@ -173,7 +173,7 @@ class Route(object):
         first_to_move = -1
         for idx in range(len(self.seq)):
             place = self.seq[idx]
-            cap -= data[place].demand
+            cap -= data[place+1].demand
             if cap >= 0:
                 first_to_move = idx
         return {'not_used': cap, 'first_to_move' : first_to_move}
@@ -227,8 +227,7 @@ class Route(object):
         dependencies = {}
         pos = 0
         for place in self.seq:
-            real_place = place+1
-            info = data[real_place]
+            info = data[place + 1]
             dependencies[place] = GraphNode(place, info.ready_time, info.due_date, pos)
             pos += 1
         for place in dependencies.values():
