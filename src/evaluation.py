@@ -151,7 +151,7 @@ class Algorithm(object):
 			#The population is entirely replaces by offspring
 			pop[:] = offspring
 
-		plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
+		#plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
 		for p in pop:
 			print (p)
 			print (p.fitness.values)
@@ -235,19 +235,19 @@ data = get_data(sys.argv[1], c)
 print(c.__dict__)
 a = Algorithm(data=data, constraints=c)
 probabilities = np.linspace(0.1, 0.9, 17)
-generations = [100, 150, 200, 250, 300, 350]
-
+generations = [200, 250, 300] #generations = [100, 150, 200, 250, 300, 350]
 params = []
 best_params = []
 best_result = top_result
 for cxpb in probabilities:
 	for mutpb in probabilities:
 		for ngen in generations:
-			for i in range(10):
+			for i in range(3):
+				print("CXPB: {}, MUTPB: {}, NGEN: {}, I: {}".format(cxpb, mutpb, ngen, i))
 				a.getVPRTW(cxpb, mutpb, ngen)
 				print("Best solution cost: {}".format(a.top_result))
 				params.append({'cxpb': cxpb, 'mutpb': mutpb, 'ngen': ngen, 'i': i, 'result': a.top_result})
-				if best_result < a.top_result:
+				if best_result > a.top_result:
 					best_params.append({'cxpb': cxpb, 'mutpb': mutpb, 'ngen': ngen, 'i': i, 'result': a.top_result})
 					best_result = a.top_result
 print("ALL PARAMS AND RESULTS")
