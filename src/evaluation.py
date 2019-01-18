@@ -41,7 +41,7 @@ class Algorithm(object):
 		#print('individual: {}\n'.format(individual))
 		print('EVALUATE')
 		no_of_cities = self.IND_SIZE // 2
-		print("no_of_cities: {}".format(no_of_cities))
+		#print("no_of_cities: {}".format(no_of_cities))
 		all_cost = 0
 		if individual[0] < no_of_cities: #tymczasowe likwidowanie zlych permutacji
 			first_city  = 0
@@ -78,6 +78,10 @@ class Algorithm(object):
 		print('all_cost: {}'.format(all_cost))
 		if all_cost != 0 and all_cost < self.top_result:
 			self.top_result = all_cost
+
+		total_cities_here = sum([len(r.seq) for r in routes])
+		print("All cities: {}".format(total_cities_here))
+		print("Individual: {}".format(individual))
 		return all_cost,
 
 
@@ -234,7 +238,7 @@ c = Constraints(25,100)
 data = get_data(sys.argv[1], c)
 print(c.__dict__)
 a = Algorithm(data=data, constraints=c)
-probabilities = np.linspace(0.1, 0.9, 17)
+probabilities = np.linspace(0.1, 0.9, 9) #17
 generations = [200, 250, 300] #generations = [100, 150, 200, 250, 300, 350]
 params = []
 best_params = []
@@ -250,6 +254,7 @@ for cxpb in probabilities:
 				if best_result > a.top_result:
 					best_params.append({'cxpb': cxpb, 'mutpb': mutpb, 'ngen': ngen, 'i': i, 'result': a.top_result})
 					best_result = a.top_result
+				a.top_result = 1_000_000_000_000_000
 print("ALL PARAMS AND RESULTS")
 print(params)
 

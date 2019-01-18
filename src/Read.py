@@ -117,7 +117,7 @@ class Solution(object):
             not_used = result['not_used']
             first_to_move = result['first_to_move']
             #not_used, first_to_move = r.check_load(data)
-            print("not_used: {}".format(not_used))
+            #print("not_used: {}".format(not_used))
             if not_used == r.constraints.capacity:
                 empty_routes.append(r)
             elif not_used < 0:
