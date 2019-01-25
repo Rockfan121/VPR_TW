@@ -7,6 +7,8 @@ from Read import Route, Constraints, Data, get_data, Solution
 import sys
 
 top_result = 1_000_000_000_000_000.0
+
+POPULATION_SIZE = 25
 class Algorithm(object):
 	def __init__(self, data = Data(), constraints = Constraints(25, 100)):
 		self.data = data
@@ -38,8 +40,9 @@ class Algorithm(object):
 		#self.toolbox.decorate("evaluate", tools.DeltaPenalty(check_feasability, 10000.0, count_cost)
 
 	def evaluate(self, individual):
+		verbose = False
 		#print('individual: {}\n'.format(individual))
-		print('EVALUATE')
+		# print('EVALUATE')
 		no_of_cities = self.IND_SIZE // 2
 		#print("no_of_cities: {}".format(no_of_cities))
 		all_cost = 0
@@ -73,60 +76,33 @@ class Algorithm(object):
 				#print('route after amending: {}'.format(r))
 			r.feasable = r.check_feasability(self.data)
 			if (r.count_cost(self.data)['cost'] !=0):
-				print(r)
+				if verbose:
+					print(r)
 			all_cost += r.cost
-		print('all_cost: {}'.format(all_cost))
+		if verbose: 
+			print('all_cost: {}'.format(all_cost))
 		if all_cost != 0 and all_cost < self.top_result:
 			self.top_result = all_cost
 
 		total_cities_here = sum([len(r.seq) for r in routes])
-		print("All cities: {}".format(total_cities_here))
-		print("Individual: {}".format(individual))
+		if verbose:
+			print("All cities: {}".format(total_cities_here))
+			print("Individual: {}".format(individual))
 		return all_cost,
 
 
-	# def feasible(self, individual):
-	# 	"""Feasibility function for the individual. Returns True if feasible False
-	# 	otherwise."""
-	# 	#j.w.
-	# 	route = Route(Constraints(25, 200), 0, [0,3,6], Data())
-	# 	if route.feasable:
-	# 		return True
-	# 	return False
-	#
-	# def distance(self, individual):
-	# 	"""A distance function to the feasibility region."""
-	# 	#j.w.
-	# 	route = Route(Constraints(25, 200), 0, [0,3,6], Data())
-	# 	return
+	def getVPRTW(self, CXPB=0.3, MUTPB=0.35, NGEN=300, verbose=False):
 
-	# def checkBounds(self, min, max):
-	#     def decorator(func):
-	#         def wrapper(*args, **kargs):
-	#             offspring = func(*args, **kargs)
-	#             for child in offspring: #zmienic petle!
-	#                 # for i in xrange(len(child)):
-	#                 #     if child[i] > max:
-	#                 #         child[i] = max
-	#                 #     elif child[i] < min:
-	#                 #         child[i] = min
-	#             return offspring
-	#         return wrapper
-	#     return decorator
-
-
-	def getVPRTW(self, CXPB=0.3, MUTPB=0.35, NGEN=300):
-
-		pop = self.toolbox.population(n=25)
-		#plot_results(pop, self.IND_SIZE // 2, self.data, self.constraints)
 		# probabilities as parameters
+		pop = self.toolbox.population(n=POPULATION_SIZE)
 
 		#Evaluate the entire pop
 		fitnesses = map(self.toolbox.evaluate, pop)
 		for ind, fit in zip(pop, fitnesses):
 			ind.fitness.values = fit
-			print(ind)
-			print(fit)
+			if verbose:
+				print(ind)
+				print(fit)
 		for g in range(NGEN):
 			#Select the next generation individuals
 			selected = self.toolbox.select(pop, len(pop))
@@ -154,16 +130,12 @@ class Algorithm(object):
 
 			#The population is entirely replaces by offspring
 			pop[:] = offspring
-
-		plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
-		for p in pop:
-			print (p)
-			print (p.fitness.values)
-			print (' ')
-
-	#
-	# def check_feasibility(individual):
-	# 	pass
+		if verbose:
+			plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
+			for p in pop:
+				print (p)
+				print (p.fitness.values)
+				print (' ')
 
 def get_routes_from_individual(individual, no_of_cities, constraints, data, verbose=False):
 	routes = []
@@ -238,9 +210,10 @@ c = Constraints(25,100)
 data = get_data(sys.argv[1], c)
 print(c.__dict__)
 a = Algorithm(data=data, constraints=c)
-SEARCH_PARAMS = False
+SEARCH_PARAMS = False 
 if not SEARCH_PARAMS:
-	a.getVPRTW(0.7, 0.7, 300)
+	print("Filename {}".format(sys.argv[1]))
+	a.getVPRTW(0.35, 0.58, 600)
 	print("Best solution cost: {}".format(a.top_result))
 else:
 	probabilities = np.linspace(0.1, 0.9, 9) #17

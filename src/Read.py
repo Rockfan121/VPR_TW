@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
 
 """
 Example file:
@@ -15,11 +13,12 @@ NUMBER     CAPACITY
 
 CUSTOMER
 CUST NO.  XCOORD.   YCOORD.    DEMAND   READY TIME  DUE DATE   SERVICE   TIME
- 
-    0      40         50          0          0       1236          0                                 
-    1      45         68         10        912        967         90 
-... (CUSTOMER CUST NO column from 0 to VECHICLE NUMBER or moved by 1)    
+
+    0      40         50          0          0       1236          0
+    1      45         68         10        912        967         90
+... (CUSTOMER CUST NO column from 0 to VECHICLE NUMBER or moved by 1)
 """
+from math import sqrt
 
 class Data(object):
     def __init__(self, row = None):
@@ -72,27 +71,15 @@ def get_data(filename, constraints):
             if d:
                 data.append(d)
 
-
-    # In[2]:
-
-
     for d in data:
         print(d.__dict__)
     return data
 
 
-# In[3]:
-
-
-import math
 def dist(point1, point2):
     diff_x = point2.x_coord - point1.x_coord
     diff_y = point2.y_coord - point2.y_coord
-    return math.sqrt(diff_x**2 + diff_y**2)
-
-
-# In[4]:
-
+    return sqrt(diff_x**2 + diff_y**2)
 
 class Solution(object):
     """set of sequences of customers ids
@@ -128,24 +115,13 @@ class Solution(object):
             print("WARNING: not enough vehicles to use!")
 
         for r_to_cut, r_to_augment in zip(overloaded_routes, empty_routes):
-            # print("Before breaking:")
-            # print("r_to_cut: {}".format(r_to_cut))
-            # print("r_to_augment: {}".format(r_to_augment))
-            #
-            # print('r_to_cut[route]: {} '.format(r_to_cut['route']))
             destinations_to_move = (r_to_cut['route'].seq)[first_to_move : ].copy()
-            # print('destinations_to_move: {} '.format(destinations_to_move))
-            #r_to_augment.seq.append(destinations_to_move)
             for dest in destinations_to_move:
                 r_to_augment.seq.append(dest)
             r_to_cut['route'].seq = (r_to_cut['route'].seq)[ : first_to_move].copy()
-
-            # print("After breaking:")
-            # print("r_to_cut: {}".format(r_to_cut))
-            # print("r_to_augment: {}".format(r_to_augment))
             r_to_cut['route'].feasable = r_to_cut['route'].check_feasability(data)
             r_to_augment.feasable = r_to_augment.check_feasability(data)
-    
+
 class Constraints(object):
     def __init__(self, vehicles, capacity):
         self.vehicle_count = vehicles
@@ -156,7 +132,7 @@ class Constraints(object):
 
 class Route(object):
     """
-        Route of single vehicle with global constraints
+    Route of single vehicle with global constraints
     """
     def __init__(self, constraints, vehicle_id, sequence, data):
         self.constraints = constraints
@@ -164,7 +140,7 @@ class Route(object):
         self.seq = sequence
         self.cost = 0
         self.feasable = self.check_feasability(data)
-        
+
     def __repr__(self):
         return str(self.__dict__)
 
@@ -177,12 +153,12 @@ class Route(object):
             if cap >= 0:
                 first_to_move = idx
         return {'not_used': cap, 'first_to_move' : first_to_move}
-    
+
     def check_feasability(self, data):
         '''
         place is the id of place in the route.
         Each vehicle start at (0, 0) on time 0.
-        
+
         '''
         # cap = self.constraints.capacity
         # for place in self.seq:
@@ -190,94 +166,93 @@ class Route(object):
         if (self.check_load(data)['not_used']) < 0:
             return "overload"
         return self.count_cost(data)['result']
-        
+
     def count_cost(self, data):
         current_time = 0
-        
+
         baza = Data()
         baza.x_coord = data[0].x_coord
         baza.y_coord = data[0].y_coord
         cost = 0
 
         last_place = baza
-        # example data[place] = "{'customer': 25, 'x_coord': 25, 'y_coord': 52, 
+        # example data[place] = "{'customer': 25, 'x_coord': 25, 'y_coord': 52,
         # 'demand': 40, 'ready_time': 169, 'due_date': 224, 'service_time': 90}"
+        '''
+        Iteration over all cities on the route which will be serviced
+        '''
         for place in self.seq:
-            # if len(data) <= place + 1:
-            #     continue
-            target = data[place+1]
+            target = data[place + 1]
             arrival_time = current_time + dist(target, last_place)
             last_place = target
+            '''
+            1) We have arrived too early, truck has to wait until "ready time" comes.
+            We are setting time when truck is ready to be laoaded.
+            '''
             if arrival_time < target.ready_time:
                 arrival_time = target.ready_time
+            '''
+            2) We are ready to deliver products from the place. We add time required to unload truck.
+            '''
             if arrival_time <= target.due_date:
                 cost += arrival_time - current_time
                 current_time = arrival_time + target.service_time
             else:
+                # We have been too late on start point
                 # print("Cannot create route")
                 self.cost = float('inf')
                 return {'result': "overtime", 'cost': float('inf') }
+        '''
+        Return to base after work has been done
+        '''
         if len(self.seq) > 0:
             cost += dist(data[self.seq[-1]+1], baza)
+        '''
+        Save cost to object field and return the result
+        '''
         self.cost = cost
         return {'result': "ok", 'cost': self.cost }
 
     def make_feasible(self, data):
         seq_copy: list = [ x for x in self.seq]
-        dependencies = {}
+        dependencies = []
         pos = 0
         for place in self.seq:
             info = data[place + 1]
-            dependencies[place] = GraphNode(place, info.ready_time, info.due_date, pos)
+            dependencies.append(Node(place, info.ready_time, info.due_date, pos))
             pos += 1
-        for place in dependencies.values():
-            place.get_priority(dependencies)
 
-        new_deps = sorted(dependencies.values(), key=lambda x: x.value()) ####
+        new_deps = reorder(dependencies)
         seq_copy = [x.no for x in new_deps]
         self.seq = seq_copy
 
 
+def reorder(elements=None, depth=0, tryagain=0):
+    next_try = tryagain
+    if depth >=  len(elements):
+        return elements
+    for idx in range(len(elements)):
+        boundry = elements[idx].ready_time
+        for idx2 in range(idx + 1, len(elements)):
+            if elements[idx2].due_time <= boundry:
+                '''
+                    Reorder: move element before our currently processed one and then process
+                    newly created list to find new similar cases in later elements.
+                '''
+                to_reorder = elements[idx2:idx2+1] + elements[idx:idx2] + elements[idx2 + 1:]
+                result_list = elements[:idx] + reorder(to_reorder, depth + 2 - idx)
+                elements = result_list
+    return elements
 
-class GraphNode(object):
+
+
+
+
+class Node(object):
     def __init__(self, no, ready_time, due_time, position):
-        self.PROPORTION = 10000
+        #self.PROPORTION = 10000
         self.no = no
         self.ready_time = ready_time
         self.due_time = due_time
         self.position = position
         self.prio = 0
-
-    def get_priority(self, allNodes):
-        current = 0
-        if self.prio > 0:
-            return self.prio
-        for node in allNodes.values():
-            if node.due_time < self.ready_time:
-                current = max(current, node.get_priority(allNodes))
-        self.prio = current + 1
-        return self.prio
-
-    def value(self):
-        return self.prio * self.PROPORTION + self.position
-
-# In[5]:
-
-
-# r = Route(Constraints(vehicle_count, capacity), 0, [0, 3, 4, 20], data)
-# print("r value:")
-# print(r)
-    
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
