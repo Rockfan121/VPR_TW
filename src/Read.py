@@ -56,8 +56,8 @@ def get_data(filename, constraints):
     if len(words) == 2:
         vehicle_count = int(words[0])
         capacity = int(words[1])
-        print('Vehicle count: {}'.format(vehicle_count))
-        print('Capacity: {}'.format(capacity))
+        #print('Vehicle count: {}'.format(vehicle_count))
+        #print('Capacity: {}'.format(capacity))
         constraints.vehicle_count = vehicle_count
         constraints.capacity = capacity
     data = []
@@ -133,6 +133,7 @@ class Solution(object):
             # print("r_to_augment: {}".format(r_to_augment))
             #
             # print('r_to_cut[route]: {} '.format(r_to_cut['route']))
+            first_to_move = r_to_cut['first_to_move']
             destinations_to_move = (r_to_cut['route'].seq)[first_to_move : ].copy()
             # print('destinations_to_move: {} '.format(destinations_to_move))
             #r_to_augment.seq.append(destinations_to_move)

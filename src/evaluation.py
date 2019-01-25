@@ -26,7 +26,8 @@ class Algorithm(object):
 		self.toolbox.register("population", tools.initRepeat, list, self.toolbox.individual)
 
 
-		self.toolbox.register("mate", tools.cxPartialyMatched)  # PartialyMatched lub Ordered
+		self.toolbox.register("mate", tools.cxPartialyMatched)
+# PartialyMatched lub Ordered
 		self.toolbox.register("mutate", tools.mutShuffleIndexes, indpb=0.1)
 
 		# self.toolbox.decorate("mate", checkBounds(MIN, MAX)) #oczywiscie inna postac funkcji!
@@ -125,8 +126,8 @@ class Algorithm(object):
 		fitnesses = map(self.toolbox.evaluate, pop)
 		for ind, fit in zip(pop, fitnesses):
 			ind.fitness.values = fit
-			print(ind)
-			print(fit)
+			#print(ind)
+			#print(fit)
 		for g in range(NGEN):
 			#Select the next generation individuals
 			selected = self.toolbox.select(pop, len(pop))
@@ -155,7 +156,7 @@ class Algorithm(object):
 			#The population is entirely replaces by offspring
 			pop[:] = offspring
 
-		plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
+		#plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
 		for p in pop:
 			print (p)
 			print (p.fitness.values)
@@ -238,7 +239,7 @@ c = Constraints(25,100)
 data = get_data(sys.argv[1], c)
 print(c.__dict__)
 a = Algorithm(data=data, constraints=c)
-SEARCH_PARAMS = False
+SEARCH_PARAMS = True
 if not SEARCH_PARAMS:
 	a.getVPRTW(0.7, 0.7, 300)
 	print("Best solution cost: {}".format(a.top_result))
