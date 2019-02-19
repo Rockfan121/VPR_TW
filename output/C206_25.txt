@@ -1,0 +1,1491 @@
+Vehicle count: 25
+Capacity: 700
+{'customer': 0, 'x_coord': 40, 'y_coord': 50, 'demand': 0, 'ready_time': 0, 'due_date': 3390, 'service_time': 0}
+{'customer': 1, 'x_coord': 52, 'y_coord': 75, 'demand': 10, 'ready_time': 213, 'due_date': 568, 'service_time': 90}
+{'customer': 2, 'x_coord': 45, 'y_coord': 70, 'demand': 30, 'ready_time': 22, 'due_date': 563, 'service_time': 90}
+{'customer': 3, 'x_coord': 62, 'y_coord': 69, 'demand': 10, 'ready_time': 1030, 'due_date': 1463, 'service_time': 90}
+{'customer': 4, 'x_coord': 60, 'y_coord': 66, 'demand': 10, 'ready_time': 1154, 'due_date': 1527, 'service_time': 90}
+{'customer': 5, 'x_coord': 42, 'y_coord': 65, 'demand': 10, 'ready_time': 15, 'due_date': 402, 'service_time': 90}
+{'customer': 6, 'x_coord': 16, 'y_coord': 42, 'demand': 20, 'ready_time': 331, 'due_date': 822, 'service_time': 90}
+{'customer': 7, 'x_coord': 58, 'y_coord': 70, 'demand': 20, 'ready_time': 965, 'due_date': 1340, 'service_time': 90}
+{'customer': 8, 'x_coord': 34, 'y_coord': 60, 'demand': 20, 'ready_time': 2653, 'due_date': 3280, 'service_time': 90}
+{'customer': 9, 'x_coord': 28, 'y_coord': 70, 'demand': 10, 'ready_time': 2385, 'due_date': 2976, 'service_time': 90}
+{'customer': 10, 'x_coord': 35, 'y_coord': 66, 'demand': 10, 'ready_time': 2628, 'due_date': 3113, 'service_time': 90}
+{'customer': 11, 'x_coord': 35, 'y_coord': 69, 'demand': 10, 'ready_time': 2603, 'due_date': 2952, 'service_time': 90}
+{'customer': 12, 'x_coord': 25, 'y_coord': 85, 'demand': 20, 'ready_time': 1985, 'due_date': 2412, 'service_time': 90}
+{'customer': 13, 'x_coord': 22, 'y_coord': 75, 'demand': 30, 'ready_time': 2310, 'due_date': 2659, 'service_time': 90}
+{'customer': 14, 'x_coord': 22, 'y_coord': 85, 'demand': 10, 'ready_time': 1846, 'due_date': 2365, 'service_time': 90}
+{'customer': 15, 'x_coord': 20, 'y_coord': 80, 'demand': 40, 'ready_time': 2077, 'due_date': 2514, 'service_time': 90}
+{'customer': 16, 'x_coord': 20, 'y_coord': 85, 'demand': 40, 'ready_time': 1763, 'due_date': 2264, 'service_time': 90}
+{'customer': 17, 'x_coord': 18, 'y_coord': 75, 'demand': 20, 'ready_time': 2143, 'due_date': 2638, 'service_time': 90}
+{'customer': 18, 'x_coord': 15, 'y_coord': 75, 'demand': 20, 'ready_time': 1560, 'due_date': 2083, 'service_time': 90}
+{'customer': 19, 'x_coord': 15, 'y_coord': 80, 'demand': 10, 'ready_time': 1689, 'due_date': 2144, 'service_time': 90}
+{'customer': 20, 'x_coord': 30, 'y_coord': 50, 'demand': 10, 'ready_time': 10, 'due_date': 645, 'service_time': 90}
+{'customer': 21, 'x_coord': 30, 'y_coord': 56, 'demand': 20, 'ready_time': 2675, 'due_date': 3288, 'service_time': 90}
+{'customer': 22, 'x_coord': 28, 'y_coord': 52, 'demand': 20, 'ready_time': 12, 'due_date': 505, 'service_time': 90}
+{'customer': 23, 'x_coord': 14, 'y_coord': 66, 'demand': 10, 'ready_time': 1519, 'due_date': 1926, 'service_time': 90}
+{'customer': 24, 'x_coord': 25, 'y_coord': 50, 'demand': 10, 'ready_time': 23, 'due_date': 368, 'service_time': 90}
+{'customer': 25, 'x_coord': 22, 'y_coord': 66, 'demand': 40, 'ready_time': 2380, 'due_date': 2787, 'service_time': 90}
+{'vehicle_count': 25, 'capacity': 700}
+CXPB: 0.1, MUTPB: 0.1, NGEN: 200, I: 0
+Best solution cost: 6612.0
+CXPB: 0.1, MUTPB: 0.1, NGEN: 200, I: 1
+Best solution cost: 6378.0
+CXPB: 0.1, MUTPB: 0.1, NGEN: 200, I: 2
+Best solution cost: 7408.0
+CXPB: 0.1, MUTPB: 0.1, NGEN: 250, I: 0
+Best solution cost: 8279.0
+CXPB: 0.1, MUTPB: 0.1, NGEN: 250, I: 1
+Best solution cost: 6201.0
+CXPB: 0.1, MUTPB: 0.1, NGEN: 250, I: 2
+Best solution cost: 5698.0
+CXPB: 0.1, MUTPB: 0.1, NGEN: 300, I: 0
+Best solution cost: 7884.0
+CXPB: 0.1, MUTPB: 0.1, NGEN: 300, I: 1
+Best solution cost: 7550.0
+CXPB: 0.1, MUTPB: 0.1, NGEN: 300, I: 2
+Best solution cost: 6980.0
+CXPB: 0.1, MUTPB: 0.2, NGEN: 200, I: 0
+Best solution cost: 7251.0
+CXPB: 0.1, MUTPB: 0.2, NGEN: 200, I: 1
+Best solution cost: 5631.0
+CXPB: 0.1, MUTPB: 0.2, NGEN: 200, I: 2
+Best solution cost: 5915.0
+CXPB: 0.1, MUTPB: 0.2, NGEN: 250, I: 0
+Best solution cost: 4624.0
+CXPB: 0.1, MUTPB: 0.2, NGEN: 250, I: 1
+Best solution cost: 5851.0
+CXPB: 0.1, MUTPB: 0.2, NGEN: 250, I: 2
+Best solution cost: 7701.0
+CXPB: 0.1, MUTPB: 0.2, NGEN: 300, I: 0
+Best solution cost: 5330.0
+CXPB: 0.1, MUTPB: 0.2, NGEN: 300, I: 1
+Best solution cost: 3429.0
+CXPB: 0.1, MUTPB: 0.2, NGEN: 300, I: 2
+Best solution cost: 6541.0
+CXPB: 0.1, MUTPB: 0.30000000000000004, NGEN: 200, I: 0
+Best solution cost: 5317.0
+CXPB: 0.1, MUTPB: 0.30000000000000004, NGEN: 200, I: 1
+Best solution cost: 7139.0
+CXPB: 0.1, MUTPB: 0.30000000000000004, NGEN: 200, I: 2
+Best solution cost: 4419.0
+CXPB: 0.1, MUTPB: 0.30000000000000004, NGEN: 250, I: 0
+Best solution cost: 5848.0
+CXPB: 0.1, MUTPB: 0.30000000000000004, NGEN: 250, I: 1
+Best solution cost: 5498.0
+CXPB: 0.1, MUTPB: 0.30000000000000004, NGEN: 250, I: 2
+Best solution cost: 5688.0
+CXPB: 0.1, MUTPB: 0.30000000000000004, NGEN: 300, I: 0
+Best solution cost: 3621.0
+CXPB: 0.1, MUTPB: 0.30000000000000004, NGEN: 300, I: 1
+Best solution cost: 3711.0
+CXPB: 0.1, MUTPB: 0.30000000000000004, NGEN: 300, I: 2
+Best solution cost: 5582.0
+CXPB: 0.1, MUTPB: 0.4, NGEN: 200, I: 0
+Best solution cost: 7194.0
+CXPB: 0.1, MUTPB: 0.4, NGEN: 200, I: 1
+Best solution cost: 5417.0
+CXPB: 0.1, MUTPB: 0.4, NGEN: 200, I: 2
+Best solution cost: 6324.0
+CXPB: 0.1, MUTPB: 0.4, NGEN: 250, I: 0
+Best solution cost: 6382.0
+CXPB: 0.1, MUTPB: 0.4, NGEN: 250, I: 1
+Best solution cost: 4205.0
+CXPB: 0.1, MUTPB: 0.4, NGEN: 250, I: 2
+Best solution cost: 3512.0
+CXPB: 0.1, MUTPB: 0.4, NGEN: 300, I: 0
+Best solution cost: 6014.0
+CXPB: 0.1, MUTPB: 0.4, NGEN: 300, I: 1
+Best solution cost: 4780.0
+CXPB: 0.1, MUTPB: 0.4, NGEN: 300, I: 2
+Best solution cost: 5518.0
+CXPB: 0.1, MUTPB: 0.5, NGEN: 200, I: 0
+Best solution cost: 5666.0
+CXPB: 0.1, MUTPB: 0.5, NGEN: 200, I: 1
+Best solution cost: 5673.0
+CXPB: 0.1, MUTPB: 0.5, NGEN: 200, I: 2
+Best solution cost: 4586.0
+CXPB: 0.1, MUTPB: 0.5, NGEN: 250, I: 0
+Best solution cost: 3705.0
+CXPB: 0.1, MUTPB: 0.5, NGEN: 250, I: 1
+Best solution cost: 5831.0
+CXPB: 0.1, MUTPB: 0.5, NGEN: 250, I: 2
+Best solution cost: 5834.0
+CXPB: 0.1, MUTPB: 0.5, NGEN: 300, I: 0
+Best solution cost: 3037.0
+CXPB: 0.1, MUTPB: 0.5, NGEN: 300, I: 1
+Best solution cost: 5897.0
+CXPB: 0.1, MUTPB: 0.5, NGEN: 300, I: 2
+Best solution cost: 3183.0
+CXPB: 0.1, MUTPB: 0.6, NGEN: 200, I: 0
+Best solution cost: 3489.0
+CXPB: 0.1, MUTPB: 0.6, NGEN: 200, I: 1
+Best solution cost: 5273.0
+CXPB: 0.1, MUTPB: 0.6, NGEN: 200, I: 2
+Best solution cost: 4097.0
+CXPB: 0.1, MUTPB: 0.6, NGEN: 250, I: 0
+Best solution cost: 5677.0
+CXPB: 0.1, MUTPB: 0.6, NGEN: 250, I: 1
+Best solution cost: 5744.0
+CXPB: 0.1, MUTPB: 0.6, NGEN: 250, I: 2
+Best solution cost: 4771.0
+CXPB: 0.1, MUTPB: 0.6, NGEN: 300, I: 0
+Best solution cost: 3691.0
+CXPB: 0.1, MUTPB: 0.6, NGEN: 300, I: 1
+Best solution cost: 5326.0
+CXPB: 0.1, MUTPB: 0.6, NGEN: 300, I: 2
+Best solution cost: 4913.0
+CXPB: 0.1, MUTPB: 0.7000000000000001, NGEN: 200, I: 0
+Best solution cost: 3388.0
+CXPB: 0.1, MUTPB: 0.7000000000000001, NGEN: 200, I: 1
+Best solution cost: 5869.0
+CXPB: 0.1, MUTPB: 0.7000000000000001, NGEN: 200, I: 2
+Best solution cost: 4666.0
+CXPB: 0.1, MUTPB: 0.7000000000000001, NGEN: 250, I: 0
+Best solution cost: 3114.0
+CXPB: 0.1, MUTPB: 0.7000000000000001, NGEN: 250, I: 1
+Best solution cost: 3509.0
+CXPB: 0.1, MUTPB: 0.7000000000000001, NGEN: 250, I: 2
+Best solution cost: 5110.0
+CXPB: 0.1, MUTPB: 0.7000000000000001, NGEN: 300, I: 0
+Best solution cost: 3253.0
+CXPB: 0.1, MUTPB: 0.7000000000000001, NGEN: 300, I: 1
+Best solution cost: 3428.0
+CXPB: 0.1, MUTPB: 0.7000000000000001, NGEN: 300, I: 2
+Best solution cost: 3608.0
+CXPB: 0.1, MUTPB: 0.8, NGEN: 200, I: 0
+Best solution cost: 5333.0
+CXPB: 0.1, MUTPB: 0.8, NGEN: 200, I: 1
+Best solution cost: 5450.0
+CXPB: 0.1, MUTPB: 0.8, NGEN: 200, I: 2
+Best solution cost: 3240.0
+CXPB: 0.1, MUTPB: 0.8, NGEN: 250, I: 0
+Best solution cost: 3995.0
+CXPB: 0.1, MUTPB: 0.8, NGEN: 250, I: 1
+Best solution cost: 3942.0
+CXPB: 0.1, MUTPB: 0.8, NGEN: 250, I: 2
+Best solution cost: 5724.0
+CXPB: 0.1, MUTPB: 0.8, NGEN: 300, I: 0
+Best solution cost: 3535.0
+CXPB: 0.1, MUTPB: 0.8, NGEN: 300, I: 1
+Best solution cost: 5036.0
+CXPB: 0.1, MUTPB: 0.8, NGEN: 300, I: 2
+Best solution cost: 3810.0
+CXPB: 0.1, MUTPB: 0.9, NGEN: 200, I: 0
+Best solution cost: 3950.0
+CXPB: 0.1, MUTPB: 0.9, NGEN: 200, I: 1
+Best solution cost: 6009.0
+CXPB: 0.1, MUTPB: 0.9, NGEN: 200, I: 2
+Best solution cost: 6021.0
+CXPB: 0.1, MUTPB: 0.9, NGEN: 250, I: 0
+Best solution cost: 5603.0
+CXPB: 0.1, MUTPB: 0.9, NGEN: 250, I: 1
+Best solution cost: 5744.0
+CXPB: 0.1, MUTPB: 0.9, NGEN: 250, I: 2
+Best solution cost: 5558.0
+CXPB: 0.1, MUTPB: 0.9, NGEN: 300, I: 0
+Best solution cost: 3560.0
+CXPB: 0.1, MUTPB: 0.9, NGEN: 300, I: 1
+Best solution cost: 3570.0
+CXPB: 0.1, MUTPB: 0.9, NGEN: 300, I: 2
+Best solution cost: 3776.0
+CXPB: 0.2, MUTPB: 0.1, NGEN: 200, I: 0
+Best solution cost: 6255.0
+CXPB: 0.2, MUTPB: 0.1, NGEN: 200, I: 1
+Best solution cost: 10022.0
+CXPB: 0.2, MUTPB: 0.1, NGEN: 200, I: 2
+Best solution cost: 9974.0
+CXPB: 0.2, MUTPB: 0.1, NGEN: 250, I: 0
+Best solution cost: 7929.0
+CXPB: 0.2, MUTPB: 0.1, NGEN: 250, I: 1
+Best solution cost: 7473.0
+CXPB: 0.2, MUTPB: 0.1, NGEN: 250, I: 2
+Best solution cost: 8365.0
+CXPB: 0.2, MUTPB: 0.1, NGEN: 300, I: 0
+Best solution cost: 6026.0
+CXPB: 0.2, MUTPB: 0.1, NGEN: 300, I: 1
+Best solution cost: 9294.0
+CXPB: 0.2, MUTPB: 0.1, NGEN: 300, I: 2
+Best solution cost: 6165.0
+CXPB: 0.2, MUTPB: 0.2, NGEN: 200, I: 0
+Best solution cost: 7583.0
+CXPB: 0.2, MUTPB: 0.2, NGEN: 200, I: 1
+Best solution cost: 7457.0
+CXPB: 0.2, MUTPB: 0.2, NGEN: 200, I: 2
+Best solution cost: 6507.0
+CXPB: 0.2, MUTPB: 0.2, NGEN: 250, I: 0
+Best solution cost: 6673.0
+CXPB: 0.2, MUTPB: 0.2, NGEN: 250, I: 1
+Best solution cost: 4888.0
+CXPB: 0.2, MUTPB: 0.2, NGEN: 250, I: 2
+Best solution cost: 6108.0
+CXPB: 0.2, MUTPB: 0.2, NGEN: 300, I: 0
+Best solution cost: 5401.0
+CXPB: 0.2, MUTPB: 0.2, NGEN: 300, I: 1
+Best solution cost: 5605.0
+CXPB: 0.2, MUTPB: 0.2, NGEN: 300, I: 2
+Best solution cost: 3620.0
+CXPB: 0.2, MUTPB: 0.30000000000000004, NGEN: 200, I: 0
+Best solution cost: 3989.0
+CXPB: 0.2, MUTPB: 0.30000000000000004, NGEN: 200, I: 1
+Best solution cost: 5848.0
+CXPB: 0.2, MUTPB: 0.30000000000000004, NGEN: 200, I: 2
+Best solution cost: 5987.0
+CXPB: 0.2, MUTPB: 0.30000000000000004, NGEN: 250, I: 0
+Best solution cost: 5379.0
+CXPB: 0.2, MUTPB: 0.30000000000000004, NGEN: 250, I: 1
+Best solution cost: 5555.0
+CXPB: 0.2, MUTPB: 0.30000000000000004, NGEN: 250, I: 2
+Best solution cost: 5848.0
+CXPB: 0.2, MUTPB: 0.30000000000000004, NGEN: 300, I: 0
+Best solution cost: 3932.0
+CXPB: 0.2, MUTPB: 0.30000000000000004, NGEN: 300, I: 1
+Best solution cost: 5482.0
+CXPB: 0.2, MUTPB: 0.30000000000000004, NGEN: 300, I: 2
+Best solution cost: 5872.0
+CXPB: 0.2, MUTPB: 0.4, NGEN: 200, I: 0
+Best solution cost: 5301.0
+CXPB: 0.2, MUTPB: 0.4, NGEN: 200, I: 1
+Best solution cost: 4325.0
+CXPB: 0.2, MUTPB: 0.4, NGEN: 200, I: 2
+Best solution cost: 5527.0
+CXPB: 0.2, MUTPB: 0.4, NGEN: 250, I: 0
+Best solution cost: 6067.0
+CXPB: 0.2, MUTPB: 0.4, NGEN: 250, I: 1
+Best solution cost: 5391.0
+CXPB: 0.2, MUTPB: 0.4, NGEN: 250, I: 2
+Best solution cost: 5286.0
+CXPB: 0.2, MUTPB: 0.4, NGEN: 300, I: 0
+Best solution cost: 5323.0
+CXPB: 0.2, MUTPB: 0.4, NGEN: 300, I: 1
+Best solution cost: 6020.0
+CXPB: 0.2, MUTPB: 0.4, NGEN: 300, I: 2
+Best solution cost: 5173.0
+CXPB: 0.2, MUTPB: 0.5, NGEN: 200, I: 0
+Best solution cost: 5017.0
+CXPB: 0.2, MUTPB: 0.5, NGEN: 200, I: 1
+Best solution cost: 5586.0
+CXPB: 0.2, MUTPB: 0.5, NGEN: 200, I: 2
+Best solution cost: 5048.0
+CXPB: 0.2, MUTPB: 0.5, NGEN: 250, I: 0
+Best solution cost: 5593.0
+CXPB: 0.2, MUTPB: 0.5, NGEN: 250, I: 1
+Best solution cost: 3243.0
+CXPB: 0.2, MUTPB: 0.5, NGEN: 250, I: 2
+Best solution cost: 3491.0
+CXPB: 0.2, MUTPB: 0.5, NGEN: 300, I: 0
+Best solution cost: 3361.0
+CXPB: 0.2, MUTPB: 0.5, NGEN: 300, I: 1
+Best solution cost: 3502.0
+CXPB: 0.2, MUTPB: 0.5, NGEN: 300, I: 2
+Best solution cost: 5477.0
+CXPB: 0.2, MUTPB: 0.6, NGEN: 200, I: 0
+Best solution cost: 5169.0
+CXPB: 0.2, MUTPB: 0.6, NGEN: 200, I: 1
+Best solution cost: 5184.0
+CXPB: 0.2, MUTPB: 0.6, NGEN: 200, I: 2
+Best solution cost: 5440.0
+CXPB: 0.2, MUTPB: 0.6, NGEN: 250, I: 0
+Best solution cost: 4271.0
+CXPB: 0.2, MUTPB: 0.6, NGEN: 250, I: 1
+Best solution cost: 3497.0
+CXPB: 0.2, MUTPB: 0.6, NGEN: 250, I: 2
+Best solution cost: 3439.0
+CXPB: 0.2, MUTPB: 0.6, NGEN: 300, I: 0
+Best solution cost: 3814.0
+CXPB: 0.2, MUTPB: 0.6, NGEN: 300, I: 1
+Best solution cost: 3616.0
+CXPB: 0.2, MUTPB: 0.6, NGEN: 300, I: 2
+Best solution cost: 5151.0
+CXPB: 0.2, MUTPB: 0.7000000000000001, NGEN: 200, I: 0
+Best solution cost: 4918.0
+CXPB: 0.2, MUTPB: 0.7000000000000001, NGEN: 200, I: 1
+Best solution cost: 5528.0
+CXPB: 0.2, MUTPB: 0.7000000000000001, NGEN: 200, I: 2
+Best solution cost: 5433.0
+CXPB: 0.2, MUTPB: 0.7000000000000001, NGEN: 250, I: 0
+Best solution cost: 3285.0
+CXPB: 0.2, MUTPB: 0.7000000000000001, NGEN: 250, I: 1
+Best solution cost: 3606.0
+CXPB: 0.2, MUTPB: 0.7000000000000001, NGEN: 250, I: 2
+Best solution cost: 5458.0
+CXPB: 0.2, MUTPB: 0.7000000000000001, NGEN: 300, I: 0
+Best solution cost: 3677.0
+CXPB: 0.2, MUTPB: 0.7000000000000001, NGEN: 300, I: 1
+Best solution cost: 3525.0
+CXPB: 0.2, MUTPB: 0.7000000000000001, NGEN: 300, I: 2
+Best solution cost: 3330.0
+CXPB: 0.2, MUTPB: 0.8, NGEN: 200, I: 0
+Best solution cost: 5267.0
+CXPB: 0.2, MUTPB: 0.8, NGEN: 200, I: 1
+Best solution cost: 3644.0
+CXPB: 0.2, MUTPB: 0.8, NGEN: 200, I: 2
+Best solution cost: 5393.0
+CXPB: 0.2, MUTPB: 0.8, NGEN: 250, I: 0
+Best solution cost: 3405.0
+CXPB: 0.2, MUTPB: 0.8, NGEN: 250, I: 1
+Best solution cost: 5911.0
+CXPB: 0.2, MUTPB: 0.8, NGEN: 250, I: 2
+Best solution cost: 4977.0
+CXPB: 0.2, MUTPB: 0.8, NGEN: 300, I: 0
+Best solution cost: 5495.0
+CXPB: 0.2, MUTPB: 0.8, NGEN: 300, I: 1
+Best solution cost: 3806.0
+CXPB: 0.2, MUTPB: 0.8, NGEN: 300, I: 2
+Best solution cost: 3764.0
+CXPB: 0.2, MUTPB: 0.9, NGEN: 200, I: 0
+Best solution cost: 5765.0
+CXPB: 0.2, MUTPB: 0.9, NGEN: 200, I: 1
+Best solution cost: 4080.0
+CXPB: 0.2, MUTPB: 0.9, NGEN: 200, I: 2
+Best solution cost: 5679.0
+CXPB: 0.2, MUTPB: 0.9, NGEN: 250, I: 0
+Best solution cost: 5503.0
+CXPB: 0.2, MUTPB: 0.9, NGEN: 250, I: 1
+Best solution cost: 5226.0
+CXPB: 0.2, MUTPB: 0.9, NGEN: 250, I: 2
+Best solution cost: 3730.0
+CXPB: 0.2, MUTPB: 0.9, NGEN: 300, I: 0
+Best solution cost: 3816.0
+CXPB: 0.2, MUTPB: 0.9, NGEN: 300, I: 1
+Best solution cost: 5338.0
+CXPB: 0.2, MUTPB: 0.9, NGEN: 300, I: 2
+Best solution cost: 5701.0
+CXPB: 0.30000000000000004, MUTPB: 0.1, NGEN: 200, I: 0
+Best solution cost: 5820.0
+CXPB: 0.30000000000000004, MUTPB: 0.1, NGEN: 200, I: 1
+Best solution cost: 8277.0
+CXPB: 0.30000000000000004, MUTPB: 0.1, NGEN: 200, I: 2
+Best solution cost: 9033.0
+CXPB: 0.30000000000000004, MUTPB: 0.1, NGEN: 250, I: 0
+Best solution cost: 6947.0
+CXPB: 0.30000000000000004, MUTPB: 0.1, NGEN: 250, I: 1
+Best solution cost: 7632.0
+CXPB: 0.30000000000000004, MUTPB: 0.1, NGEN: 250, I: 2
+Best solution cost: 5598.0
+CXPB: 0.30000000000000004, MUTPB: 0.1, NGEN: 300, I: 0
+Best solution cost: 7618.0
+CXPB: 0.30000000000000004, MUTPB: 0.1, NGEN: 300, I: 1
+Best solution cost: 7701.0
+CXPB: 0.30000000000000004, MUTPB: 0.1, NGEN: 300, I: 2
+Best solution cost: 6579.0
+CXPB: 0.30000000000000004, MUTPB: 0.2, NGEN: 200, I: 0
+Best solution cost: 5907.0
+CXPB: 0.30000000000000004, MUTPB: 0.2, NGEN: 200, I: 1
+Best solution cost: 6158.0
+CXPB: 0.30000000000000004, MUTPB: 0.2, NGEN: 200, I: 2
+Best solution cost: 5619.0
+CXPB: 0.30000000000000004, MUTPB: 0.2, NGEN: 250, I: 0
+Best solution cost: 5973.0
+CXPB: 0.30000000000000004, MUTPB: 0.2, NGEN: 250, I: 1
+Best solution cost: 5831.0
+CXPB: 0.30000000000000004, MUTPB: 0.2, NGEN: 250, I: 2
+Best solution cost: 5440.0
+CXPB: 0.30000000000000004, MUTPB: 0.2, NGEN: 300, I: 0
+Best solution cost: 5386.0
+CXPB: 0.30000000000000004, MUTPB: 0.2, NGEN: 300, I: 1
+Best solution cost: 3809.0
+CXPB: 0.30000000000000004, MUTPB: 0.2, NGEN: 300, I: 2
+Best solution cost: 5470.0
+CXPB: 0.30000000000000004, MUTPB: 0.30000000000000004, NGEN: 200, I: 0
+Best solution cost: 7913.0
+CXPB: 0.30000000000000004, MUTPB: 0.30000000000000004, NGEN: 200, I: 1
+Best solution cost: 7461.0
+CXPB: 0.30000000000000004, MUTPB: 0.30000000000000004, NGEN: 200, I: 2
+Best solution cost: 5103.0
+CXPB: 0.30000000000000004, MUTPB: 0.30000000000000004, NGEN: 250, I: 0
+Best solution cost: 5636.0
+CXPB: 0.30000000000000004, MUTPB: 0.30000000000000004, NGEN: 250, I: 1
+Best solution cost: 5288.0
+CXPB: 0.30000000000000004, MUTPB: 0.30000000000000004, NGEN: 250, I: 2
+Best solution cost: 6363.0
+CXPB: 0.30000000000000004, MUTPB: 0.30000000000000004, NGEN: 300, I: 0
+Best solution cost: 6611.0
+CXPB: 0.30000000000000004, MUTPB: 0.30000000000000004, NGEN: 300, I: 1
+Best solution cost: 6169.0
+CXPB: 0.30000000000000004, MUTPB: 0.30000000000000004, NGEN: 300, I: 2
+Best solution cost: 4958.0
+CXPB: 0.30000000000000004, MUTPB: 0.4, NGEN: 200, I: 0
+Best solution cost: 4812.0
+CXPB: 0.30000000000000004, MUTPB: 0.4, NGEN: 200, I: 1
+Best solution cost: 3655.0
+CXPB: 0.30000000000000004, MUTPB: 0.4, NGEN: 200, I: 2
+Best solution cost: 6004.0
+CXPB: 0.30000000000000004, MUTPB: 0.4, NGEN: 250, I: 0
+Best solution cost: 5954.0
+CXPB: 0.30000000000000004, MUTPB: 0.4, NGEN: 250, I: 1
+Best solution cost: 5516.0
+CXPB: 0.30000000000000004, MUTPB: 0.4, NGEN: 250, I: 2
+Best solution cost: 5581.0
+CXPB: 0.30000000000000004, MUTPB: 0.4, NGEN: 300, I: 0
+Best solution cost: 5675.0
+CXPB: 0.30000000000000004, MUTPB: 0.4, NGEN: 300, I: 1
+Best solution cost: 3873.0
+CXPB: 0.30000000000000004, MUTPB: 0.4, NGEN: 300, I: 2
+Best solution cost: 5155.0
+CXPB: 0.30000000000000004, MUTPB: 0.5, NGEN: 200, I: 0
+Best solution cost: 3671.0
+CXPB: 0.30000000000000004, MUTPB: 0.5, NGEN: 200, I: 1
+Best solution cost: 3640.0
+CXPB: 0.30000000000000004, MUTPB: 0.5, NGEN: 200, I: 2
+Best solution cost: 5859.0
+CXPB: 0.30000000000000004, MUTPB: 0.5, NGEN: 250, I: 0
+Best solution cost: 5755.0
+CXPB: 0.30000000000000004, MUTPB: 0.5, NGEN: 250, I: 1
+Best solution cost: 3763.0
+CXPB: 0.30000000000000004, MUTPB: 0.5, NGEN: 250, I: 2
+Best solution cost: 5334.0
+CXPB: 0.30000000000000004, MUTPB: 0.5, NGEN: 300, I: 0
+Best solution cost: 5270.0
+CXPB: 0.30000000000000004, MUTPB: 0.5, NGEN: 300, I: 1
+Best solution cost: 3171.0
+CXPB: 0.30000000000000004, MUTPB: 0.5, NGEN: 300, I: 2
+Best solution cost: 5424.0
+CXPB: 0.30000000000000004, MUTPB: 0.6, NGEN: 200, I: 0
+Best solution cost: 4896.0
+CXPB: 0.30000000000000004, MUTPB: 0.6, NGEN: 200, I: 1
+Best solution cost: 4625.0
+CXPB: 0.30000000000000004, MUTPB: 0.6, NGEN: 200, I: 2
+Best solution cost: 5592.0
+CXPB: 0.30000000000000004, MUTPB: 0.6, NGEN: 250, I: 0
+Best solution cost: 3395.0
+CXPB: 0.30000000000000004, MUTPB: 0.6, NGEN: 250, I: 1
+Best solution cost: 3517.0
+CXPB: 0.30000000000000004, MUTPB: 0.6, NGEN: 250, I: 2
+Best solution cost: 3387.0
+CXPB: 0.30000000000000004, MUTPB: 0.6, NGEN: 300, I: 0
+Best solution cost: 4831.0
+CXPB: 0.30000000000000004, MUTPB: 0.6, NGEN: 300, I: 1
+Best solution cost: 5252.0
+CXPB: 0.30000000000000004, MUTPB: 0.6, NGEN: 300, I: 2
+Best solution cost: 3790.0
+CXPB: 0.30000000000000004, MUTPB: 0.7000000000000001, NGEN: 200, I: 0
+Best solution cost: 6598.0
+CXPB: 0.30000000000000004, MUTPB: 0.7000000000000001, NGEN: 200, I: 1
+Best solution cost: 4764.0
+CXPB: 0.30000000000000004, MUTPB: 0.7000000000000001, NGEN: 200, I: 2
+Best solution cost: 3532.0
+CXPB: 0.30000000000000004, MUTPB: 0.7000000000000001, NGEN: 250, I: 0
+Best solution cost: 4821.0
+CXPB: 0.30000000000000004, MUTPB: 0.7000000000000001, NGEN: 250, I: 1
+Best solution cost: 3539.0
+CXPB: 0.30000000000000004, MUTPB: 0.7000000000000001, NGEN: 250, I: 2
+Best solution cost: 4197.0
+CXPB: 0.30000000000000004, MUTPB: 0.7000000000000001, NGEN: 300, I: 0
+Best solution cost: 3451.0
+CXPB: 0.30000000000000004, MUTPB: 0.7000000000000001, NGEN: 300, I: 1
+Best solution cost: 3631.0
+CXPB: 0.30000000000000004, MUTPB: 0.7000000000000001, NGEN: 300, I: 2
+Best solution cost: 4545.0
+CXPB: 0.30000000000000004, MUTPB: 0.8, NGEN: 200, I: 0
+Best solution cost: 4061.0
+CXPB: 0.30000000000000004, MUTPB: 0.8, NGEN: 200, I: 1
+Best solution cost: 5232.0
+CXPB: 0.30000000000000004, MUTPB: 0.8, NGEN: 200, I: 2
+Best solution cost: 3735.0
+CXPB: 0.30000000000000004, MUTPB: 0.8, NGEN: 250, I: 0
+Best solution cost: 3522.0
+CXPB: 0.30000000000000004, MUTPB: 0.8, NGEN: 250, I: 1
+Best solution cost: 3711.0
+CXPB: 0.30000000000000004, MUTPB: 0.8, NGEN: 250, I: 2
+Best solution cost: 3643.0
+CXPB: 0.30000000000000004, MUTPB: 0.8, NGEN: 300, I: 0
+Best solution cost: 5157.0
+CXPB: 0.30000000000000004, MUTPB: 0.8, NGEN: 300, I: 1
+Best solution cost: 3405.0
+CXPB: 0.30000000000000004, MUTPB: 0.8, NGEN: 300, I: 2
+Best solution cost: 5278.0
+CXPB: 0.30000000000000004, MUTPB: 0.9, NGEN: 200, I: 0
+Best solution cost: 3756.0
+CXPB: 0.30000000000000004, MUTPB: 0.9, NGEN: 200, I: 1
+Best solution cost: 5263.0
+CXPB: 0.30000000000000004, MUTPB: 0.9, NGEN: 200, I: 2
+Best solution cost: 4555.0
+CXPB: 0.30000000000000004, MUTPB: 0.9, NGEN: 250, I: 0
+Best solution cost: 5231.0
+CXPB: 0.30000000000000004, MUTPB: 0.9, NGEN: 250, I: 1
+Best solution cost: 5950.0
+CXPB: 0.30000000000000004, MUTPB: 0.9, NGEN: 250, I: 2
+Best solution cost: 3924.0
+CXPB: 0.30000000000000004, MUTPB: 0.9, NGEN: 300, I: 0
+Best solution cost: 3541.0
+CXPB: 0.30000000000000004, MUTPB: 0.9, NGEN: 300, I: 1
+Best solution cost: 5185.0
+CXPB: 0.30000000000000004, MUTPB: 0.9, NGEN: 300, I: 2
+Best solution cost: 4072.0
+CXPB: 0.4, MUTPB: 0.1, NGEN: 200, I: 0
+Best solution cost: 5770.0
+CXPB: 0.4, MUTPB: 0.1, NGEN: 200, I: 1
+Best solution cost: 9026.0
+CXPB: 0.4, MUTPB: 0.1, NGEN: 200, I: 2
+Best solution cost: 9660.0
+CXPB: 0.4, MUTPB: 0.1, NGEN: 250, I: 0
+Best solution cost: 5953.0
+CXPB: 0.4, MUTPB: 0.1, NGEN: 250, I: 1
+Best solution cost: 7473.0
+CXPB: 0.4, MUTPB: 0.1, NGEN: 250, I: 2
+Best solution cost: 6950.0
+CXPB: 0.4, MUTPB: 0.1, NGEN: 300, I: 0
+Best solution cost: 5745.0
+CXPB: 0.4, MUTPB: 0.1, NGEN: 300, I: 1
+Best solution cost: 5978.0
+CXPB: 0.4, MUTPB: 0.1, NGEN: 300, I: 2
+Best solution cost: 8151.0
+CXPB: 0.4, MUTPB: 0.2, NGEN: 200, I: 0
+Best solution cost: 6106.0
+CXPB: 0.4, MUTPB: 0.2, NGEN: 200, I: 1
+Best solution cost: 5979.0
+CXPB: 0.4, MUTPB: 0.2, NGEN: 200, I: 2
+Best solution cost: 5736.0
+CXPB: 0.4, MUTPB: 0.2, NGEN: 250, I: 0
+Best solution cost: 5372.0
+CXPB: 0.4, MUTPB: 0.2, NGEN: 250, I: 1
+Best solution cost: 5957.0
+CXPB: 0.4, MUTPB: 0.2, NGEN: 250, I: 2
+Best solution cost: 5942.0
+CXPB: 0.4, MUTPB: 0.2, NGEN: 300, I: 0
+Best solution cost: 7662.0
+CXPB: 0.4, MUTPB: 0.2, NGEN: 300, I: 1
+Best solution cost: 5291.0
+CXPB: 0.4, MUTPB: 0.2, NGEN: 300, I: 2
+Best solution cost: 5130.0
+CXPB: 0.4, MUTPB: 0.30000000000000004, NGEN: 200, I: 0
+Best solution cost: 3395.0
+CXPB: 0.4, MUTPB: 0.30000000000000004, NGEN: 200, I: 1
+Best solution cost: 3302.0
+CXPB: 0.4, MUTPB: 0.30000000000000004, NGEN: 200, I: 2
+Best solution cost: 6697.0
+CXPB: 0.4, MUTPB: 0.30000000000000004, NGEN: 250, I: 0
+Best solution cost: 3808.0
+CXPB: 0.4, MUTPB: 0.30000000000000004, NGEN: 250, I: 1
+Best solution cost: 4953.0
+CXPB: 0.4, MUTPB: 0.30000000000000004, NGEN: 250, I: 2
+Best solution cost: 5969.0
+CXPB: 0.4, MUTPB: 0.30000000000000004, NGEN: 300, I: 0
+Best solution cost: 7134.0
+CXPB: 0.4, MUTPB: 0.30000000000000004, NGEN: 300, I: 1
+Best solution cost: 5334.0
+CXPB: 0.4, MUTPB: 0.30000000000000004, NGEN: 300, I: 2
+Best solution cost: 4875.0
+CXPB: 0.4, MUTPB: 0.4, NGEN: 200, I: 0
+Best solution cost: 5221.0
+CXPB: 0.4, MUTPB: 0.4, NGEN: 200, I: 1
+Best solution cost: 3564.0
+CXPB: 0.4, MUTPB: 0.4, NGEN: 200, I: 2
+Best solution cost: 5273.0
+CXPB: 0.4, MUTPB: 0.4, NGEN: 250, I: 0
+Best solution cost: 5805.0
+CXPB: 0.4, MUTPB: 0.4, NGEN: 250, I: 1
+Best solution cost: 3625.0
+CXPB: 0.4, MUTPB: 0.4, NGEN: 250, I: 2
+Best solution cost: 5887.0
+CXPB: 0.4, MUTPB: 0.4, NGEN: 300, I: 0
+Best solution cost: 5088.0
+CXPB: 0.4, MUTPB: 0.4, NGEN: 300, I: 1
+Best solution cost: 5413.0
+CXPB: 0.4, MUTPB: 0.4, NGEN: 300, I: 2
+Best solution cost: 6818.0
+CXPB: 0.4, MUTPB: 0.5, NGEN: 200, I: 0
+Best solution cost: 5573.0
+CXPB: 0.4, MUTPB: 0.5, NGEN: 200, I: 1
+Best solution cost: 5260.0
+CXPB: 0.4, MUTPB: 0.5, NGEN: 200, I: 2
+Best solution cost: 3343.0
+CXPB: 0.4, MUTPB: 0.5, NGEN: 250, I: 0
+Best solution cost: 5706.0
+CXPB: 0.4, MUTPB: 0.5, NGEN: 250, I: 1
+Best solution cost: 5757.0
+CXPB: 0.4, MUTPB: 0.5, NGEN: 250, I: 2
+Best solution cost: 3596.0
+CXPB: 0.4, MUTPB: 0.5, NGEN: 300, I: 0
+Best solution cost: 5326.0
+CXPB: 0.4, MUTPB: 0.5, NGEN: 300, I: 1
+Best solution cost: 3470.0
+CXPB: 0.4, MUTPB: 0.5, NGEN: 300, I: 2
+Best solution cost: 4598.0
+CXPB: 0.4, MUTPB: 0.6, NGEN: 200, I: 0
+Best solution cost: 3924.0
+CXPB: 0.4, MUTPB: 0.6, NGEN: 200, I: 1
+Best solution cost: 5608.0
+CXPB: 0.4, MUTPB: 0.6, NGEN: 200, I: 2
+Best solution cost: 3385.0
+CXPB: 0.4, MUTPB: 0.6, NGEN: 250, I: 0
+Best solution cost: 5980.0
+CXPB: 0.4, MUTPB: 0.6, NGEN: 250, I: 1
+Best solution cost: 3755.0
+CXPB: 0.4, MUTPB: 0.6, NGEN: 250, I: 2
+Best solution cost: 4779.0
+CXPB: 0.4, MUTPB: 0.6, NGEN: 300, I: 0
+Best solution cost: 5022.0
+CXPB: 0.4, MUTPB: 0.6, NGEN: 300, I: 1
+Best solution cost: 5239.0
+CXPB: 0.4, MUTPB: 0.6, NGEN: 300, I: 2
+Best solution cost: 3604.0
+CXPB: 0.4, MUTPB: 0.7000000000000001, NGEN: 200, I: 0
+Best solution cost: 3371.0
+CXPB: 0.4, MUTPB: 0.7000000000000001, NGEN: 200, I: 1
+Best solution cost: 5541.0
+CXPB: 0.4, MUTPB: 0.7000000000000001, NGEN: 200, I: 2
+Best solution cost: 4972.0
+CXPB: 0.4, MUTPB: 0.7000000000000001, NGEN: 250, I: 0
+Best solution cost: 4678.0
+CXPB: 0.4, MUTPB: 0.7000000000000001, NGEN: 250, I: 1
+Best solution cost: 5585.0
+CXPB: 0.4, MUTPB: 0.7000000000000001, NGEN: 250, I: 2
+Best solution cost: 4843.0
+CXPB: 0.4, MUTPB: 0.7000000000000001, NGEN: 300, I: 0
+Best solution cost: 3326.0
+CXPB: 0.4, MUTPB: 0.7000000000000001, NGEN: 300, I: 1
+Best solution cost: 3385.0
+CXPB: 0.4, MUTPB: 0.7000000000000001, NGEN: 300, I: 2
+Best solution cost: 3215.0
+CXPB: 0.4, MUTPB: 0.8, NGEN: 200, I: 0
+Best solution cost: 5185.0
+CXPB: 0.4, MUTPB: 0.8, NGEN: 200, I: 1
+Best solution cost: 5262.0
+CXPB: 0.4, MUTPB: 0.8, NGEN: 200, I: 2
+Best solution cost: 4782.0
+CXPB: 0.4, MUTPB: 0.8, NGEN: 250, I: 0
+Best solution cost: 3614.0
+CXPB: 0.4, MUTPB: 0.8, NGEN: 250, I: 1
+Best solution cost: 3634.0
+CXPB: 0.4, MUTPB: 0.8, NGEN: 250, I: 2
+Best solution cost: 3079.0
+CXPB: 0.4, MUTPB: 0.8, NGEN: 300, I: 0
+Best solution cost: 3166.0
+CXPB: 0.4, MUTPB: 0.8, NGEN: 300, I: 1
+Best solution cost: 3944.0
+CXPB: 0.4, MUTPB: 0.8, NGEN: 300, I: 2
+Best solution cost: 3346.0
+CXPB: 0.4, MUTPB: 0.9, NGEN: 200, I: 0
+Best solution cost: 4885.0
+CXPB: 0.4, MUTPB: 0.9, NGEN: 200, I: 1
+Best solution cost: 6183.0
+CXPB: 0.4, MUTPB: 0.9, NGEN: 200, I: 2
+Best solution cost: 4071.0
+CXPB: 0.4, MUTPB: 0.9, NGEN: 250, I: 0
+Best solution cost: 6116.0
+CXPB: 0.4, MUTPB: 0.9, NGEN: 250, I: 1
+Best solution cost: 5459.0
+CXPB: 0.4, MUTPB: 0.9, NGEN: 250, I: 2
+Best solution cost: 4027.0
+CXPB: 0.4, MUTPB: 0.9, NGEN: 300, I: 0
+Best solution cost: 3855.0
+CXPB: 0.4, MUTPB: 0.9, NGEN: 300, I: 1
+Best solution cost: 5920.0
+CXPB: 0.4, MUTPB: 0.9, NGEN: 300, I: 2
+Best solution cost: 5738.0
+CXPB: 0.5, MUTPB: 0.1, NGEN: 200, I: 0
+Best solution cost: 8088.0
+CXPB: 0.5, MUTPB: 0.1, NGEN: 200, I: 1
+Best solution cost: 6022.0
+CXPB: 0.5, MUTPB: 0.1, NGEN: 200, I: 2
+Best solution cost: 6617.0
+CXPB: 0.5, MUTPB: 0.1, NGEN: 250, I: 0
+Best solution cost: 9016.0
+CXPB: 0.5, MUTPB: 0.1, NGEN: 250, I: 1
+Best solution cost: 8124.0
+CXPB: 0.5, MUTPB: 0.1, NGEN: 250, I: 2
+Best solution cost: 6474.0
+CXPB: 0.5, MUTPB: 0.1, NGEN: 300, I: 0
+Best solution cost: 6948.0
+CXPB: 0.5, MUTPB: 0.1, NGEN: 300, I: 1
+Best solution cost: 8257.0
+CXPB: 0.5, MUTPB: 0.1, NGEN: 300, I: 2
+Best solution cost: 5952.0
+CXPB: 0.5, MUTPB: 0.2, NGEN: 200, I: 0
+Best solution cost: 4618.0
+CXPB: 0.5, MUTPB: 0.2, NGEN: 200, I: 1
+Best solution cost: 6102.0
+CXPB: 0.5, MUTPB: 0.2, NGEN: 200, I: 2
+Best solution cost: 7171.0
+CXPB: 0.5, MUTPB: 0.2, NGEN: 250, I: 0
+Best solution cost: 6716.0
+CXPB: 0.5, MUTPB: 0.2, NGEN: 250, I: 1
+Best solution cost: 6149.0
+CXPB: 0.5, MUTPB: 0.2, NGEN: 250, I: 2
+Best solution cost: 4217.0
+CXPB: 0.5, MUTPB: 0.2, NGEN: 300, I: 0
+Best solution cost: 5054.0
+CXPB: 0.5, MUTPB: 0.2, NGEN: 300, I: 1
+Best solution cost: 7593.0
+CXPB: 0.5, MUTPB: 0.2, NGEN: 300, I: 2
+Best solution cost: 5770.0
+CXPB: 0.5, MUTPB: 0.30000000000000004, NGEN: 200, I: 0
+Best solution cost: 6450.0
+CXPB: 0.5, MUTPB: 0.30000000000000004, NGEN: 200, I: 1
+Best solution cost: 5887.0
+CXPB: 0.5, MUTPB: 0.30000000000000004, NGEN: 200, I: 2
+Best solution cost: 5910.0
+CXPB: 0.5, MUTPB: 0.30000000000000004, NGEN: 250, I: 0
+Best solution cost: 5436.0
+CXPB: 0.5, MUTPB: 0.30000000000000004, NGEN: 250, I: 1
+Best solution cost: 7006.0
+CXPB: 0.5, MUTPB: 0.30000000000000004, NGEN: 250, I: 2
+Best solution cost: 7242.0
+CXPB: 0.5, MUTPB: 0.30000000000000004, NGEN: 300, I: 0
+Best solution cost: 3326.0
+CXPB: 0.5, MUTPB: 0.30000000000000004, NGEN: 300, I: 1
+Best solution cost: 5879.0
+CXPB: 0.5, MUTPB: 0.30000000000000004, NGEN: 300, I: 2
+Best solution cost: 5498.0
+CXPB: 0.5, MUTPB: 0.4, NGEN: 200, I: 0
+Best solution cost: 6206.0
+CXPB: 0.5, MUTPB: 0.4, NGEN: 200, I: 1
+Best solution cost: 5673.0
+CXPB: 0.5, MUTPB: 0.4, NGEN: 200, I: 2
+Best solution cost: 5224.0
+CXPB: 0.5, MUTPB: 0.4, NGEN: 250, I: 0
+Best solution cost: 5760.0
+CXPB: 0.5, MUTPB: 0.4, NGEN: 250, I: 1
+Best solution cost: 5963.0
+CXPB: 0.5, MUTPB: 0.4, NGEN: 250, I: 2
+Best solution cost: 5522.0
+CXPB: 0.5, MUTPB: 0.4, NGEN: 300, I: 0
+Best solution cost: 3317.0
+CXPB: 0.5, MUTPB: 0.4, NGEN: 300, I: 1
+Best solution cost: 6481.0
+CXPB: 0.5, MUTPB: 0.4, NGEN: 300, I: 2
+Best solution cost: 5475.0
+CXPB: 0.5, MUTPB: 0.5, NGEN: 200, I: 0
+Best solution cost: 3627.0
+CXPB: 0.5, MUTPB: 0.5, NGEN: 200, I: 1
+Best solution cost: 3606.0
+CXPB: 0.5, MUTPB: 0.5, NGEN: 200, I: 2
+Best solution cost: 6287.0
+CXPB: 0.5, MUTPB: 0.5, NGEN: 250, I: 0
+Best solution cost: 5373.0
+CXPB: 0.5, MUTPB: 0.5, NGEN: 250, I: 1
+Best solution cost: 4714.0
+CXPB: 0.5, MUTPB: 0.5, NGEN: 250, I: 2
+Best solution cost: 3564.0
+CXPB: 0.5, MUTPB: 0.5, NGEN: 300, I: 0
+Best solution cost: 4677.0
+CXPB: 0.5, MUTPB: 0.5, NGEN: 300, I: 1
+Best solution cost: 4934.0
+CXPB: 0.5, MUTPB: 0.5, NGEN: 300, I: 2
+Best solution cost: 3524.0
+CXPB: 0.5, MUTPB: 0.6, NGEN: 200, I: 0
+Best solution cost: 3489.0
+CXPB: 0.5, MUTPB: 0.6, NGEN: 200, I: 1
+Best solution cost: 5258.0
+CXPB: 0.5, MUTPB: 0.6, NGEN: 200, I: 2
+Best solution cost: 4892.0
+CXPB: 0.5, MUTPB: 0.6, NGEN: 250, I: 0
+Best solution cost: 5373.0
+CXPB: 0.5, MUTPB: 0.6, NGEN: 250, I: 1
+Best solution cost: 5551.0
+CXPB: 0.5, MUTPB: 0.6, NGEN: 250, I: 2
+Best solution cost: 5326.0
+CXPB: 0.5, MUTPB: 0.6, NGEN: 300, I: 0
+Best solution cost: 3407.0
+CXPB: 0.5, MUTPB: 0.6, NGEN: 300, I: 1
+Best solution cost: 3721.0
+CXPB: 0.5, MUTPB: 0.6, NGEN: 300, I: 2
+Best solution cost: 5306.0
+CXPB: 0.5, MUTPB: 0.7000000000000001, NGEN: 200, I: 0
+Best solution cost: 4570.0
+CXPB: 0.5, MUTPB: 0.7000000000000001, NGEN: 200, I: 1
+Best solution cost: 5499.0
+CXPB: 0.5, MUTPB: 0.7000000000000001, NGEN: 200, I: 2
+Best solution cost: 3650.0
+CXPB: 0.5, MUTPB: 0.7000000000000001, NGEN: 250, I: 0
+Best solution cost: 3163.0
+CXPB: 0.5, MUTPB: 0.7000000000000001, NGEN: 250, I: 1
+Best solution cost: 5636.0
+CXPB: 0.5, MUTPB: 0.7000000000000001, NGEN: 250, I: 2
+Best solution cost: 3430.0
+CXPB: 0.5, MUTPB: 0.7000000000000001, NGEN: 300, I: 0
+Best solution cost: 5072.0
+CXPB: 0.5, MUTPB: 0.7000000000000001, NGEN: 300, I: 1
+Best solution cost: 2601.0
+CXPB: 0.5, MUTPB: 0.7000000000000001, NGEN: 300, I: 2
+Best solution cost: 5749.0
+CXPB: 0.5, MUTPB: 0.8, NGEN: 200, I: 0
+Best solution cost: 5115.0
+CXPB: 0.5, MUTPB: 0.8, NGEN: 200, I: 1
+Best solution cost: 5393.0
+CXPB: 0.5, MUTPB: 0.8, NGEN: 200, I: 2
+Best solution cost: 4871.0
+CXPB: 0.5, MUTPB: 0.8, NGEN: 250, I: 0
+Best solution cost: 3645.0
+CXPB: 0.5, MUTPB: 0.8, NGEN: 250, I: 1
+Best solution cost: 5030.0
+CXPB: 0.5, MUTPB: 0.8, NGEN: 250, I: 2
+Best solution cost: 3430.0
+CXPB: 0.5, MUTPB: 0.8, NGEN: 300, I: 0
+Best solution cost: 3627.0
+CXPB: 0.5, MUTPB: 0.8, NGEN: 300, I: 1
+Best solution cost: 3387.0
+CXPB: 0.5, MUTPB: 0.8, NGEN: 300, I: 2
+Best solution cost: 3816.0
+CXPB: 0.5, MUTPB: 0.9, NGEN: 200, I: 0
+Best solution cost: 3775.0
+CXPB: 0.5, MUTPB: 0.9, NGEN: 200, I: 1
+Best solution cost: 5660.0
+CXPB: 0.5, MUTPB: 0.9, NGEN: 200, I: 2
+Best solution cost: 5591.0
+CXPB: 0.5, MUTPB: 0.9, NGEN: 250, I: 0
+Best solution cost: 5627.0
+CXPB: 0.5, MUTPB: 0.9, NGEN: 250, I: 1
+Best solution cost: 4771.0
+CXPB: 0.5, MUTPB: 0.9, NGEN: 250, I: 2
+Best solution cost: 4156.0
+CXPB: 0.5, MUTPB: 0.9, NGEN: 300, I: 0
+Best solution cost: 4143.0
+CXPB: 0.5, MUTPB: 0.9, NGEN: 300, I: 1
+Best solution cost: 4992.0
+CXPB: 0.5, MUTPB: 0.9, NGEN: 300, I: 2
+Best solution cost: 3750.0
+CXPB: 0.6, MUTPB: 0.1, NGEN: 200, I: 0
+Best solution cost: 8005.0
+CXPB: 0.6, MUTPB: 0.1, NGEN: 200, I: 1
+Best solution cost: 5235.0
+CXPB: 0.6, MUTPB: 0.1, NGEN: 200, I: 2
+Best solution cost: 5927.0
+CXPB: 0.6, MUTPB: 0.1, NGEN: 250, I: 0
+Best solution cost: 6401.0
+CXPB: 0.6, MUTPB: 0.1, NGEN: 250, I: 1
+Best solution cost: 7870.0
+CXPB: 0.6, MUTPB: 0.1, NGEN: 250, I: 2
+Best solution cost: 7045.0
+CXPB: 0.6, MUTPB: 0.1, NGEN: 300, I: 0
+Best solution cost: 7576.0
+CXPB: 0.6, MUTPB: 0.1, NGEN: 300, I: 1
+Best solution cost: 7507.0
+CXPB: 0.6, MUTPB: 0.1, NGEN: 300, I: 2
+Best solution cost: 5451.0
+CXPB: 0.6, MUTPB: 0.2, NGEN: 200, I: 0
+Best solution cost: 5708.0
+CXPB: 0.6, MUTPB: 0.2, NGEN: 200, I: 1
+Best solution cost: 6011.0
+CXPB: 0.6, MUTPB: 0.2, NGEN: 200, I: 2
+Best solution cost: 6280.0
+CXPB: 0.6, MUTPB: 0.2, NGEN: 250, I: 0
+Best solution cost: 5489.0
+CXPB: 0.6, MUTPB: 0.2, NGEN: 250, I: 1
+Best solution cost: 4020.0
+CXPB: 0.6, MUTPB: 0.2, NGEN: 250, I: 2
+Best solution cost: 7847.0
+CXPB: 0.6, MUTPB: 0.2, NGEN: 300, I: 0
+Best solution cost: 5272.0
+CXPB: 0.6, MUTPB: 0.2, NGEN: 300, I: 1
+Best solution cost: 5943.0
+CXPB: 0.6, MUTPB: 0.2, NGEN: 300, I: 2
+Best solution cost: 6097.0
+CXPB: 0.6, MUTPB: 0.30000000000000004, NGEN: 200, I: 0
+Best solution cost: 5622.0
+CXPB: 0.6, MUTPB: 0.30000000000000004, NGEN: 200, I: 1
+Best solution cost: 6663.0
+CXPB: 0.6, MUTPB: 0.30000000000000004, NGEN: 200, I: 2
+Best solution cost: 4934.0
+CXPB: 0.6, MUTPB: 0.30000000000000004, NGEN: 250, I: 0
+Best solution cost: 7425.0
+CXPB: 0.6, MUTPB: 0.30000000000000004, NGEN: 250, I: 1
+Best solution cost: 3548.0
+CXPB: 0.6, MUTPB: 0.30000000000000004, NGEN: 250, I: 2
+Best solution cost: 7517.0
+CXPB: 0.6, MUTPB: 0.30000000000000004, NGEN: 300, I: 0
+Best solution cost: 4926.0
+CXPB: 0.6, MUTPB: 0.30000000000000004, NGEN: 300, I: 1
+Best solution cost: 3455.0
+CXPB: 0.6, MUTPB: 0.30000000000000004, NGEN: 300, I: 2
+Best solution cost: 7159.0
+CXPB: 0.6, MUTPB: 0.4, NGEN: 200, I: 0
+Best solution cost: 4062.0
+CXPB: 0.6, MUTPB: 0.4, NGEN: 200, I: 1
+Best solution cost: 5693.0
+CXPB: 0.6, MUTPB: 0.4, NGEN: 200, I: 2
+Best solution cost: 4625.0
+CXPB: 0.6, MUTPB: 0.4, NGEN: 250, I: 0
+Best solution cost: 5871.0
+CXPB: 0.6, MUTPB: 0.4, NGEN: 250, I: 1
+Best solution cost: 5114.0
+CXPB: 0.6, MUTPB: 0.4, NGEN: 250, I: 2
+Best solution cost: 5495.0
+CXPB: 0.6, MUTPB: 0.4, NGEN: 300, I: 0
+Best solution cost: 3642.0
+CXPB: 0.6, MUTPB: 0.4, NGEN: 300, I: 1
+Best solution cost: 4739.0
+CXPB: 0.6, MUTPB: 0.4, NGEN: 300, I: 2
+Best solution cost: 3675.0
+CXPB: 0.6, MUTPB: 0.5, NGEN: 200, I: 0
+Best solution cost: 3407.0
+CXPB: 0.6, MUTPB: 0.5, NGEN: 200, I: 1
+Best solution cost: 3910.0
+CXPB: 0.6, MUTPB: 0.5, NGEN: 200, I: 2
+Best solution cost: 3694.0
+CXPB: 0.6, MUTPB: 0.5, NGEN: 250, I: 0
+Best solution cost: 4734.0
+CXPB: 0.6, MUTPB: 0.5, NGEN: 250, I: 1
+Best solution cost: 5451.0
+CXPB: 0.6, MUTPB: 0.5, NGEN: 250, I: 2
+Best solution cost: 3788.0
+CXPB: 0.6, MUTPB: 0.5, NGEN: 300, I: 0
+Best solution cost: 4848.0
+CXPB: 0.6, MUTPB: 0.5, NGEN: 300, I: 1
+Best solution cost: 3937.0
+CXPB: 0.6, MUTPB: 0.5, NGEN: 300, I: 2
+Best solution cost: 5872.0
+CXPB: 0.6, MUTPB: 0.6, NGEN: 200, I: 0
+Best solution cost: 5108.0
+CXPB: 0.6, MUTPB: 0.6, NGEN: 200, I: 1
+Best solution cost: 4850.0
+CXPB: 0.6, MUTPB: 0.6, NGEN: 200, I: 2
+Best solution cost: 4573.0
+CXPB: 0.6, MUTPB: 0.6, NGEN: 250, I: 0
+Best solution cost: 4800.0
+CXPB: 0.6, MUTPB: 0.6, NGEN: 250, I: 1
+Best solution cost: 3363.0
+CXPB: 0.6, MUTPB: 0.6, NGEN: 250, I: 2
+Best solution cost: 5110.0
+CXPB: 0.6, MUTPB: 0.6, NGEN: 300, I: 0
+Best solution cost: 3565.0
+CXPB: 0.6, MUTPB: 0.6, NGEN: 300, I: 1
+Best solution cost: 4986.0
+CXPB: 0.6, MUTPB: 0.6, NGEN: 300, I: 2
+Best solution cost: 4519.0
+CXPB: 0.6, MUTPB: 0.7000000000000001, NGEN: 200, I: 0
+Best solution cost: 5676.0
+CXPB: 0.6, MUTPB: 0.7000000000000001, NGEN: 200, I: 1
+Best solution cost: 5616.0
+CXPB: 0.6, MUTPB: 0.7000000000000001, NGEN: 200, I: 2
+Best solution cost: 5583.0
+CXPB: 0.6, MUTPB: 0.7000000000000001, NGEN: 250, I: 0
+Best solution cost: 3494.0
+CXPB: 0.6, MUTPB: 0.7000000000000001, NGEN: 250, I: 1
+Best solution cost: 5190.0
+CXPB: 0.6, MUTPB: 0.7000000000000001, NGEN: 250, I: 2
+Best solution cost: 5467.0
+CXPB: 0.6, MUTPB: 0.7000000000000001, NGEN: 300, I: 0
+Best solution cost: 5441.0
+CXPB: 0.6, MUTPB: 0.7000000000000001, NGEN: 300, I: 1
+Best solution cost: 5001.0
+CXPB: 0.6, MUTPB: 0.7000000000000001, NGEN: 300, I: 2
+Best solution cost: 3176.0
+CXPB: 0.6, MUTPB: 0.8, NGEN: 200, I: 0
+Best solution cost: 3329.0
+CXPB: 0.6, MUTPB: 0.8, NGEN: 200, I: 1
+Best solution cost: 3405.0
+CXPB: 0.6, MUTPB: 0.8, NGEN: 200, I: 2
+Best solution cost: 3715.0
+CXPB: 0.6, MUTPB: 0.8, NGEN: 250, I: 0
+Best solution cost: 3621.0
+CXPB: 0.6, MUTPB: 0.8, NGEN: 250, I: 1
+Best solution cost: 3862.0
+CXPB: 0.6, MUTPB: 0.8, NGEN: 250, I: 2
+Best solution cost: 3513.0
+CXPB: 0.6, MUTPB: 0.8, NGEN: 300, I: 0
+Best solution cost: 3259.0
+CXPB: 0.6, MUTPB: 0.8, NGEN: 300, I: 1
+Best solution cost: 3404.0
+CXPB: 0.6, MUTPB: 0.8, NGEN: 300, I: 2
+Best solution cost: 3278.0
+CXPB: 0.6, MUTPB: 0.9, NGEN: 200, I: 0
+Best solution cost: 5288.0
+CXPB: 0.6, MUTPB: 0.9, NGEN: 200, I: 1
+Best solution cost: 3821.0
+CXPB: 0.6, MUTPB: 0.9, NGEN: 200, I: 2
+Best solution cost: 3793.0
+CXPB: 0.6, MUTPB: 0.9, NGEN: 250, I: 0
+Best solution cost: 3639.0
+CXPB: 0.6, MUTPB: 0.9, NGEN: 250, I: 1
+Best solution cost: 4147.0
+CXPB: 0.6, MUTPB: 0.9, NGEN: 250, I: 2
+Best solution cost: 4456.0
+CXPB: 0.6, MUTPB: 0.9, NGEN: 300, I: 0
+Best solution cost: 5088.0
+CXPB: 0.6, MUTPB: 0.9, NGEN: 300, I: 1
+Best solution cost: 5719.0
+CXPB: 0.6, MUTPB: 0.9, NGEN: 300, I: 2
+Best solution cost: 5314.0
+CXPB: 0.7000000000000001, MUTPB: 0.1, NGEN: 200, I: 0
+Best solution cost: 7407.0
+CXPB: 0.7000000000000001, MUTPB: 0.1, NGEN: 200, I: 1
+Best solution cost: 6612.0
+CXPB: 0.7000000000000001, MUTPB: 0.1, NGEN: 200, I: 2
+Best solution cost: 5311.0
+CXPB: 0.7000000000000001, MUTPB: 0.1, NGEN: 250, I: 0
+Best solution cost: 5814.0
+CXPB: 0.7000000000000001, MUTPB: 0.1, NGEN: 250, I: 1
+Best solution cost: 6600.0
+CXPB: 0.7000000000000001, MUTPB: 0.1, NGEN: 250, I: 2
+Best solution cost: 6617.0
+CXPB: 0.7000000000000001, MUTPB: 0.1, NGEN: 300, I: 0
+Best solution cost: 8526.0
+CXPB: 0.7000000000000001, MUTPB: 0.1, NGEN: 300, I: 1
+Best solution cost: 6005.0
+CXPB: 0.7000000000000001, MUTPB: 0.1, NGEN: 300, I: 2
+Best solution cost: 7493.0
+CXPB: 0.7000000000000001, MUTPB: 0.2, NGEN: 200, I: 0
+Best solution cost: 7277.0
+CXPB: 0.7000000000000001, MUTPB: 0.2, NGEN: 200, I: 1
+Best solution cost: 4082.0
+CXPB: 0.7000000000000001, MUTPB: 0.2, NGEN: 200, I: 2
+Best solution cost: 4220.0
+CXPB: 0.7000000000000001, MUTPB: 0.2, NGEN: 250, I: 0
+Best solution cost: 6541.0
+CXPB: 0.7000000000000001, MUTPB: 0.2, NGEN: 250, I: 1
+Best solution cost: 5332.0
+CXPB: 0.7000000000000001, MUTPB: 0.2, NGEN: 250, I: 2
+Best solution cost: 5480.0
+CXPB: 0.7000000000000001, MUTPB: 0.2, NGEN: 300, I: 0
+Best solution cost: 7548.0
+CXPB: 0.7000000000000001, MUTPB: 0.2, NGEN: 300, I: 1
+Best solution cost: 5089.0
+CXPB: 0.7000000000000001, MUTPB: 0.2, NGEN: 300, I: 2
+Best solution cost: 3731.0
+CXPB: 0.7000000000000001, MUTPB: 0.30000000000000004, NGEN: 200, I: 0
+Best solution cost: 5393.0
+CXPB: 0.7000000000000001, MUTPB: 0.30000000000000004, NGEN: 200, I: 1
+Best solution cost: 5711.0
+CXPB: 0.7000000000000001, MUTPB: 0.30000000000000004, NGEN: 200, I: 2
+Best solution cost: 6802.0
+CXPB: 0.7000000000000001, MUTPB: 0.30000000000000004, NGEN: 250, I: 0
+Best solution cost: 4920.0
+CXPB: 0.7000000000000001, MUTPB: 0.30000000000000004, NGEN: 250, I: 1
+Best solution cost: 5653.0
+CXPB: 0.7000000000000001, MUTPB: 0.30000000000000004, NGEN: 250, I: 2
+Best solution cost: 5323.0
+CXPB: 0.7000000000000001, MUTPB: 0.30000000000000004, NGEN: 300, I: 0
+Best solution cost: 5647.0
+CXPB: 0.7000000000000001, MUTPB: 0.30000000000000004, NGEN: 300, I: 1
+Best solution cost: 3524.0
+CXPB: 0.7000000000000001, MUTPB: 0.30000000000000004, NGEN: 300, I: 2
+Best solution cost: 3494.0
+CXPB: 0.7000000000000001, MUTPB: 0.4, NGEN: 200, I: 0
+Best solution cost: 5855.0
+CXPB: 0.7000000000000001, MUTPB: 0.4, NGEN: 200, I: 1
+Best solution cost: 3639.0
+CXPB: 0.7000000000000001, MUTPB: 0.4, NGEN: 200, I: 2
+Best solution cost: 5724.0
+CXPB: 0.7000000000000001, MUTPB: 0.4, NGEN: 250, I: 0
+Best solution cost: 5167.0
+CXPB: 0.7000000000000001, MUTPB: 0.4, NGEN: 250, I: 1
+Best solution cost: 5292.0
+CXPB: 0.7000000000000001, MUTPB: 0.4, NGEN: 250, I: 2
+Best solution cost: 3312.0
+CXPB: 0.7000000000000001, MUTPB: 0.4, NGEN: 300, I: 0
+Best solution cost: 5850.0
+CXPB: 0.7000000000000001, MUTPB: 0.4, NGEN: 300, I: 1
+Best solution cost: 3385.0
+CXPB: 0.7000000000000001, MUTPB: 0.4, NGEN: 300, I: 2
+Best solution cost: 5154.0
+CXPB: 0.7000000000000001, MUTPB: 0.5, NGEN: 200, I: 0
+Best solution cost: 3677.0
+CXPB: 0.7000000000000001, MUTPB: 0.5, NGEN: 200, I: 1
+Best solution cost: 5380.0
+CXPB: 0.7000000000000001, MUTPB: 0.5, NGEN: 200, I: 2
+Best solution cost: 4909.0
+CXPB: 0.7000000000000001, MUTPB: 0.5, NGEN: 250, I: 0
+Best solution cost: 3410.0
+CXPB: 0.7000000000000001, MUTPB: 0.5, NGEN: 250, I: 1
+Best solution cost: 3477.0
+CXPB: 0.7000000000000001, MUTPB: 0.5, NGEN: 250, I: 2
+Best solution cost: 4116.0
+CXPB: 0.7000000000000001, MUTPB: 0.5, NGEN: 300, I: 0
+Best solution cost: 5020.0
+CXPB: 0.7000000000000001, MUTPB: 0.5, NGEN: 300, I: 1
+Best solution cost: 4313.0
+CXPB: 0.7000000000000001, MUTPB: 0.5, NGEN: 300, I: 2
+Best solution cost: 4574.0
+CXPB: 0.7000000000000001, MUTPB: 0.6, NGEN: 200, I: 0
+Best solution cost: 4823.0
+CXPB: 0.7000000000000001, MUTPB: 0.6, NGEN: 200, I: 1
+Best solution cost: 3363.0
+CXPB: 0.7000000000000001, MUTPB: 0.6, NGEN: 200, I: 2
+Best solution cost: 3720.0
+CXPB: 0.7000000000000001, MUTPB: 0.6, NGEN: 250, I: 0
+Best solution cost: 3361.0
+CXPB: 0.7000000000000001, MUTPB: 0.6, NGEN: 250, I: 1
+Best solution cost: 5592.0
+CXPB: 0.7000000000000001, MUTPB: 0.6, NGEN: 250, I: 2
+Best solution cost: 4912.0
+CXPB: 0.7000000000000001, MUTPB: 0.6, NGEN: 300, I: 0
+Best solution cost: 3284.0
+CXPB: 0.7000000000000001, MUTPB: 0.6, NGEN: 300, I: 1
+Best solution cost: 5477.0
+CXPB: 0.7000000000000001, MUTPB: 0.6, NGEN: 300, I: 2
+Best solution cost: 3122.0
+CXPB: 0.7000000000000001, MUTPB: 0.7000000000000001, NGEN: 200, I: 0
+Best solution cost: 3762.0
+CXPB: 0.7000000000000001, MUTPB: 0.7000000000000001, NGEN: 200, I: 1
+Best solution cost: 5641.0
+CXPB: 0.7000000000000001, MUTPB: 0.7000000000000001, NGEN: 200, I: 2
+Best solution cost: 3417.0
+CXPB: 0.7000000000000001, MUTPB: 0.7000000000000001, NGEN: 250, I: 0
+Best solution cost: 3485.0
+CXPB: 0.7000000000000001, MUTPB: 0.7000000000000001, NGEN: 250, I: 1
+Best solution cost: 3385.0
+CXPB: 0.7000000000000001, MUTPB: 0.7000000000000001, NGEN: 250, I: 2
+Best solution cost: 5088.0
+CXPB: 0.7000000000000001, MUTPB: 0.7000000000000001, NGEN: 300, I: 0
+Best solution cost: 4500.0
+CXPB: 0.7000000000000001, MUTPB: 0.7000000000000001, NGEN: 300, I: 1
+Best solution cost: 3444.0
+CXPB: 0.7000000000000001, MUTPB: 0.7000000000000001, NGEN: 300, I: 2
+Best solution cost: 3089.0
+CXPB: 0.7000000000000001, MUTPB: 0.8, NGEN: 200, I: 0
+Best solution cost: 3464.0
+CXPB: 0.7000000000000001, MUTPB: 0.8, NGEN: 200, I: 1
+Best solution cost: 5814.0
+CXPB: 0.7000000000000001, MUTPB: 0.8, NGEN: 200, I: 2
+Best solution cost: 3505.0
+CXPB: 0.7000000000000001, MUTPB: 0.8, NGEN: 250, I: 0
+Best solution cost: 3133.0
+CXPB: 0.7000000000000001, MUTPB: 0.8, NGEN: 250, I: 1
+Best solution cost: 3236.0
+CXPB: 0.7000000000000001, MUTPB: 0.8, NGEN: 250, I: 2
+Best solution cost: 1324.0
+CXPB: 0.7000000000000001, MUTPB: 0.8, NGEN: 300, I: 0
+Best solution cost: 3191.0
+CXPB: 0.7000000000000001, MUTPB: 0.8, NGEN: 300, I: 1
+Best solution cost: 3236.0
+CXPB: 0.7000000000000001, MUTPB: 0.8, NGEN: 300, I: 2
+Best solution cost: 3934.0
+CXPB: 0.7000000000000001, MUTPB: 0.9, NGEN: 200, I: 0
+Best solution cost: 4964.0
+CXPB: 0.7000000000000001, MUTPB: 0.9, NGEN: 200, I: 1
+Best solution cost: 4074.0
+CXPB: 0.7000000000000001, MUTPB: 0.9, NGEN: 200, I: 2
+Best solution cost: 5339.0
+CXPB: 0.7000000000000001, MUTPB: 0.9, NGEN: 250, I: 0
+Best solution cost: 5471.0
+CXPB: 0.7000000000000001, MUTPB: 0.9, NGEN: 250, I: 1
+Best solution cost: 3639.0
+CXPB: 0.7000000000000001, MUTPB: 0.9, NGEN: 250, I: 2
+Best solution cost: 5770.0
+CXPB: 0.7000000000000001, MUTPB: 0.9, NGEN: 300, I: 0
+Best solution cost: 4365.0
+CXPB: 0.7000000000000001, MUTPB: 0.9, NGEN: 300, I: 1
+Best solution cost: 3839.0
+CXPB: 0.7000000000000001, MUTPB: 0.9, NGEN: 300, I: 2
+Best solution cost: 3527.0
+CXPB: 0.8, MUTPB: 0.1, NGEN: 200, I: 0
+Best solution cost: 6962.0
+CXPB: 0.8, MUTPB: 0.1, NGEN: 200, I: 1
+Best solution cost: 6183.0
+CXPB: 0.8, MUTPB: 0.1, NGEN: 200, I: 2
+Best solution cost: 6489.0
+CXPB: 0.8, MUTPB: 0.1, NGEN: 250, I: 0
+Best solution cost: 6260.0
+CXPB: 0.8, MUTPB: 0.1, NGEN: 250, I: 1
+Best solution cost: 7771.0
+CXPB: 0.8, MUTPB: 0.1, NGEN: 250, I: 2
+Best solution cost: 6079.0
+CXPB: 0.8, MUTPB: 0.1, NGEN: 300, I: 0
+Best solution cost: 6080.0
+CXPB: 0.8, MUTPB: 0.1, NGEN: 300, I: 1
+Best solution cost: 6598.0
+CXPB: 0.8, MUTPB: 0.1, NGEN: 300, I: 2
+Best solution cost: 7836.0
+CXPB: 0.8, MUTPB: 0.2, NGEN: 200, I: 0
+Best solution cost: 5952.0
+CXPB: 0.8, MUTPB: 0.2, NGEN: 200, I: 1
+Best solution cost: 5658.0
+CXPB: 0.8, MUTPB: 0.2, NGEN: 200, I: 2
+Best solution cost: 7067.0
+CXPB: 0.8, MUTPB: 0.2, NGEN: 250, I: 0
+Best solution cost: 6523.0
+CXPB: 0.8, MUTPB: 0.2, NGEN: 250, I: 1
+Best solution cost: 7907.0
+CXPB: 0.8, MUTPB: 0.2, NGEN: 250, I: 2
+Best solution cost: 5794.0
+CXPB: 0.8, MUTPB: 0.2, NGEN: 300, I: 0
+Best solution cost: 5834.0
+CXPB: 0.8, MUTPB: 0.2, NGEN: 300, I: 1
+Best solution cost: 3724.0
+CXPB: 0.8, MUTPB: 0.2, NGEN: 300, I: 2
+Best solution cost: 5912.0
+CXPB: 0.8, MUTPB: 0.30000000000000004, NGEN: 200, I: 0
+Best solution cost: 5317.0
+CXPB: 0.8, MUTPB: 0.30000000000000004, NGEN: 200, I: 1
+Best solution cost: 7320.0
+CXPB: 0.8, MUTPB: 0.30000000000000004, NGEN: 200, I: 2
+Best solution cost: 5582.0
+CXPB: 0.8, MUTPB: 0.30000000000000004, NGEN: 250, I: 0
+Best solution cost: 6430.0
+CXPB: 0.8, MUTPB: 0.30000000000000004, NGEN: 250, I: 1
+Best solution cost: 8397.0
+CXPB: 0.8, MUTPB: 0.30000000000000004, NGEN: 250, I: 2
+Best solution cost: 7879.0
+CXPB: 0.8, MUTPB: 0.30000000000000004, NGEN: 300, I: 0
+Best solution cost: 5803.0
+CXPB: 0.8, MUTPB: 0.30000000000000004, NGEN: 300, I: 1
+Best solution cost: 3537.0
+CXPB: 0.8, MUTPB: 0.30000000000000004, NGEN: 300, I: 2
+Best solution cost: 5688.0
+CXPB: 0.8, MUTPB: 0.4, NGEN: 200, I: 0
+Best solution cost: 5854.0
+CXPB: 0.8, MUTPB: 0.4, NGEN: 200, I: 1
+Best solution cost: 3549.0
+CXPB: 0.8, MUTPB: 0.4, NGEN: 200, I: 2
+Best solution cost: 5181.0
+CXPB: 0.8, MUTPB: 0.4, NGEN: 250, I: 0
+Best solution cost: 5154.0
+CXPB: 0.8, MUTPB: 0.4, NGEN: 250, I: 1
+Best solution cost: 3519.0
+CXPB: 0.8, MUTPB: 0.4, NGEN: 250, I: 2
+Best solution cost: 4543.0
+CXPB: 0.8, MUTPB: 0.4, NGEN: 300, I: 0
+Best solution cost: 3489.0
+CXPB: 0.8, MUTPB: 0.4, NGEN: 300, I: 1
+Best solution cost: 5848.0
+CXPB: 0.8, MUTPB: 0.4, NGEN: 300, I: 2
+Best solution cost: 3492.0
+CXPB: 0.8, MUTPB: 0.5, NGEN: 200, I: 0
+Best solution cost: 5572.0
+CXPB: 0.8, MUTPB: 0.5, NGEN: 200, I: 1
+Best solution cost: 3321.0
+CXPB: 0.8, MUTPB: 0.5, NGEN: 200, I: 2
+Best solution cost: 5668.0
+CXPB: 0.8, MUTPB: 0.5, NGEN: 250, I: 0
+Best solution cost: 5149.0
+CXPB: 0.8, MUTPB: 0.5, NGEN: 250, I: 1
+Best solution cost: 3510.0
+CXPB: 0.8, MUTPB: 0.5, NGEN: 250, I: 2
+Best solution cost: 5157.0
+CXPB: 0.8, MUTPB: 0.5, NGEN: 300, I: 0
+Best solution cost: 4010.0
+CXPB: 0.8, MUTPB: 0.5, NGEN: 300, I: 1
+Best solution cost: 5075.0
+CXPB: 0.8, MUTPB: 0.5, NGEN: 300, I: 2
+Best solution cost: 5535.0
+CXPB: 0.8, MUTPB: 0.6, NGEN: 200, I: 0
+Best solution cost: 5899.0
+CXPB: 0.8, MUTPB: 0.6, NGEN: 200, I: 1
+Best solution cost: 5497.0
+CXPB: 0.8, MUTPB: 0.6, NGEN: 200, I: 2
+Best solution cost: 6000.0
+CXPB: 0.8, MUTPB: 0.6, NGEN: 250, I: 0
+Best solution cost: 3582.0
+CXPB: 0.8, MUTPB: 0.6, NGEN: 250, I: 1
+Best solution cost: 2984.0
+CXPB: 0.8, MUTPB: 0.6, NGEN: 250, I: 2
+Best solution cost: 3747.0
+CXPB: 0.8, MUTPB: 0.6, NGEN: 300, I: 0
+Best solution cost: 5630.0
+CXPB: 0.8, MUTPB: 0.6, NGEN: 300, I: 1
+Best solution cost: 4553.0
+CXPB: 0.8, MUTPB: 0.6, NGEN: 300, I: 2
+Best solution cost: 3413.0
+CXPB: 0.8, MUTPB: 0.7000000000000001, NGEN: 200, I: 0
+Best solution cost: 3393.0
+CXPB: 0.8, MUTPB: 0.7000000000000001, NGEN: 200, I: 1
+Best solution cost: 5547.0
+CXPB: 0.8, MUTPB: 0.7000000000000001, NGEN: 200, I: 2
+Best solution cost: 3716.0
+CXPB: 0.8, MUTPB: 0.7000000000000001, NGEN: 250, I: 0
+Best solution cost: 5638.0
+CXPB: 0.8, MUTPB: 0.7000000000000001, NGEN: 250, I: 1
+Best solution cost: 5248.0
+CXPB: 0.8, MUTPB: 0.7000000000000001, NGEN: 250, I: 2
+Best solution cost: 6856.0
+CXPB: 0.8, MUTPB: 0.7000000000000001, NGEN: 300, I: 0
+Best solution cost: 3391.0
+CXPB: 0.8, MUTPB: 0.7000000000000001, NGEN: 300, I: 1
+Best solution cost: 5128.0
+CXPB: 0.8, MUTPB: 0.7000000000000001, NGEN: 300, I: 2
+Best solution cost: 3425.0
+CXPB: 0.8, MUTPB: 0.8, NGEN: 200, I: 0
+Best solution cost: 4694.0
+CXPB: 0.8, MUTPB: 0.8, NGEN: 200, I: 1
+Best solution cost: 3855.0
+CXPB: 0.8, MUTPB: 0.8, NGEN: 200, I: 2
+Best solution cost: 3028.0
+CXPB: 0.8, MUTPB: 0.8, NGEN: 250, I: 0
+Best solution cost: 3447.0
+CXPB: 0.8, MUTPB: 0.8, NGEN: 250, I: 1
+Best solution cost: 2982.0
+CXPB: 0.8, MUTPB: 0.8, NGEN: 250, I: 2
+Best solution cost: 4454.0
+CXPB: 0.8, MUTPB: 0.8, NGEN: 300, I: 0
+Best solution cost: 3353.0
+CXPB: 0.8, MUTPB: 0.8, NGEN: 300, I: 1
+Best solution cost: 3317.0
+CXPB: 0.8, MUTPB: 0.8, NGEN: 300, I: 2
+Best solution cost: 3635.0
+CXPB: 0.8, MUTPB: 0.9, NGEN: 200, I: 0
+Best solution cost: 5473.0
+CXPB: 0.8, MUTPB: 0.9, NGEN: 200, I: 1
+Best solution cost: 3994.0
+CXPB: 0.8, MUTPB: 0.9, NGEN: 200, I: 2
+Best solution cost: 5999.0
+CXPB: 0.8, MUTPB: 0.9, NGEN: 250, I: 0
+Best solution cost: 5694.0
+CXPB: 0.8, MUTPB: 0.9, NGEN: 250, I: 1
+Best solution cost: 4135.0
+CXPB: 0.8, MUTPB: 0.9, NGEN: 250, I: 2
+Best solution cost: 3921.0
+CXPB: 0.8, MUTPB: 0.9, NGEN: 300, I: 0
+Best solution cost: 3546.0
+CXPB: 0.8, MUTPB: 0.9, NGEN: 300, I: 1
+Best solution cost: 3675.0
+CXPB: 0.8, MUTPB: 0.9, NGEN: 300, I: 2
+Best solution cost: 3762.0
+CXPB: 0.9, MUTPB: 0.1, NGEN: 200, I: 0
+Best solution cost: 5996.0
+CXPB: 0.9, MUTPB: 0.1, NGEN: 200, I: 1
+Best solution cost: 6852.0
+CXPB: 0.9, MUTPB: 0.1, NGEN: 200, I: 2
+Best solution cost: 8692.0
+CXPB: 0.9, MUTPB: 0.1, NGEN: 250, I: 0
+Best solution cost: 7157.0
+CXPB: 0.9, MUTPB: 0.1, NGEN: 250, I: 1
+Best solution cost: 7351.0
+CXPB: 0.9, MUTPB: 0.1, NGEN: 250, I: 2
+Best solution cost: 7308.0
+CXPB: 0.9, MUTPB: 0.1, NGEN: 300, I: 0
+Best solution cost: 3672.0
+CXPB: 0.9, MUTPB: 0.1, NGEN: 300, I: 1
+Best solution cost: 6346.0
+CXPB: 0.9, MUTPB: 0.1, NGEN: 300, I: 2
+Best solution cost: 5913.0
+CXPB: 0.9, MUTPB: 0.2, NGEN: 200, I: 0
+Best solution cost: 7166.0
+CXPB: 0.9, MUTPB: 0.2, NGEN: 200, I: 1
+Best solution cost: 5881.0
+CXPB: 0.9, MUTPB: 0.2, NGEN: 200, I: 2
+Best solution cost: 6598.0
+CXPB: 0.9, MUTPB: 0.2, NGEN: 250, I: 0
+Best solution cost: 5893.0
+CXPB: 0.9, MUTPB: 0.2, NGEN: 250, I: 1
+Best solution cost: 7473.0
+CXPB: 0.9, MUTPB: 0.2, NGEN: 250, I: 2
+Best solution cost: 5837.0
+CXPB: 0.9, MUTPB: 0.2, NGEN: 300, I: 0
+Best solution cost: 7232.0
+CXPB: 0.9, MUTPB: 0.2, NGEN: 300, I: 1
+Best solution cost: 5744.0
+CXPB: 0.9, MUTPB: 0.2, NGEN: 300, I: 2
+Best solution cost: 6894.0
+CXPB: 0.9, MUTPB: 0.30000000000000004, NGEN: 200, I: 0
+Best solution cost: 4452.0
+CXPB: 0.9, MUTPB: 0.30000000000000004, NGEN: 200, I: 1
+Best solution cost: 4938.0
+CXPB: 0.9, MUTPB: 0.30000000000000004, NGEN: 200, I: 2
+Best solution cost: 5491.0
+CXPB: 0.9, MUTPB: 0.30000000000000004, NGEN: 250, I: 0
+Best solution cost: 5501.0
+CXPB: 0.9, MUTPB: 0.30000000000000004, NGEN: 250, I: 1
+Best solution cost: 5893.0
+CXPB: 0.9, MUTPB: 0.30000000000000004, NGEN: 250, I: 2
+Best solution cost: 5561.0
+CXPB: 0.9, MUTPB: 0.30000000000000004, NGEN: 300, I: 0
+Best solution cost: 3700.0
+CXPB: 0.9, MUTPB: 0.30000000000000004, NGEN: 300, I: 1
+Best solution cost: 5803.0
+CXPB: 0.9, MUTPB: 0.30000000000000004, NGEN: 300, I: 2
+Best solution cost: 5167.0
+CXPB: 0.9, MUTPB: 0.4, NGEN: 200, I: 0
+Best solution cost: 5983.0
+CXPB: 0.9, MUTPB: 0.4, NGEN: 200, I: 1
+Best solution cost: 5252.0
+CXPB: 0.9, MUTPB: 0.4, NGEN: 200, I: 2
+Best solution cost: 4775.0
+CXPB: 0.9, MUTPB: 0.4, NGEN: 250, I: 0
+Best solution cost: 3511.0
+CXPB: 0.9, MUTPB: 0.4, NGEN: 250, I: 1
+Best solution cost: 3044.0
+CXPB: 0.9, MUTPB: 0.4, NGEN: 250, I: 2
+Best solution cost: 4500.0
+CXPB: 0.9, MUTPB: 0.4, NGEN: 300, I: 0
+Best solution cost: 5330.0
+CXPB: 0.9, MUTPB: 0.4, NGEN: 300, I: 1
+Best solution cost: 3495.0
+CXPB: 0.9, MUTPB: 0.4, NGEN: 300, I: 2
+Best solution cost: 3607.0
+CXPB: 0.9, MUTPB: 0.5, NGEN: 200, I: 0
+Best solution cost: 5081.0
+CXPB: 0.9, MUTPB: 0.5, NGEN: 200, I: 1
+Best solution cost: 5592.0
+CXPB: 0.9, MUTPB: 0.5, NGEN: 200, I: 2
+Best solution cost: 5565.0
+CXPB: 0.9, MUTPB: 0.5, NGEN: 250, I: 0
+Best solution cost: 3382.0
+CXPB: 0.9, MUTPB: 0.5, NGEN: 250, I: 1
+Best solution cost: 3681.0
+CXPB: 0.9, MUTPB: 0.5, NGEN: 250, I: 2
+Best solution cost: 5441.0
+CXPB: 0.9, MUTPB: 0.5, NGEN: 300, I: 0
+Best solution cost: 5165.0
+CXPB: 0.9, MUTPB: 0.5, NGEN: 300, I: 1
+Best solution cost: 5004.0
+CXPB: 0.9, MUTPB: 0.5, NGEN: 300, I: 2
+Best solution cost: 3655.0
+CXPB: 0.9, MUTPB: 0.6, NGEN: 200, I: 0
+Best solution cost: 3501.0
+CXPB: 0.9, MUTPB: 0.6, NGEN: 200, I: 1
+Best solution cost: 5581.0
+CXPB: 0.9, MUTPB: 0.6, NGEN: 200, I: 2
+Best solution cost: 5370.0
+CXPB: 0.9, MUTPB: 0.6, NGEN: 250, I: 0
+Best solution cost: 3846.0
+CXPB: 0.9, MUTPB: 0.6, NGEN: 250, I: 1
+Best solution cost: 3346.0
+CXPB: 0.9, MUTPB: 0.6, NGEN: 250, I: 2
+Best solution cost: 5565.0
+CXPB: 0.9, MUTPB: 0.6, NGEN: 300, I: 0
+Best solution cost: 3704.0
+CXPB: 0.9, MUTPB: 0.6, NGEN: 300, I: 1
+Best solution cost: 3865.0
+CXPB: 0.9, MUTPB: 0.6, NGEN: 300, I: 2
+Best solution cost: 5191.0
+CXPB: 0.9, MUTPB: 0.7000000000000001, NGEN: 200, I: 0
+Best solution cost: 5591.0
+CXPB: 0.9, MUTPB: 0.7000000000000001, NGEN: 200, I: 1
+Best solution cost: 5305.0
+CXPB: 0.9, MUTPB: 0.7000000000000001, NGEN: 200, I: 2
+Best solution cost: 5165.0
+CXPB: 0.9, MUTPB: 0.7000000000000001, NGEN: 250, I: 0
+Best solution cost: 3442.0
+CXPB: 0.9, MUTPB: 0.7000000000000001, NGEN: 250, I: 1
+Best solution cost: 4804.0
+CXPB: 0.9, MUTPB: 0.7000000000000001, NGEN: 250, I: 2
+Best solution cost: 3830.0
+CXPB: 0.9, MUTPB: 0.7000000000000001, NGEN: 300, I: 0
+Best solution cost: 3079.0
+CXPB: 0.9, MUTPB: 0.7000000000000001, NGEN: 300, I: 1
+Best solution cost: 3215.0
+CXPB: 0.9, MUTPB: 0.7000000000000001, NGEN: 300, I: 2
+Best solution cost: 3643.0
+CXPB: 0.9, MUTPB: 0.8, NGEN: 200, I: 0
+Best solution cost: 4446.0
+CXPB: 0.9, MUTPB: 0.8, NGEN: 200, I: 1
+Best solution cost: 3948.0
+CXPB: 0.9, MUTPB: 0.8, NGEN: 200, I: 2
+Best solution cost: 3517.0
+CXPB: 0.9, MUTPB: 0.8, NGEN: 250, I: 0
+Best solution cost: 3293.0
+CXPB: 0.9, MUTPB: 0.8, NGEN: 250, I: 1
+Best solution cost: 5260.0
+CXPB: 0.9, MUTPB: 0.8, NGEN: 250, I: 2
+Best solution cost: 3306.0
+CXPB: 0.9, MUTPB: 0.8, NGEN: 300, I: 0
+Best solution cost: 4598.0
+CXPB: 0.9, MUTPB: 0.8, NGEN: 300, I: 1
+Best solution cost: 3445.0
+CXPB: 0.9, MUTPB: 0.8, NGEN: 300, I: 2
+Best solution cost: 5603.0
+CXPB: 0.9, MUTPB: 0.9, NGEN: 200, I: 0
+Best solution cost: 5722.0
+CXPB: 0.9, MUTPB: 0.9, NGEN: 200, I: 1
+Best solution cost: 5839.0
+CXPB: 0.9, MUTPB: 0.9, NGEN: 200, I: 2
+Best solution cost: 5846.0
+CXPB: 0.9, MUTPB: 0.9, NGEN: 250, I: 0
+Best solution cost: 5760.0
+CXPB: 0.9, MUTPB: 0.9, NGEN: 250, I: 1
+Best solution cost: 6144.0
+CXPB: 0.9, MUTPB: 0.9, NGEN: 250, I: 2
+Best solution cost: 5563.0
+CXPB: 0.9, MUTPB: 0.9, NGEN: 300, I: 0
+Best solution cost: 4081.0
+CXPB: 0.9, MUTPB: 0.9, NGEN: 300, I: 1
+Best solution cost: 3304.0
+CXPB: 0.9, MUTPB: 0.9, NGEN: 300, I: 2
+Best solution cost: 3686.0
+ALL PARAMS AND RESULTS
+[{'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 200, 'i': 0, 'result': 6612.0}, {'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 200, 'i': 1, 'result': 6378.0}, {'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 200, 'i': 2, 'result': 7408.0}, {'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 250, 'i': 0, 'result': 8279.0}, {'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 250, 'i': 1, 'result': 6201.0}, {'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 250, 'i': 2, 'result': 5698.0}, {'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 300, 'i': 0, 'result': 7884.0}, {'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 300, 'i': 1, 'result': 7550.0}, {'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 300, 'i': 2, 'result': 6980.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 200, 'i': 0, 'result': 7251.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 200, 'i': 1, 'result': 5631.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 200, 'i': 2, 'result': 5915.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 250, 'i': 0, 'result': 4624.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 250, 'i': 1, 'result': 5851.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 250, 'i': 2, 'result': 7701.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 300, 'i': 0, 'result': 5330.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 300, 'i': 1, 'result': 3429.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 300, 'i': 2, 'result': 6541.0}, {'cxpb': 0.1, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 0, 'result': 5317.0}, {'cxpb': 0.1, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 1, 'result': 7139.0}, {'cxpb': 0.1, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 2, 'result': 4419.0}, {'cxpb': 0.1, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 0, 'result': 5848.0}, {'cxpb': 0.1, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 1, 'result': 5498.0}, {'cxpb': 0.1, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 2, 'result': 5688.0}, {'cxpb': 0.1, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 0, 'result': 3621.0}, {'cxpb': 0.1, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 1, 'result': 3711.0}, {'cxpb': 0.1, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 2, 'result': 5582.0}, {'cxpb': 0.1, 'mutpb': 0.4, 'ngen': 200, 'i': 0, 'result': 7194.0}, {'cxpb': 0.1, 'mutpb': 0.4, 'ngen': 200, 'i': 1, 'result': 5417.0}, {'cxpb': 0.1, 'mutpb': 0.4, 'ngen': 200, 'i': 2, 'result': 6324.0}, {'cxpb': 0.1, 'mutpb': 0.4, 'ngen': 250, 'i': 0, 'result': 6382.0}, {'cxpb': 0.1, 'mutpb': 0.4, 'ngen': 250, 'i': 1, 'result': 4205.0}, {'cxpb': 0.1, 'mutpb': 0.4, 'ngen': 250, 'i': 2, 'result': 3512.0}, {'cxpb': 0.1, 'mutpb': 0.4, 'ngen': 300, 'i': 0, 'result': 6014.0}, {'cxpb': 0.1, 'mutpb': 0.4, 'ngen': 300, 'i': 1, 'result': 4780.0}, {'cxpb': 0.1, 'mutpb': 0.4, 'ngen': 300, 'i': 2, 'result': 5518.0}, {'cxpb': 0.1, 'mutpb': 0.5, 'ngen': 200, 'i': 0, 'result': 5666.0}, {'cxpb': 0.1, 'mutpb': 0.5, 'ngen': 200, 'i': 1, 'result': 5673.0}, {'cxpb': 0.1, 'mutpb': 0.5, 'ngen': 200, 'i': 2, 'result': 4586.0}, {'cxpb': 0.1, 'mutpb': 0.5, 'ngen': 250, 'i': 0, 'result': 3705.0}, {'cxpb': 0.1, 'mutpb': 0.5, 'ngen': 250, 'i': 1, 'result': 5831.0}, {'cxpb': 0.1, 'mutpb': 0.5, 'ngen': 250, 'i': 2, 'result': 5834.0}, {'cxpb': 0.1, 'mutpb': 0.5, 'ngen': 300, 'i': 0, 'result': 3037.0}, {'cxpb': 0.1, 'mutpb': 0.5, 'ngen': 300, 'i': 1, 'result': 5897.0}, {'cxpb': 0.1, 'mutpb': 0.5, 'ngen': 300, 'i': 2, 'result': 3183.0}, {'cxpb': 0.1, 'mutpb': 0.6, 'ngen': 200, 'i': 0, 'result': 3489.0}, {'cxpb': 0.1, 'mutpb': 0.6, 'ngen': 200, 'i': 1, 'result': 5273.0}, {'cxpb': 0.1, 'mutpb': 0.6, 'ngen': 200, 'i': 2, 'result': 4097.0}, {'cxpb': 0.1, 'mutpb': 0.6, 'ngen': 250, 'i': 0, 'result': 5677.0}, {'cxpb': 0.1, 'mutpb': 0.6, 'ngen': 250, 'i': 1, 'result': 5744.0}, {'cxpb': 0.1, 'mutpb': 0.6, 'ngen': 250, 'i': 2, 'result': 4771.0}, {'cxpb': 0.1, 'mutpb': 0.6, 'ngen': 300, 'i': 0, 'result': 3691.0}, {'cxpb': 0.1, 'mutpb': 0.6, 'ngen': 300, 'i': 1, 'result': 5326.0}, {'cxpb': 0.1, 'mutpb': 0.6, 'ngen': 300, 'i': 2, 'result': 4913.0}, {'cxpb': 0.1, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 0, 'result': 3388.0}, {'cxpb': 0.1, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 1, 'result': 5869.0}, {'cxpb': 0.1, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 2, 'result': 4666.0}, {'cxpb': 0.1, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 0, 'result': 3114.0}, {'cxpb': 0.1, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 1, 'result': 3509.0}, {'cxpb': 0.1, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 2, 'result': 5110.0}, {'cxpb': 0.1, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 0, 'result': 3253.0}, {'cxpb': 0.1, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 1, 'result': 3428.0}, {'cxpb': 0.1, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 2, 'result': 3608.0}, {'cxpb': 0.1, 'mutpb': 0.8, 'ngen': 200, 'i': 0, 'result': 5333.0}, {'cxpb': 0.1, 'mutpb': 0.8, 'ngen': 200, 'i': 1, 'result': 5450.0}, {'cxpb': 0.1, 'mutpb': 0.8, 'ngen': 200, 'i': 2, 'result': 3240.0}, {'cxpb': 0.1, 'mutpb': 0.8, 'ngen': 250, 'i': 0, 'result': 3995.0}, {'cxpb': 0.1, 'mutpb': 0.8, 'ngen': 250, 'i': 1, 'result': 3942.0}, {'cxpb': 0.1, 'mutpb': 0.8, 'ngen': 250, 'i': 2, 'result': 5724.0}, {'cxpb': 0.1, 'mutpb': 0.8, 'ngen': 300, 'i': 0, 'result': 3535.0}, {'cxpb': 0.1, 'mutpb': 0.8, 'ngen': 300, 'i': 1, 'result': 5036.0}, {'cxpb': 0.1, 'mutpb': 0.8, 'ngen': 300, 'i': 2, 'result': 3810.0}, {'cxpb': 0.1, 'mutpb': 0.9, 'ngen': 200, 'i': 0, 'result': 3950.0}, {'cxpb': 0.1, 'mutpb': 0.9, 'ngen': 200, 'i': 1, 'result': 6009.0}, {'cxpb': 0.1, 'mutpb': 0.9, 'ngen': 200, 'i': 2, 'result': 6021.0}, {'cxpb': 0.1, 'mutpb': 0.9, 'ngen': 250, 'i': 0, 'result': 5603.0}, {'cxpb': 0.1, 'mutpb': 0.9, 'ngen': 250, 'i': 1, 'result': 5744.0}, {'cxpb': 0.1, 'mutpb': 0.9, 'ngen': 250, 'i': 2, 'result': 5558.0}, {'cxpb': 0.1, 'mutpb': 0.9, 'ngen': 300, 'i': 0, 'result': 3560.0}, {'cxpb': 0.1, 'mutpb': 0.9, 'ngen': 300, 'i': 1, 'result': 3570.0}, {'cxpb': 0.1, 'mutpb': 0.9, 'ngen': 300, 'i': 2, 'result': 3776.0}, {'cxpb': 0.2, 'mutpb': 0.1, 'ngen': 200, 'i': 0, 'result': 6255.0}, {'cxpb': 0.2, 'mutpb': 0.1, 'ngen': 200, 'i': 1, 'result': 10022.0}, {'cxpb': 0.2, 'mutpb': 0.1, 'ngen': 200, 'i': 2, 'result': 9974.0}, {'cxpb': 0.2, 'mutpb': 0.1, 'ngen': 250, 'i': 0, 'result': 7929.0}, {'cxpb': 0.2, 'mutpb': 0.1, 'ngen': 250, 'i': 1, 'result': 7473.0}, {'cxpb': 0.2, 'mutpb': 0.1, 'ngen': 250, 'i': 2, 'result': 8365.0}, {'cxpb': 0.2, 'mutpb': 0.1, 'ngen': 300, 'i': 0, 'result': 6026.0}, {'cxpb': 0.2, 'mutpb': 0.1, 'ngen': 300, 'i': 1, 'result': 9294.0}, {'cxpb': 0.2, 'mutpb': 0.1, 'ngen': 300, 'i': 2, 'result': 6165.0}, {'cxpb': 0.2, 'mutpb': 0.2, 'ngen': 200, 'i': 0, 'result': 7583.0}, {'cxpb': 0.2, 'mutpb': 0.2, 'ngen': 200, 'i': 1, 'result': 7457.0}, {'cxpb': 0.2, 'mutpb': 0.2, 'ngen': 200, 'i': 2, 'result': 6507.0}, {'cxpb': 0.2, 'mutpb': 0.2, 'ngen': 250, 'i': 0, 'result': 6673.0}, {'cxpb': 0.2, 'mutpb': 0.2, 'ngen': 250, 'i': 1, 'result': 4888.0}, {'cxpb': 0.2, 'mutpb': 0.2, 'ngen': 250, 'i': 2, 'result': 6108.0}, {'cxpb': 0.2, 'mutpb': 0.2, 'ngen': 300, 'i': 0, 'result': 5401.0}, {'cxpb': 0.2, 'mutpb': 0.2, 'ngen': 300, 'i': 1, 'result': 5605.0}, {'cxpb': 0.2, 'mutpb': 0.2, 'ngen': 300, 'i': 2, 'result': 3620.0}, {'cxpb': 0.2, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 0, 'result': 3989.0}, {'cxpb': 0.2, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 1, 'result': 5848.0}, {'cxpb': 0.2, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 2, 'result': 5987.0}, {'cxpb': 0.2, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 0, 'result': 5379.0}, {'cxpb': 0.2, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 1, 'result': 5555.0}, {'cxpb': 0.2, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 2, 'result': 5848.0}, {'cxpb': 0.2, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 0, 'result': 3932.0}, {'cxpb': 0.2, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 1, 'result': 5482.0}, {'cxpb': 0.2, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 2, 'result': 5872.0}, {'cxpb': 0.2, 'mutpb': 0.4, 'ngen': 200, 'i': 0, 'result': 5301.0}, {'cxpb': 0.2, 'mutpb': 0.4, 'ngen': 200, 'i': 1, 'result': 4325.0}, {'cxpb': 0.2, 'mutpb': 0.4, 'ngen': 200, 'i': 2, 'result': 5527.0}, {'cxpb': 0.2, 'mutpb': 0.4, 'ngen': 250, 'i': 0, 'result': 6067.0}, {'cxpb': 0.2, 'mutpb': 0.4, 'ngen': 250, 'i': 1, 'result': 5391.0}, {'cxpb': 0.2, 'mutpb': 0.4, 'ngen': 250, 'i': 2, 'result': 5286.0}, {'cxpb': 0.2, 'mutpb': 0.4, 'ngen': 300, 'i': 0, 'result': 5323.0}, {'cxpb': 0.2, 'mutpb': 0.4, 'ngen': 300, 'i': 1, 'result': 6020.0}, {'cxpb': 0.2, 'mutpb': 0.4, 'ngen': 300, 'i': 2, 'result': 5173.0}, {'cxpb': 0.2, 'mutpb': 0.5, 'ngen': 200, 'i': 0, 'result': 5017.0}, {'cxpb': 0.2, 'mutpb': 0.5, 'ngen': 200, 'i': 1, 'result': 5586.0}, {'cxpb': 0.2, 'mutpb': 0.5, 'ngen': 200, 'i': 2, 'result': 5048.0}, {'cxpb': 0.2, 'mutpb': 0.5, 'ngen': 250, 'i': 0, 'result': 5593.0}, {'cxpb': 0.2, 'mutpb': 0.5, 'ngen': 250, 'i': 1, 'result': 3243.0}, {'cxpb': 0.2, 'mutpb': 0.5, 'ngen': 250, 'i': 2, 'result': 3491.0}, {'cxpb': 0.2, 'mutpb': 0.5, 'ngen': 300, 'i': 0, 'result': 3361.0}, {'cxpb': 0.2, 'mutpb': 0.5, 'ngen': 300, 'i': 1, 'result': 3502.0}, {'cxpb': 0.2, 'mutpb': 0.5, 'ngen': 300, 'i': 2, 'result': 5477.0}, {'cxpb': 0.2, 'mutpb': 0.6, 'ngen': 200, 'i': 0, 'result': 5169.0}, {'cxpb': 0.2, 'mutpb': 0.6, 'ngen': 200, 'i': 1, 'result': 5184.0}, {'cxpb': 0.2, 'mutpb': 0.6, 'ngen': 200, 'i': 2, 'result': 5440.0}, {'cxpb': 0.2, 'mutpb': 0.6, 'ngen': 250, 'i': 0, 'result': 4271.0}, {'cxpb': 0.2, 'mutpb': 0.6, 'ngen': 250, 'i': 1, 'result': 3497.0}, {'cxpb': 0.2, 'mutpb': 0.6, 'ngen': 250, 'i': 2, 'result': 3439.0}, {'cxpb': 0.2, 'mutpb': 0.6, 'ngen': 300, 'i': 0, 'result': 3814.0}, {'cxpb': 0.2, 'mutpb': 0.6, 'ngen': 300, 'i': 1, 'result': 3616.0}, {'cxpb': 0.2, 'mutpb': 0.6, 'ngen': 300, 'i': 2, 'result': 5151.0}, {'cxpb': 0.2, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 0, 'result': 4918.0}, {'cxpb': 0.2, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 1, 'result': 5528.0}, {'cxpb': 0.2, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 2, 'result': 5433.0}, {'cxpb': 0.2, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 0, 'result': 3285.0}, {'cxpb': 0.2, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 1, 'result': 3606.0}, {'cxpb': 0.2, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 2, 'result': 5458.0}, {'cxpb': 0.2, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 0, 'result': 3677.0}, {'cxpb': 0.2, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 1, 'result': 3525.0}, {'cxpb': 0.2, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 2, 'result': 3330.0}, {'cxpb': 0.2, 'mutpb': 0.8, 'ngen': 200, 'i': 0, 'result': 5267.0}, {'cxpb': 0.2, 'mutpb': 0.8, 'ngen': 200, 'i': 1, 'result': 3644.0}, {'cxpb': 0.2, 'mutpb': 0.8, 'ngen': 200, 'i': 2, 'result': 5393.0}, {'cxpb': 0.2, 'mutpb': 0.8, 'ngen': 250, 'i': 0, 'result': 3405.0}, {'cxpb': 0.2, 'mutpb': 0.8, 'ngen': 250, 'i': 1, 'result': 5911.0}, {'cxpb': 0.2, 'mutpb': 0.8, 'ngen': 250, 'i': 2, 'result': 4977.0}, {'cxpb': 0.2, 'mutpb': 0.8, 'ngen': 300, 'i': 0, 'result': 5495.0}, {'cxpb': 0.2, 'mutpb': 0.8, 'ngen': 300, 'i': 1, 'result': 3806.0}, {'cxpb': 0.2, 'mutpb': 0.8, 'ngen': 300, 'i': 2, 'result': 3764.0}, {'cxpb': 0.2, 'mutpb': 0.9, 'ngen': 200, 'i': 0, 'result': 5765.0}, {'cxpb': 0.2, 'mutpb': 0.9, 'ngen': 200, 'i': 1, 'result': 4080.0}, {'cxpb': 0.2, 'mutpb': 0.9, 'ngen': 200, 'i': 2, 'result': 5679.0}, {'cxpb': 0.2, 'mutpb': 0.9, 'ngen': 250, 'i': 0, 'result': 5503.0}, {'cxpb': 0.2, 'mutpb': 0.9, 'ngen': 250, 'i': 1, 'result': 5226.0}, {'cxpb': 0.2, 'mutpb': 0.9, 'ngen': 250, 'i': 2, 'result': 3730.0}, {'cxpb': 0.2, 'mutpb': 0.9, 'ngen': 300, 'i': 0, 'result': 3816.0}, {'cxpb': 0.2, 'mutpb': 0.9, 'ngen': 300, 'i': 1, 'result': 5338.0}, {'cxpb': 0.2, 'mutpb': 0.9, 'ngen': 300, 'i': 2, 'result': 5701.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.1, 'ngen': 200, 'i': 0, 'result': 5820.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.1, 'ngen': 200, 'i': 1, 'result': 8277.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.1, 'ngen': 200, 'i': 2, 'result': 9033.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.1, 'ngen': 250, 'i': 0, 'result': 6947.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.1, 'ngen': 250, 'i': 1, 'result': 7632.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.1, 'ngen': 250, 'i': 2, 'result': 5598.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.1, 'ngen': 300, 'i': 0, 'result': 7618.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.1, 'ngen': 300, 'i': 1, 'result': 7701.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.1, 'ngen': 300, 'i': 2, 'result': 6579.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.2, 'ngen': 200, 'i': 0, 'result': 5907.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.2, 'ngen': 200, 'i': 1, 'result': 6158.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.2, 'ngen': 200, 'i': 2, 'result': 5619.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.2, 'ngen': 250, 'i': 0, 'result': 5973.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.2, 'ngen': 250, 'i': 1, 'result': 5831.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.2, 'ngen': 250, 'i': 2, 'result': 5440.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.2, 'ngen': 300, 'i': 0, 'result': 5386.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.2, 'ngen': 300, 'i': 1, 'result': 3809.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.2, 'ngen': 300, 'i': 2, 'result': 5470.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 0, 'result': 7913.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 1, 'result': 7461.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 2, 'result': 5103.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 0, 'result': 5636.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 1, 'result': 5288.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 2, 'result': 6363.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 0, 'result': 6611.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 1, 'result': 6169.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 2, 'result': 4958.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.4, 'ngen': 200, 'i': 0, 'result': 4812.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.4, 'ngen': 200, 'i': 1, 'result': 3655.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.4, 'ngen': 200, 'i': 2, 'result': 6004.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.4, 'ngen': 250, 'i': 0, 'result': 5954.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.4, 'ngen': 250, 'i': 1, 'result': 5516.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.4, 'ngen': 250, 'i': 2, 'result': 5581.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.4, 'ngen': 300, 'i': 0, 'result': 5675.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.4, 'ngen': 300, 'i': 1, 'result': 3873.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.4, 'ngen': 300, 'i': 2, 'result': 5155.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.5, 'ngen': 200, 'i': 0, 'result': 3671.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.5, 'ngen': 200, 'i': 1, 'result': 3640.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.5, 'ngen': 200, 'i': 2, 'result': 5859.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.5, 'ngen': 250, 'i': 0, 'result': 5755.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.5, 'ngen': 250, 'i': 1, 'result': 3763.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.5, 'ngen': 250, 'i': 2, 'result': 5334.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.5, 'ngen': 300, 'i': 0, 'result': 5270.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.5, 'ngen': 300, 'i': 1, 'result': 3171.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.5, 'ngen': 300, 'i': 2, 'result': 5424.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.6, 'ngen': 200, 'i': 0, 'result': 4896.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.6, 'ngen': 200, 'i': 1, 'result': 4625.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.6, 'ngen': 200, 'i': 2, 'result': 5592.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.6, 'ngen': 250, 'i': 0, 'result': 3395.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.6, 'ngen': 250, 'i': 1, 'result': 3517.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.6, 'ngen': 250, 'i': 2, 'result': 3387.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.6, 'ngen': 300, 'i': 0, 'result': 4831.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.6, 'ngen': 300, 'i': 1, 'result': 5252.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.6, 'ngen': 300, 'i': 2, 'result': 3790.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 0, 'result': 6598.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 1, 'result': 4764.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 2, 'result': 3532.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 0, 'result': 4821.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 1, 'result': 3539.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 2, 'result': 4197.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 0, 'result': 3451.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 1, 'result': 3631.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 2, 'result': 4545.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.8, 'ngen': 200, 'i': 0, 'result': 4061.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.8, 'ngen': 200, 'i': 1, 'result': 5232.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.8, 'ngen': 200, 'i': 2, 'result': 3735.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.8, 'ngen': 250, 'i': 0, 'result': 3522.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.8, 'ngen': 250, 'i': 1, 'result': 3711.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.8, 'ngen': 250, 'i': 2, 'result': 3643.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.8, 'ngen': 300, 'i': 0, 'result': 5157.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.8, 'ngen': 300, 'i': 1, 'result': 3405.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.8, 'ngen': 300, 'i': 2, 'result': 5278.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.9, 'ngen': 200, 'i': 0, 'result': 3756.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.9, 'ngen': 200, 'i': 1, 'result': 5263.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.9, 'ngen': 200, 'i': 2, 'result': 4555.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.9, 'ngen': 250, 'i': 0, 'result': 5231.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.9, 'ngen': 250, 'i': 1, 'result': 5950.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.9, 'ngen': 250, 'i': 2, 'result': 3924.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.9, 'ngen': 300, 'i': 0, 'result': 3541.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.9, 'ngen': 300, 'i': 1, 'result': 5185.0}, {'cxpb': 0.30000000000000004, 'mutpb': 0.9, 'ngen': 300, 'i': 2, 'result': 4072.0}, {'cxpb': 0.4, 'mutpb': 0.1, 'ngen': 200, 'i': 0, 'result': 5770.0}, {'cxpb': 0.4, 'mutpb': 0.1, 'ngen': 200, 'i': 1, 'result': 9026.0}, {'cxpb': 0.4, 'mutpb': 0.1, 'ngen': 200, 'i': 2, 'result': 9660.0}, {'cxpb': 0.4, 'mutpb': 0.1, 'ngen': 250, 'i': 0, 'result': 5953.0}, {'cxpb': 0.4, 'mutpb': 0.1, 'ngen': 250, 'i': 1, 'result': 7473.0}, {'cxpb': 0.4, 'mutpb': 0.1, 'ngen': 250, 'i': 2, 'result': 6950.0}, {'cxpb': 0.4, 'mutpb': 0.1, 'ngen': 300, 'i': 0, 'result': 5745.0}, {'cxpb': 0.4, 'mutpb': 0.1, 'ngen': 300, 'i': 1, 'result': 5978.0}, {'cxpb': 0.4, 'mutpb': 0.1, 'ngen': 300, 'i': 2, 'result': 8151.0}, {'cxpb': 0.4, 'mutpb': 0.2, 'ngen': 200, 'i': 0, 'result': 6106.0}, {'cxpb': 0.4, 'mutpb': 0.2, 'ngen': 200, 'i': 1, 'result': 5979.0}, {'cxpb': 0.4, 'mutpb': 0.2, 'ngen': 200, 'i': 2, 'result': 5736.0}, {'cxpb': 0.4, 'mutpb': 0.2, 'ngen': 250, 'i': 0, 'result': 5372.0}, {'cxpb': 0.4, 'mutpb': 0.2, 'ngen': 250, 'i': 1, 'result': 5957.0}, {'cxpb': 0.4, 'mutpb': 0.2, 'ngen': 250, 'i': 2, 'result': 5942.0}, {'cxpb': 0.4, 'mutpb': 0.2, 'ngen': 300, 'i': 0, 'result': 7662.0}, {'cxpb': 0.4, 'mutpb': 0.2, 'ngen': 300, 'i': 1, 'result': 5291.0}, {'cxpb': 0.4, 'mutpb': 0.2, 'ngen': 300, 'i': 2, 'result': 5130.0}, {'cxpb': 0.4, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 0, 'result': 3395.0}, {'cxpb': 0.4, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 1, 'result': 3302.0}, {'cxpb': 0.4, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 2, 'result': 6697.0}, {'cxpb': 0.4, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 0, 'result': 3808.0}, {'cxpb': 0.4, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 1, 'result': 4953.0}, {'cxpb': 0.4, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 2, 'result': 5969.0}, {'cxpb': 0.4, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 0, 'result': 7134.0}, {'cxpb': 0.4, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 1, 'result': 5334.0}, {'cxpb': 0.4, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 2, 'result': 4875.0}, {'cxpb': 0.4, 'mutpb': 0.4, 'ngen': 200, 'i': 0, 'result': 5221.0}, {'cxpb': 0.4, 'mutpb': 0.4, 'ngen': 200, 'i': 1, 'result': 3564.0}, {'cxpb': 0.4, 'mutpb': 0.4, 'ngen': 200, 'i': 2, 'result': 5273.0}, {'cxpb': 0.4, 'mutpb': 0.4, 'ngen': 250, 'i': 0, 'result': 5805.0}, {'cxpb': 0.4, 'mutpb': 0.4, 'ngen': 250, 'i': 1, 'result': 3625.0}, {'cxpb': 0.4, 'mutpb': 0.4, 'ngen': 250, 'i': 2, 'result': 5887.0}, {'cxpb': 0.4, 'mutpb': 0.4, 'ngen': 300, 'i': 0, 'result': 5088.0}, {'cxpb': 0.4, 'mutpb': 0.4, 'ngen': 300, 'i': 1, 'result': 5413.0}, {'cxpb': 0.4, 'mutpb': 0.4, 'ngen': 300, 'i': 2, 'result': 6818.0}, {'cxpb': 0.4, 'mutpb': 0.5, 'ngen': 200, 'i': 0, 'result': 5573.0}, {'cxpb': 0.4, 'mutpb': 0.5, 'ngen': 200, 'i': 1, 'result': 5260.0}, {'cxpb': 0.4, 'mutpb': 0.5, 'ngen': 200, 'i': 2, 'result': 3343.0}, {'cxpb': 0.4, 'mutpb': 0.5, 'ngen': 250, 'i': 0, 'result': 5706.0}, {'cxpb': 0.4, 'mutpb': 0.5, 'ngen': 250, 'i': 1, 'result': 5757.0}, {'cxpb': 0.4, 'mutpb': 0.5, 'ngen': 250, 'i': 2, 'result': 3596.0}, {'cxpb': 0.4, 'mutpb': 0.5, 'ngen': 300, 'i': 0, 'result': 5326.0}, {'cxpb': 0.4, 'mutpb': 0.5, 'ngen': 300, 'i': 1, 'result': 3470.0}, {'cxpb': 0.4, 'mutpb': 0.5, 'ngen': 300, 'i': 2, 'result': 4598.0}, {'cxpb': 0.4, 'mutpb': 0.6, 'ngen': 200, 'i': 0, 'result': 3924.0}, {'cxpb': 0.4, 'mutpb': 0.6, 'ngen': 200, 'i': 1, 'result': 5608.0}, {'cxpb': 0.4, 'mutpb': 0.6, 'ngen': 200, 'i': 2, 'result': 3385.0}, {'cxpb': 0.4, 'mutpb': 0.6, 'ngen': 250, 'i': 0, 'result': 5980.0}, {'cxpb': 0.4, 'mutpb': 0.6, 'ngen': 250, 'i': 1, 'result': 3755.0}, {'cxpb': 0.4, 'mutpb': 0.6, 'ngen': 250, 'i': 2, 'result': 4779.0}, {'cxpb': 0.4, 'mutpb': 0.6, 'ngen': 300, 'i': 0, 'result': 5022.0}, {'cxpb': 0.4, 'mutpb': 0.6, 'ngen': 300, 'i': 1, 'result': 5239.0}, {'cxpb': 0.4, 'mutpb': 0.6, 'ngen': 300, 'i': 2, 'result': 3604.0}, {'cxpb': 0.4, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 0, 'result': 3371.0}, {'cxpb': 0.4, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 1, 'result': 5541.0}, {'cxpb': 0.4, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 2, 'result': 4972.0}, {'cxpb': 0.4, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 0, 'result': 4678.0}, {'cxpb': 0.4, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 1, 'result': 5585.0}, {'cxpb': 0.4, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 2, 'result': 4843.0}, {'cxpb': 0.4, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 0, 'result': 3326.0}, {'cxpb': 0.4, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 1, 'result': 3385.0}, {'cxpb': 0.4, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 2, 'result': 3215.0}, {'cxpb': 0.4, 'mutpb': 0.8, 'ngen': 200, 'i': 0, 'result': 5185.0}, {'cxpb': 0.4, 'mutpb': 0.8, 'ngen': 200, 'i': 1, 'result': 5262.0}, {'cxpb': 0.4, 'mutpb': 0.8, 'ngen': 200, 'i': 2, 'result': 4782.0}, {'cxpb': 0.4, 'mutpb': 0.8, 'ngen': 250, 'i': 0, 'result': 3614.0}, {'cxpb': 0.4, 'mutpb': 0.8, 'ngen': 250, 'i': 1, 'result': 3634.0}, {'cxpb': 0.4, 'mutpb': 0.8, 'ngen': 250, 'i': 2, 'result': 3079.0}, {'cxpb': 0.4, 'mutpb': 0.8, 'ngen': 300, 'i': 0, 'result': 3166.0}, {'cxpb': 0.4, 'mutpb': 0.8, 'ngen': 300, 'i': 1, 'result': 3944.0}, {'cxpb': 0.4, 'mutpb': 0.8, 'ngen': 300, 'i': 2, 'result': 3346.0}, {'cxpb': 0.4, 'mutpb': 0.9, 'ngen': 200, 'i': 0, 'result': 4885.0}, {'cxpb': 0.4, 'mutpb': 0.9, 'ngen': 200, 'i': 1, 'result': 6183.0}, {'cxpb': 0.4, 'mutpb': 0.9, 'ngen': 200, 'i': 2, 'result': 4071.0}, {'cxpb': 0.4, 'mutpb': 0.9, 'ngen': 250, 'i': 0, 'result': 6116.0}, {'cxpb': 0.4, 'mutpb': 0.9, 'ngen': 250, 'i': 1, 'result': 5459.0}, {'cxpb': 0.4, 'mutpb': 0.9, 'ngen': 250, 'i': 2, 'result': 4027.0}, {'cxpb': 0.4, 'mutpb': 0.9, 'ngen': 300, 'i': 0, 'result': 3855.0}, {'cxpb': 0.4, 'mutpb': 0.9, 'ngen': 300, 'i': 1, 'result': 5920.0}, {'cxpb': 0.4, 'mutpb': 0.9, 'ngen': 300, 'i': 2, 'result': 5738.0}, {'cxpb': 0.5, 'mutpb': 0.1, 'ngen': 200, 'i': 0, 'result': 8088.0}, {'cxpb': 0.5, 'mutpb': 0.1, 'ngen': 200, 'i': 1, 'result': 6022.0}, {'cxpb': 0.5, 'mutpb': 0.1, 'ngen': 200, 'i': 2, 'result': 6617.0}, {'cxpb': 0.5, 'mutpb': 0.1, 'ngen': 250, 'i': 0, 'result': 9016.0}, {'cxpb': 0.5, 'mutpb': 0.1, 'ngen': 250, 'i': 1, 'result': 8124.0}, {'cxpb': 0.5, 'mutpb': 0.1, 'ngen': 250, 'i': 2, 'result': 6474.0}, {'cxpb': 0.5, 'mutpb': 0.1, 'ngen': 300, 'i': 0, 'result': 6948.0}, {'cxpb': 0.5, 'mutpb': 0.1, 'ngen': 300, 'i': 1, 'result': 8257.0}, {'cxpb': 0.5, 'mutpb': 0.1, 'ngen': 300, 'i': 2, 'result': 5952.0}, {'cxpb': 0.5, 'mutpb': 0.2, 'ngen': 200, 'i': 0, 'result': 4618.0}, {'cxpb': 0.5, 'mutpb': 0.2, 'ngen': 200, 'i': 1, 'result': 6102.0}, {'cxpb': 0.5, 'mutpb': 0.2, 'ngen': 200, 'i': 2, 'result': 7171.0}, {'cxpb': 0.5, 'mutpb': 0.2, 'ngen': 250, 'i': 0, 'result': 6716.0}, {'cxpb': 0.5, 'mutpb': 0.2, 'ngen': 250, 'i': 1, 'result': 6149.0}, {'cxpb': 0.5, 'mutpb': 0.2, 'ngen': 250, 'i': 2, 'result': 4217.0}, {'cxpb': 0.5, 'mutpb': 0.2, 'ngen': 300, 'i': 0, 'result': 5054.0}, {'cxpb': 0.5, 'mutpb': 0.2, 'ngen': 300, 'i': 1, 'result': 7593.0}, {'cxpb': 0.5, 'mutpb': 0.2, 'ngen': 300, 'i': 2, 'result': 5770.0}, {'cxpb': 0.5, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 0, 'result': 6450.0}, {'cxpb': 0.5, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 1, 'result': 5887.0}, {'cxpb': 0.5, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 2, 'result': 5910.0}, {'cxpb': 0.5, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 0, 'result': 5436.0}, {'cxpb': 0.5, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 1, 'result': 7006.0}, {'cxpb': 0.5, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 2, 'result': 7242.0}, {'cxpb': 0.5, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 0, 'result': 3326.0}, {'cxpb': 0.5, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 1, 'result': 5879.0}, {'cxpb': 0.5, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 2, 'result': 5498.0}, {'cxpb': 0.5, 'mutpb': 0.4, 'ngen': 200, 'i': 0, 'result': 6206.0}, {'cxpb': 0.5, 'mutpb': 0.4, 'ngen': 200, 'i': 1, 'result': 5673.0}, {'cxpb': 0.5, 'mutpb': 0.4, 'ngen': 200, 'i': 2, 'result': 5224.0}, {'cxpb': 0.5, 'mutpb': 0.4, 'ngen': 250, 'i': 0, 'result': 5760.0}, {'cxpb': 0.5, 'mutpb': 0.4, 'ngen': 250, 'i': 1, 'result': 5963.0}, {'cxpb': 0.5, 'mutpb': 0.4, 'ngen': 250, 'i': 2, 'result': 5522.0}, {'cxpb': 0.5, 'mutpb': 0.4, 'ngen': 300, 'i': 0, 'result': 3317.0}, {'cxpb': 0.5, 'mutpb': 0.4, 'ngen': 300, 'i': 1, 'result': 6481.0}, {'cxpb': 0.5, 'mutpb': 0.4, 'ngen': 300, 'i': 2, 'result': 5475.0}, {'cxpb': 0.5, 'mutpb': 0.5, 'ngen': 200, 'i': 0, 'result': 3627.0}, {'cxpb': 0.5, 'mutpb': 0.5, 'ngen': 200, 'i': 1, 'result': 3606.0}, {'cxpb': 0.5, 'mutpb': 0.5, 'ngen': 200, 'i': 2, 'result': 6287.0}, {'cxpb': 0.5, 'mutpb': 0.5, 'ngen': 250, 'i': 0, 'result': 5373.0}, {'cxpb': 0.5, 'mutpb': 0.5, 'ngen': 250, 'i': 1, 'result': 4714.0}, {'cxpb': 0.5, 'mutpb': 0.5, 'ngen': 250, 'i': 2, 'result': 3564.0}, {'cxpb': 0.5, 'mutpb': 0.5, 'ngen': 300, 'i': 0, 'result': 4677.0}, {'cxpb': 0.5, 'mutpb': 0.5, 'ngen': 300, 'i': 1, 'result': 4934.0}, {'cxpb': 0.5, 'mutpb': 0.5, 'ngen': 300, 'i': 2, 'result': 3524.0}, {'cxpb': 0.5, 'mutpb': 0.6, 'ngen': 200, 'i': 0, 'result': 3489.0}, {'cxpb': 0.5, 'mutpb': 0.6, 'ngen': 200, 'i': 1, 'result': 5258.0}, {'cxpb': 0.5, 'mutpb': 0.6, 'ngen': 200, 'i': 2, 'result': 4892.0}, {'cxpb': 0.5, 'mutpb': 0.6, 'ngen': 250, 'i': 0, 'result': 5373.0}, {'cxpb': 0.5, 'mutpb': 0.6, 'ngen': 250, 'i': 1, 'result': 5551.0}, {'cxpb': 0.5, 'mutpb': 0.6, 'ngen': 250, 'i': 2, 'result': 5326.0}, {'cxpb': 0.5, 'mutpb': 0.6, 'ngen': 300, 'i': 0, 'result': 3407.0}, {'cxpb': 0.5, 'mutpb': 0.6, 'ngen': 300, 'i': 1, 'result': 3721.0}, {'cxpb': 0.5, 'mutpb': 0.6, 'ngen': 300, 'i': 2, 'result': 5306.0}, {'cxpb': 0.5, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 0, 'result': 4570.0}, {'cxpb': 0.5, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 1, 'result': 5499.0}, {'cxpb': 0.5, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 2, 'result': 3650.0}, {'cxpb': 0.5, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 0, 'result': 3163.0}, {'cxpb': 0.5, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 1, 'result': 5636.0}, {'cxpb': 0.5, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 2, 'result': 3430.0}, {'cxpb': 0.5, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 0, 'result': 5072.0}, {'cxpb': 0.5, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 1, 'result': 2601.0}, {'cxpb': 0.5, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 2, 'result': 5749.0}, {'cxpb': 0.5, 'mutpb': 0.8, 'ngen': 200, 'i': 0, 'result': 5115.0}, {'cxpb': 0.5, 'mutpb': 0.8, 'ngen': 200, 'i': 1, 'result': 5393.0}, {'cxpb': 0.5, 'mutpb': 0.8, 'ngen': 200, 'i': 2, 'result': 4871.0}, {'cxpb': 0.5, 'mutpb': 0.8, 'ngen': 250, 'i': 0, 'result': 3645.0}, {'cxpb': 0.5, 'mutpb': 0.8, 'ngen': 250, 'i': 1, 'result': 5030.0}, {'cxpb': 0.5, 'mutpb': 0.8, 'ngen': 250, 'i': 2, 'result': 3430.0}, {'cxpb': 0.5, 'mutpb': 0.8, 'ngen': 300, 'i': 0, 'result': 3627.0}, {'cxpb': 0.5, 'mutpb': 0.8, 'ngen': 300, 'i': 1, 'result': 3387.0}, {'cxpb': 0.5, 'mutpb': 0.8, 'ngen': 300, 'i': 2, 'result': 3816.0}, {'cxpb': 0.5, 'mutpb': 0.9, 'ngen': 200, 'i': 0, 'result': 3775.0}, {'cxpb': 0.5, 'mutpb': 0.9, 'ngen': 200, 'i': 1, 'result': 5660.0}, {'cxpb': 0.5, 'mutpb': 0.9, 'ngen': 200, 'i': 2, 'result': 5591.0}, {'cxpb': 0.5, 'mutpb': 0.9, 'ngen': 250, 'i': 0, 'result': 5627.0}, {'cxpb': 0.5, 'mutpb': 0.9, 'ngen': 250, 'i': 1, 'result': 4771.0}, {'cxpb': 0.5, 'mutpb': 0.9, 'ngen': 250, 'i': 2, 'result': 4156.0}, {'cxpb': 0.5, 'mutpb': 0.9, 'ngen': 300, 'i': 0, 'result': 4143.0}, {'cxpb': 0.5, 'mutpb': 0.9, 'ngen': 300, 'i': 1, 'result': 4992.0}, {'cxpb': 0.5, 'mutpb': 0.9, 'ngen': 300, 'i': 2, 'result': 3750.0}, {'cxpb': 0.6, 'mutpb': 0.1, 'ngen': 200, 'i': 0, 'result': 8005.0}, {'cxpb': 0.6, 'mutpb': 0.1, 'ngen': 200, 'i': 1, 'result': 5235.0}, {'cxpb': 0.6, 'mutpb': 0.1, 'ngen': 200, 'i': 2, 'result': 5927.0}, {'cxpb': 0.6, 'mutpb': 0.1, 'ngen': 250, 'i': 0, 'result': 6401.0}, {'cxpb': 0.6, 'mutpb': 0.1, 'ngen': 250, 'i': 1, 'result': 7870.0}, {'cxpb': 0.6, 'mutpb': 0.1, 'ngen': 250, 'i': 2, 'result': 7045.0}, {'cxpb': 0.6, 'mutpb': 0.1, 'ngen': 300, 'i': 0, 'result': 7576.0}, {'cxpb': 0.6, 'mutpb': 0.1, 'ngen': 300, 'i': 1, 'result': 7507.0}, {'cxpb': 0.6, 'mutpb': 0.1, 'ngen': 300, 'i': 2, 'result': 5451.0}, {'cxpb': 0.6, 'mutpb': 0.2, 'ngen': 200, 'i': 0, 'result': 5708.0}, {'cxpb': 0.6, 'mutpb': 0.2, 'ngen': 200, 'i': 1, 'result': 6011.0}, {'cxpb': 0.6, 'mutpb': 0.2, 'ngen': 200, 'i': 2, 'result': 6280.0}, {'cxpb': 0.6, 'mutpb': 0.2, 'ngen': 250, 'i': 0, 'result': 5489.0}, {'cxpb': 0.6, 'mutpb': 0.2, 'ngen': 250, 'i': 1, 'result': 4020.0}, {'cxpb': 0.6, 'mutpb': 0.2, 'ngen': 250, 'i': 2, 'result': 7847.0}, {'cxpb': 0.6, 'mutpb': 0.2, 'ngen': 300, 'i': 0, 'result': 5272.0}, {'cxpb': 0.6, 'mutpb': 0.2, 'ngen': 300, 'i': 1, 'result': 5943.0}, {'cxpb': 0.6, 'mutpb': 0.2, 'ngen': 300, 'i': 2, 'result': 6097.0}, {'cxpb': 0.6, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 0, 'result': 5622.0}, {'cxpb': 0.6, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 1, 'result': 6663.0}, {'cxpb': 0.6, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 2, 'result': 4934.0}, {'cxpb': 0.6, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 0, 'result': 7425.0}, {'cxpb': 0.6, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 1, 'result': 3548.0}, {'cxpb': 0.6, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 2, 'result': 7517.0}, {'cxpb': 0.6, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 0, 'result': 4926.0}, {'cxpb': 0.6, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 1, 'result': 3455.0}, {'cxpb': 0.6, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 2, 'result': 7159.0}, {'cxpb': 0.6, 'mutpb': 0.4, 'ngen': 200, 'i': 0, 'result': 4062.0}, {'cxpb': 0.6, 'mutpb': 0.4, 'ngen': 200, 'i': 1, 'result': 5693.0}, {'cxpb': 0.6, 'mutpb': 0.4, 'ngen': 200, 'i': 2, 'result': 4625.0}, {'cxpb': 0.6, 'mutpb': 0.4, 'ngen': 250, 'i': 0, 'result': 5871.0}, {'cxpb': 0.6, 'mutpb': 0.4, 'ngen': 250, 'i': 1, 'result': 5114.0}, {'cxpb': 0.6, 'mutpb': 0.4, 'ngen': 250, 'i': 2, 'result': 5495.0}, {'cxpb': 0.6, 'mutpb': 0.4, 'ngen': 300, 'i': 0, 'result': 3642.0}, {'cxpb': 0.6, 'mutpb': 0.4, 'ngen': 300, 'i': 1, 'result': 4739.0}, {'cxpb': 0.6, 'mutpb': 0.4, 'ngen': 300, 'i': 2, 'result': 3675.0}, {'cxpb': 0.6, 'mutpb': 0.5, 'ngen': 200, 'i': 0, 'result': 3407.0}, {'cxpb': 0.6, 'mutpb': 0.5, 'ngen': 200, 'i': 1, 'result': 3910.0}, {'cxpb': 0.6, 'mutpb': 0.5, 'ngen': 200, 'i': 2, 'result': 3694.0}, {'cxpb': 0.6, 'mutpb': 0.5, 'ngen': 250, 'i': 0, 'result': 4734.0}, {'cxpb': 0.6, 'mutpb': 0.5, 'ngen': 250, 'i': 1, 'result': 5451.0}, {'cxpb': 0.6, 'mutpb': 0.5, 'ngen': 250, 'i': 2, 'result': 3788.0}, {'cxpb': 0.6, 'mutpb': 0.5, 'ngen': 300, 'i': 0, 'result': 4848.0}, {'cxpb': 0.6, 'mutpb': 0.5, 'ngen': 300, 'i': 1, 'result': 3937.0}, {'cxpb': 0.6, 'mutpb': 0.5, 'ngen': 300, 'i': 2, 'result': 5872.0}, {'cxpb': 0.6, 'mutpb': 0.6, 'ngen': 200, 'i': 0, 'result': 5108.0}, {'cxpb': 0.6, 'mutpb': 0.6, 'ngen': 200, 'i': 1, 'result': 4850.0}, {'cxpb': 0.6, 'mutpb': 0.6, 'ngen': 200, 'i': 2, 'result': 4573.0}, {'cxpb': 0.6, 'mutpb': 0.6, 'ngen': 250, 'i': 0, 'result': 4800.0}, {'cxpb': 0.6, 'mutpb': 0.6, 'ngen': 250, 'i': 1, 'result': 3363.0}, {'cxpb': 0.6, 'mutpb': 0.6, 'ngen': 250, 'i': 2, 'result': 5110.0}, {'cxpb': 0.6, 'mutpb': 0.6, 'ngen': 300, 'i': 0, 'result': 3565.0}, {'cxpb': 0.6, 'mutpb': 0.6, 'ngen': 300, 'i': 1, 'result': 4986.0}, {'cxpb': 0.6, 'mutpb': 0.6, 'ngen': 300, 'i': 2, 'result': 4519.0}, {'cxpb': 0.6, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 0, 'result': 5676.0}, {'cxpb': 0.6, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 1, 'result': 5616.0}, {'cxpb': 0.6, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 2, 'result': 5583.0}, {'cxpb': 0.6, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 0, 'result': 3494.0}, {'cxpb': 0.6, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 1, 'result': 5190.0}, {'cxpb': 0.6, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 2, 'result': 5467.0}, {'cxpb': 0.6, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 0, 'result': 5441.0}, {'cxpb': 0.6, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 1, 'result': 5001.0}, {'cxpb': 0.6, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 2, 'result': 3176.0}, {'cxpb': 0.6, 'mutpb': 0.8, 'ngen': 200, 'i': 0, 'result': 3329.0}, {'cxpb': 0.6, 'mutpb': 0.8, 'ngen': 200, 'i': 1, 'result': 3405.0}, {'cxpb': 0.6, 'mutpb': 0.8, 'ngen': 200, 'i': 2, 'result': 3715.0}, {'cxpb': 0.6, 'mutpb': 0.8, 'ngen': 250, 'i': 0, 'result': 3621.0}, {'cxpb': 0.6, 'mutpb': 0.8, 'ngen': 250, 'i': 1, 'result': 3862.0}, {'cxpb': 0.6, 'mutpb': 0.8, 'ngen': 250, 'i': 2, 'result': 3513.0}, {'cxpb': 0.6, 'mutpb': 0.8, 'ngen': 300, 'i': 0, 'result': 3259.0}, {'cxpb': 0.6, 'mutpb': 0.8, 'ngen': 300, 'i': 1, 'result': 3404.0}, {'cxpb': 0.6, 'mutpb': 0.8, 'ngen': 300, 'i': 2, 'result': 3278.0}, {'cxpb': 0.6, 'mutpb': 0.9, 'ngen': 200, 'i': 0, 'result': 5288.0}, {'cxpb': 0.6, 'mutpb': 0.9, 'ngen': 200, 'i': 1, 'result': 3821.0}, {'cxpb': 0.6, 'mutpb': 0.9, 'ngen': 200, 'i': 2, 'result': 3793.0}, {'cxpb': 0.6, 'mutpb': 0.9, 'ngen': 250, 'i': 0, 'result': 3639.0}, {'cxpb': 0.6, 'mutpb': 0.9, 'ngen': 250, 'i': 1, 'result': 4147.0}, {'cxpb': 0.6, 'mutpb': 0.9, 'ngen': 250, 'i': 2, 'result': 4456.0}, {'cxpb': 0.6, 'mutpb': 0.9, 'ngen': 300, 'i': 0, 'result': 5088.0}, {'cxpb': 0.6, 'mutpb': 0.9, 'ngen': 300, 'i': 1, 'result': 5719.0}, {'cxpb': 0.6, 'mutpb': 0.9, 'ngen': 300, 'i': 2, 'result': 5314.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.1, 'ngen': 200, 'i': 0, 'result': 7407.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.1, 'ngen': 200, 'i': 1, 'result': 6612.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.1, 'ngen': 200, 'i': 2, 'result': 5311.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.1, 'ngen': 250, 'i': 0, 'result': 5814.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.1, 'ngen': 250, 'i': 1, 'result': 6600.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.1, 'ngen': 250, 'i': 2, 'result': 6617.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.1, 'ngen': 300, 'i': 0, 'result': 8526.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.1, 'ngen': 300, 'i': 1, 'result': 6005.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.1, 'ngen': 300, 'i': 2, 'result': 7493.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.2, 'ngen': 200, 'i': 0, 'result': 7277.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.2, 'ngen': 200, 'i': 1, 'result': 4082.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.2, 'ngen': 200, 'i': 2, 'result': 4220.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.2, 'ngen': 250, 'i': 0, 'result': 6541.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.2, 'ngen': 250, 'i': 1, 'result': 5332.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.2, 'ngen': 250, 'i': 2, 'result': 5480.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.2, 'ngen': 300, 'i': 0, 'result': 7548.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.2, 'ngen': 300, 'i': 1, 'result': 5089.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.2, 'ngen': 300, 'i': 2, 'result': 3731.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 0, 'result': 5393.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 1, 'result': 5711.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 2, 'result': 6802.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 0, 'result': 4920.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 1, 'result': 5653.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 2, 'result': 5323.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 0, 'result': 5647.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 1, 'result': 3524.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 2, 'result': 3494.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.4, 'ngen': 200, 'i': 0, 'result': 5855.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.4, 'ngen': 200, 'i': 1, 'result': 3639.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.4, 'ngen': 200, 'i': 2, 'result': 5724.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.4, 'ngen': 250, 'i': 0, 'result': 5167.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.4, 'ngen': 250, 'i': 1, 'result': 5292.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.4, 'ngen': 250, 'i': 2, 'result': 3312.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.4, 'ngen': 300, 'i': 0, 'result': 5850.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.4, 'ngen': 300, 'i': 1, 'result': 3385.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.4, 'ngen': 300, 'i': 2, 'result': 5154.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.5, 'ngen': 200, 'i': 0, 'result': 3677.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.5, 'ngen': 200, 'i': 1, 'result': 5380.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.5, 'ngen': 200, 'i': 2, 'result': 4909.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.5, 'ngen': 250, 'i': 0, 'result': 3410.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.5, 'ngen': 250, 'i': 1, 'result': 3477.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.5, 'ngen': 250, 'i': 2, 'result': 4116.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.5, 'ngen': 300, 'i': 0, 'result': 5020.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.5, 'ngen': 300, 'i': 1, 'result': 4313.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.5, 'ngen': 300, 'i': 2, 'result': 4574.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.6, 'ngen': 200, 'i': 0, 'result': 4823.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.6, 'ngen': 200, 'i': 1, 'result': 3363.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.6, 'ngen': 200, 'i': 2, 'result': 3720.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.6, 'ngen': 250, 'i': 0, 'result': 3361.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.6, 'ngen': 250, 'i': 1, 'result': 5592.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.6, 'ngen': 250, 'i': 2, 'result': 4912.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.6, 'ngen': 300, 'i': 0, 'result': 3284.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.6, 'ngen': 300, 'i': 1, 'result': 5477.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.6, 'ngen': 300, 'i': 2, 'result': 3122.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 0, 'result': 3762.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 1, 'result': 5641.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 2, 'result': 3417.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 0, 'result': 3485.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 1, 'result': 3385.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 2, 'result': 5088.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 0, 'result': 4500.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 1, 'result': 3444.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 2, 'result': 3089.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.8, 'ngen': 200, 'i': 0, 'result': 3464.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.8, 'ngen': 200, 'i': 1, 'result': 5814.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.8, 'ngen': 200, 'i': 2, 'result': 3505.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.8, 'ngen': 250, 'i': 0, 'result': 3133.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.8, 'ngen': 250, 'i': 1, 'result': 3236.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.8, 'ngen': 250, 'i': 2, 'result': 1324.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.8, 'ngen': 300, 'i': 0, 'result': 3191.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.8, 'ngen': 300, 'i': 1, 'result': 3236.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.8, 'ngen': 300, 'i': 2, 'result': 3934.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.9, 'ngen': 200, 'i': 0, 'result': 4964.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.9, 'ngen': 200, 'i': 1, 'result': 4074.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.9, 'ngen': 200, 'i': 2, 'result': 5339.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.9, 'ngen': 250, 'i': 0, 'result': 5471.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.9, 'ngen': 250, 'i': 1, 'result': 3639.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.9, 'ngen': 250, 'i': 2, 'result': 5770.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.9, 'ngen': 300, 'i': 0, 'result': 4365.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.9, 'ngen': 300, 'i': 1, 'result': 3839.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.9, 'ngen': 300, 'i': 2, 'result': 3527.0}, {'cxpb': 0.8, 'mutpb': 0.1, 'ngen': 200, 'i': 0, 'result': 6962.0}, {'cxpb': 0.8, 'mutpb': 0.1, 'ngen': 200, 'i': 1, 'result': 6183.0}, {'cxpb': 0.8, 'mutpb': 0.1, 'ngen': 200, 'i': 2, 'result': 6489.0}, {'cxpb': 0.8, 'mutpb': 0.1, 'ngen': 250, 'i': 0, 'result': 6260.0}, {'cxpb': 0.8, 'mutpb': 0.1, 'ngen': 250, 'i': 1, 'result': 7771.0}, {'cxpb': 0.8, 'mutpb': 0.1, 'ngen': 250, 'i': 2, 'result': 6079.0}, {'cxpb': 0.8, 'mutpb': 0.1, 'ngen': 300, 'i': 0, 'result': 6080.0}, {'cxpb': 0.8, 'mutpb': 0.1, 'ngen': 300, 'i': 1, 'result': 6598.0}, {'cxpb': 0.8, 'mutpb': 0.1, 'ngen': 300, 'i': 2, 'result': 7836.0}, {'cxpb': 0.8, 'mutpb': 0.2, 'ngen': 200, 'i': 0, 'result': 5952.0}, {'cxpb': 0.8, 'mutpb': 0.2, 'ngen': 200, 'i': 1, 'result': 5658.0}, {'cxpb': 0.8, 'mutpb': 0.2, 'ngen': 200, 'i': 2, 'result': 7067.0}, {'cxpb': 0.8, 'mutpb': 0.2, 'ngen': 250, 'i': 0, 'result': 6523.0}, {'cxpb': 0.8, 'mutpb': 0.2, 'ngen': 250, 'i': 1, 'result': 7907.0}, {'cxpb': 0.8, 'mutpb': 0.2, 'ngen': 250, 'i': 2, 'result': 5794.0}, {'cxpb': 0.8, 'mutpb': 0.2, 'ngen': 300, 'i': 0, 'result': 5834.0}, {'cxpb': 0.8, 'mutpb': 0.2, 'ngen': 300, 'i': 1, 'result': 3724.0}, {'cxpb': 0.8, 'mutpb': 0.2, 'ngen': 300, 'i': 2, 'result': 5912.0}, {'cxpb': 0.8, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 0, 'result': 5317.0}, {'cxpb': 0.8, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 1, 'result': 7320.0}, {'cxpb': 0.8, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 2, 'result': 5582.0}, {'cxpb': 0.8, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 0, 'result': 6430.0}, {'cxpb': 0.8, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 1, 'result': 8397.0}, {'cxpb': 0.8, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 2, 'result': 7879.0}, {'cxpb': 0.8, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 0, 'result': 5803.0}, {'cxpb': 0.8, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 1, 'result': 3537.0}, {'cxpb': 0.8, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 2, 'result': 5688.0}, {'cxpb': 0.8, 'mutpb': 0.4, 'ngen': 200, 'i': 0, 'result': 5854.0}, {'cxpb': 0.8, 'mutpb': 0.4, 'ngen': 200, 'i': 1, 'result': 3549.0}, {'cxpb': 0.8, 'mutpb': 0.4, 'ngen': 200, 'i': 2, 'result': 5181.0}, {'cxpb': 0.8, 'mutpb': 0.4, 'ngen': 250, 'i': 0, 'result': 5154.0}, {'cxpb': 0.8, 'mutpb': 0.4, 'ngen': 250, 'i': 1, 'result': 3519.0}, {'cxpb': 0.8, 'mutpb': 0.4, 'ngen': 250, 'i': 2, 'result': 4543.0}, {'cxpb': 0.8, 'mutpb': 0.4, 'ngen': 300, 'i': 0, 'result': 3489.0}, {'cxpb': 0.8, 'mutpb': 0.4, 'ngen': 300, 'i': 1, 'result': 5848.0}, {'cxpb': 0.8, 'mutpb': 0.4, 'ngen': 300, 'i': 2, 'result': 3492.0}, {'cxpb': 0.8, 'mutpb': 0.5, 'ngen': 200, 'i': 0, 'result': 5572.0}, {'cxpb': 0.8, 'mutpb': 0.5, 'ngen': 200, 'i': 1, 'result': 3321.0}, {'cxpb': 0.8, 'mutpb': 0.5, 'ngen': 200, 'i': 2, 'result': 5668.0}, {'cxpb': 0.8, 'mutpb': 0.5, 'ngen': 250, 'i': 0, 'result': 5149.0}, {'cxpb': 0.8, 'mutpb': 0.5, 'ngen': 250, 'i': 1, 'result': 3510.0}, {'cxpb': 0.8, 'mutpb': 0.5, 'ngen': 250, 'i': 2, 'result': 5157.0}, {'cxpb': 0.8, 'mutpb': 0.5, 'ngen': 300, 'i': 0, 'result': 4010.0}, {'cxpb': 0.8, 'mutpb': 0.5, 'ngen': 300, 'i': 1, 'result': 5075.0}, {'cxpb': 0.8, 'mutpb': 0.5, 'ngen': 300, 'i': 2, 'result': 5535.0}, {'cxpb': 0.8, 'mutpb': 0.6, 'ngen': 200, 'i': 0, 'result': 5899.0}, {'cxpb': 0.8, 'mutpb': 0.6, 'ngen': 200, 'i': 1, 'result': 5497.0}, {'cxpb': 0.8, 'mutpb': 0.6, 'ngen': 200, 'i': 2, 'result': 6000.0}, {'cxpb': 0.8, 'mutpb': 0.6, 'ngen': 250, 'i': 0, 'result': 3582.0}, {'cxpb': 0.8, 'mutpb': 0.6, 'ngen': 250, 'i': 1, 'result': 2984.0}, {'cxpb': 0.8, 'mutpb': 0.6, 'ngen': 250, 'i': 2, 'result': 3747.0}, {'cxpb': 0.8, 'mutpb': 0.6, 'ngen': 300, 'i': 0, 'result': 5630.0}, {'cxpb': 0.8, 'mutpb': 0.6, 'ngen': 300, 'i': 1, 'result': 4553.0}, {'cxpb': 0.8, 'mutpb': 0.6, 'ngen': 300, 'i': 2, 'result': 3413.0}, {'cxpb': 0.8, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 0, 'result': 3393.0}, {'cxpb': 0.8, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 1, 'result': 5547.0}, {'cxpb': 0.8, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 2, 'result': 3716.0}, {'cxpb': 0.8, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 0, 'result': 5638.0}, {'cxpb': 0.8, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 1, 'result': 5248.0}, {'cxpb': 0.8, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 2, 'result': 6856.0}, {'cxpb': 0.8, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 0, 'result': 3391.0}, {'cxpb': 0.8, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 1, 'result': 5128.0}, {'cxpb': 0.8, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 2, 'result': 3425.0}, {'cxpb': 0.8, 'mutpb': 0.8, 'ngen': 200, 'i': 0, 'result': 4694.0}, {'cxpb': 0.8, 'mutpb': 0.8, 'ngen': 200, 'i': 1, 'result': 3855.0}, {'cxpb': 0.8, 'mutpb': 0.8, 'ngen': 200, 'i': 2, 'result': 3028.0}, {'cxpb': 0.8, 'mutpb': 0.8, 'ngen': 250, 'i': 0, 'result': 3447.0}, {'cxpb': 0.8, 'mutpb': 0.8, 'ngen': 250, 'i': 1, 'result': 2982.0}, {'cxpb': 0.8, 'mutpb': 0.8, 'ngen': 250, 'i': 2, 'result': 4454.0}, {'cxpb': 0.8, 'mutpb': 0.8, 'ngen': 300, 'i': 0, 'result': 3353.0}, {'cxpb': 0.8, 'mutpb': 0.8, 'ngen': 300, 'i': 1, 'result': 3317.0}, {'cxpb': 0.8, 'mutpb': 0.8, 'ngen': 300, 'i': 2, 'result': 3635.0}, {'cxpb': 0.8, 'mutpb': 0.9, 'ngen': 200, 'i': 0, 'result': 5473.0}, {'cxpb': 0.8, 'mutpb': 0.9, 'ngen': 200, 'i': 1, 'result': 3994.0}, {'cxpb': 0.8, 'mutpb': 0.9, 'ngen': 200, 'i': 2, 'result': 5999.0}, {'cxpb': 0.8, 'mutpb': 0.9, 'ngen': 250, 'i': 0, 'result': 5694.0}, {'cxpb': 0.8, 'mutpb': 0.9, 'ngen': 250, 'i': 1, 'result': 4135.0}, {'cxpb': 0.8, 'mutpb': 0.9, 'ngen': 250, 'i': 2, 'result': 3921.0}, {'cxpb': 0.8, 'mutpb': 0.9, 'ngen': 300, 'i': 0, 'result': 3546.0}, {'cxpb': 0.8, 'mutpb': 0.9, 'ngen': 300, 'i': 1, 'result': 3675.0}, {'cxpb': 0.8, 'mutpb': 0.9, 'ngen': 300, 'i': 2, 'result': 3762.0}, {'cxpb': 0.9, 'mutpb': 0.1, 'ngen': 200, 'i': 0, 'result': 5996.0}, {'cxpb': 0.9, 'mutpb': 0.1, 'ngen': 200, 'i': 1, 'result': 6852.0}, {'cxpb': 0.9, 'mutpb': 0.1, 'ngen': 200, 'i': 2, 'result': 8692.0}, {'cxpb': 0.9, 'mutpb': 0.1, 'ngen': 250, 'i': 0, 'result': 7157.0}, {'cxpb': 0.9, 'mutpb': 0.1, 'ngen': 250, 'i': 1, 'result': 7351.0}, {'cxpb': 0.9, 'mutpb': 0.1, 'ngen': 250, 'i': 2, 'result': 7308.0}, {'cxpb': 0.9, 'mutpb': 0.1, 'ngen': 300, 'i': 0, 'result': 3672.0}, {'cxpb': 0.9, 'mutpb': 0.1, 'ngen': 300, 'i': 1, 'result': 6346.0}, {'cxpb': 0.9, 'mutpb': 0.1, 'ngen': 300, 'i': 2, 'result': 5913.0}, {'cxpb': 0.9, 'mutpb': 0.2, 'ngen': 200, 'i': 0, 'result': 7166.0}, {'cxpb': 0.9, 'mutpb': 0.2, 'ngen': 200, 'i': 1, 'result': 5881.0}, {'cxpb': 0.9, 'mutpb': 0.2, 'ngen': 200, 'i': 2, 'result': 6598.0}, {'cxpb': 0.9, 'mutpb': 0.2, 'ngen': 250, 'i': 0, 'result': 5893.0}, {'cxpb': 0.9, 'mutpb': 0.2, 'ngen': 250, 'i': 1, 'result': 7473.0}, {'cxpb': 0.9, 'mutpb': 0.2, 'ngen': 250, 'i': 2, 'result': 5837.0}, {'cxpb': 0.9, 'mutpb': 0.2, 'ngen': 300, 'i': 0, 'result': 7232.0}, {'cxpb': 0.9, 'mutpb': 0.2, 'ngen': 300, 'i': 1, 'result': 5744.0}, {'cxpb': 0.9, 'mutpb': 0.2, 'ngen': 300, 'i': 2, 'result': 6894.0}, {'cxpb': 0.9, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 0, 'result': 4452.0}, {'cxpb': 0.9, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 1, 'result': 4938.0}, {'cxpb': 0.9, 'mutpb': 0.30000000000000004, 'ngen': 200, 'i': 2, 'result': 5491.0}, {'cxpb': 0.9, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 0, 'result': 5501.0}, {'cxpb': 0.9, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 1, 'result': 5893.0}, {'cxpb': 0.9, 'mutpb': 0.30000000000000004, 'ngen': 250, 'i': 2, 'result': 5561.0}, {'cxpb': 0.9, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 0, 'result': 3700.0}, {'cxpb': 0.9, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 1, 'result': 5803.0}, {'cxpb': 0.9, 'mutpb': 0.30000000000000004, 'ngen': 300, 'i': 2, 'result': 5167.0}, {'cxpb': 0.9, 'mutpb': 0.4, 'ngen': 200, 'i': 0, 'result': 5983.0}, {'cxpb': 0.9, 'mutpb': 0.4, 'ngen': 200, 'i': 1, 'result': 5252.0}, {'cxpb': 0.9, 'mutpb': 0.4, 'ngen': 200, 'i': 2, 'result': 4775.0}, {'cxpb': 0.9, 'mutpb': 0.4, 'ngen': 250, 'i': 0, 'result': 3511.0}, {'cxpb': 0.9, 'mutpb': 0.4, 'ngen': 250, 'i': 1, 'result': 3044.0}, {'cxpb': 0.9, 'mutpb': 0.4, 'ngen': 250, 'i': 2, 'result': 4500.0}, {'cxpb': 0.9, 'mutpb': 0.4, 'ngen': 300, 'i': 0, 'result': 5330.0}, {'cxpb': 0.9, 'mutpb': 0.4, 'ngen': 300, 'i': 1, 'result': 3495.0}, {'cxpb': 0.9, 'mutpb': 0.4, 'ngen': 300, 'i': 2, 'result': 3607.0}, {'cxpb': 0.9, 'mutpb': 0.5, 'ngen': 200, 'i': 0, 'result': 5081.0}, {'cxpb': 0.9, 'mutpb': 0.5, 'ngen': 200, 'i': 1, 'result': 5592.0}, {'cxpb': 0.9, 'mutpb': 0.5, 'ngen': 200, 'i': 2, 'result': 5565.0}, {'cxpb': 0.9, 'mutpb': 0.5, 'ngen': 250, 'i': 0, 'result': 3382.0}, {'cxpb': 0.9, 'mutpb': 0.5, 'ngen': 250, 'i': 1, 'result': 3681.0}, {'cxpb': 0.9, 'mutpb': 0.5, 'ngen': 250, 'i': 2, 'result': 5441.0}, {'cxpb': 0.9, 'mutpb': 0.5, 'ngen': 300, 'i': 0, 'result': 5165.0}, {'cxpb': 0.9, 'mutpb': 0.5, 'ngen': 300, 'i': 1, 'result': 5004.0}, {'cxpb': 0.9, 'mutpb': 0.5, 'ngen': 300, 'i': 2, 'result': 3655.0}, {'cxpb': 0.9, 'mutpb': 0.6, 'ngen': 200, 'i': 0, 'result': 3501.0}, {'cxpb': 0.9, 'mutpb': 0.6, 'ngen': 200, 'i': 1, 'result': 5581.0}, {'cxpb': 0.9, 'mutpb': 0.6, 'ngen': 200, 'i': 2, 'result': 5370.0}, {'cxpb': 0.9, 'mutpb': 0.6, 'ngen': 250, 'i': 0, 'result': 3846.0}, {'cxpb': 0.9, 'mutpb': 0.6, 'ngen': 250, 'i': 1, 'result': 3346.0}, {'cxpb': 0.9, 'mutpb': 0.6, 'ngen': 250, 'i': 2, 'result': 5565.0}, {'cxpb': 0.9, 'mutpb': 0.6, 'ngen': 300, 'i': 0, 'result': 3704.0}, {'cxpb': 0.9, 'mutpb': 0.6, 'ngen': 300, 'i': 1, 'result': 3865.0}, {'cxpb': 0.9, 'mutpb': 0.6, 'ngen': 300, 'i': 2, 'result': 5191.0}, {'cxpb': 0.9, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 0, 'result': 5591.0}, {'cxpb': 0.9, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 1, 'result': 5305.0}, {'cxpb': 0.9, 'mutpb': 0.7000000000000001, 'ngen': 200, 'i': 2, 'result': 5165.0}, {'cxpb': 0.9, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 0, 'result': 3442.0}, {'cxpb': 0.9, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 1, 'result': 4804.0}, {'cxpb': 0.9, 'mutpb': 0.7000000000000001, 'ngen': 250, 'i': 2, 'result': 3830.0}, {'cxpb': 0.9, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 0, 'result': 3079.0}, {'cxpb': 0.9, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 1, 'result': 3215.0}, {'cxpb': 0.9, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 2, 'result': 3643.0}, {'cxpb': 0.9, 'mutpb': 0.8, 'ngen': 200, 'i': 0, 'result': 4446.0}, {'cxpb': 0.9, 'mutpb': 0.8, 'ngen': 200, 'i': 1, 'result': 3948.0}, {'cxpb': 0.9, 'mutpb': 0.8, 'ngen': 200, 'i': 2, 'result': 3517.0}, {'cxpb': 0.9, 'mutpb': 0.8, 'ngen': 250, 'i': 0, 'result': 3293.0}, {'cxpb': 0.9, 'mutpb': 0.8, 'ngen': 250, 'i': 1, 'result': 5260.0}, {'cxpb': 0.9, 'mutpb': 0.8, 'ngen': 250, 'i': 2, 'result': 3306.0}, {'cxpb': 0.9, 'mutpb': 0.8, 'ngen': 300, 'i': 0, 'result': 4598.0}, {'cxpb': 0.9, 'mutpb': 0.8, 'ngen': 300, 'i': 1, 'result': 3445.0}, {'cxpb': 0.9, 'mutpb': 0.8, 'ngen': 300, 'i': 2, 'result': 5603.0}, {'cxpb': 0.9, 'mutpb': 0.9, 'ngen': 200, 'i': 0, 'result': 5722.0}, {'cxpb': 0.9, 'mutpb': 0.9, 'ngen': 200, 'i': 1, 'result': 5839.0}, {'cxpb': 0.9, 'mutpb': 0.9, 'ngen': 200, 'i': 2, 'result': 5846.0}, {'cxpb': 0.9, 'mutpb': 0.9, 'ngen': 250, 'i': 0, 'result': 5760.0}, {'cxpb': 0.9, 'mutpb': 0.9, 'ngen': 250, 'i': 1, 'result': 6144.0}, {'cxpb': 0.9, 'mutpb': 0.9, 'ngen': 250, 'i': 2, 'result': 5563.0}, {'cxpb': 0.9, 'mutpb': 0.9, 'ngen': 300, 'i': 0, 'result': 4081.0}, {'cxpb': 0.9, 'mutpb': 0.9, 'ngen': 300, 'i': 1, 'result': 3304.0}, {'cxpb': 0.9, 'mutpb': 0.9, 'ngen': 300, 'i': 2, 'result': 3686.0}]
+BEST PARAMS AND RESULTS
+[{'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 200, 'i': 0, 'result': 6612.0}, {'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 200, 'i': 1, 'result': 6378.0}, {'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 250, 'i': 1, 'result': 6201.0}, {'cxpb': 0.1, 'mutpb': 0.1, 'ngen': 250, 'i': 2, 'result': 5698.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 200, 'i': 1, 'result': 5631.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 250, 'i': 0, 'result': 4624.0}, {'cxpb': 0.1, 'mutpb': 0.2, 'ngen': 300, 'i': 1, 'result': 3429.0}, {'cxpb': 0.1, 'mutpb': 0.5, 'ngen': 300, 'i': 0, 'result': 3037.0}, {'cxpb': 0.5, 'mutpb': 0.7000000000000001, 'ngen': 300, 'i': 1, 'result': 2601.0}, {'cxpb': 0.7000000000000001, 'mutpb': 0.8, 'ngen': 250, 'i': 2, 'result': 1324.0}]

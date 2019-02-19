@@ -130,6 +130,7 @@ class Algorithm(object):
 
 			#The population is entirely replaces by offspring
 			pop[:] = offspring
+		verbose = True
 		if verbose:
 			plot_results(pop, self.IND_SIZE // 2, self.data,self.constraints)
 			for p in pop:
@@ -176,7 +177,7 @@ def plot_results(population, no_of_cities, data, constraints):
 	max_y = max(data, key=lambda x: x.y_coord)
 	min_y = min(data, key=lambda x: x.y_coord)
 	ind_id = 0
-	f, plots = plt.subplots(len(population) // 3 + 1, 3, sharex='col', sharey='row')
+	f, plots = plt.subplots(1, 1, sharex='col', sharey='row')
 	for individual in population:
 		z = 1
 
@@ -192,17 +193,17 @@ def plot_results(population, no_of_cities, data, constraints):
 			# print(r)
 			custom_data = [(data[i+1].x_coord, data[i+1].y_coord) for i in route.seq]
 			custom_data = [(data[0].x_coord, data[0].y_coord)] + custom_data
-			plots[(ind_id + 1) // 3 ][(ind_id  + 1 )% 3].plot(list(map(lambda x: x[0], custom_data)),
+			plots.plot(list(map(lambda x: x[0], custom_data)),
 					 list(map(lambda x: x[1], custom_data)), zorder=z*2)
 			#plots[ind_id // 3][ind_id % 3].title = route.__repr__()
 			z += 1
-			plots[(ind_id + 1) // 3][(ind_id + 1) % 3].plot(list(map(lambda x: x.x_coord, data)),
+			plots.plot(list(map(lambda x: x.x_coord, data)),
 			 list(map(lambda x: x.y_coord, data)), zorder=0)
 		ind_id += 1
-
-	plots[0][0].plot(list(map(lambda x: x.x_coord, data)),
-			 list(map(lambda x: x.y_coord, data)), zorder=1)
-	plt.show()
+		plt.show()
+	# plots[0][0].plot(list(map(lambda x: x.x_coord, data)),
+	# 		 list(map(lambda x: x.y_coord, data)), zorder=1)
+	# plt.show()
 
 
 
